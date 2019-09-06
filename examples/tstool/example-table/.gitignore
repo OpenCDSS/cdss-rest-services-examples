@@ -1,0 +1,4 @@
+# Ignore files that should not be in the repository
+
+# Dynamic output files from example
+*.csv

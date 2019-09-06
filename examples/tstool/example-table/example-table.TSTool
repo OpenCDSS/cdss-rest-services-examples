@@ -1,0 +1,22 @@
+# This command file illustrates how to download HydroBase REST web service data
+# for a list of structures in a water district and read into a table.
+# The return code is checked in case there is an error.
+WebGet(URI="https://dwr.state.co.us/Rest/GET/api/v2/structures/?format=csv&ciuCode=A&waterDistrict=3&waterSource=CACHE+LA+POUDRE+RIVER",LocalFile="Div3_Active_Ditches.csv",ResponseCodeProperty="StatusCode")
+If(Name="ErrorCheck",Condition="${StatusCode} != 200")
+Message(Message="Error ${StatusCode} downloading data.",CommandStatus=FAILURE)
+EndIf(Name="ErrorCheck")
+#
+# Read the CSV file into a table
+# - skip the first 2 rows because they contain the page/line count
+ReadTableFromDelimitedFile(TableID="Div3_Active_Structures_Table",InputFile="Div3_Active_Structures.csv",SkipLines="1-2",HeaderLines="3")
+#
+# Web services don't allow selecting by structure type so copy the table to a different and and remove all but Ditch
+CopyTable(TableID="Div3_Active_Structures_Table",NewTableID="Div3_Active_Ditches_Table",ColumnFilters="structureType:DITCH")
+#
+# Loop over each row in the table
+# - just print the WDID for now
+# - will update the example later to do some actual work
+For(Name="DitchLoop",IteratorProperty="wdid",TableID="Div3_Active_Ditches_Table",TableColumn="wdid",TablePropertyMap="structureName:structureName")
+Message(Message="Processing ditch ${wdid} - ${structureName}")
+# Here is where commands could be inserted to read diversion time series, etc.
+EndFor(Name="DitchLoop")
