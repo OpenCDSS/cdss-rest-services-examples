@@ -1,5 +1,8 @@
 # Ignore the following files (do not commit working files to repository)
 
+# Ignore TSTool log files
+*.log
+
 # Ignore temporary files from editors
 # vi/vim
 *.swp
