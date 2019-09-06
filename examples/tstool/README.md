@@ -70,4 +70,4 @@ This is useful for bulk download of data.
 Because other software will need to process the file, choose a data format that can be processed,
 such as comma-separated-value (CSV).
 
-Example files:  [example-webget](#example-webget/)
+Example files:  [example-webget](example-webget)
