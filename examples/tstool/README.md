@@ -83,7 +83,7 @@ For example, this example:
 3. copies only the `DITCH` structures into another table (because web services don't allow filtering on structure type)
 4. loops over the rows in the table using the TSTool [`For` Command](http://opencdss.state.co.us/tstool/latest/doc-user/command-ref/For/For/) command
 
-This basic logic can be used to iterate through lists of structures, stations, or other water rights to
+This basic logic can be used to iterate through lists of structures, stations, or other data to
 automate data download, quality control, etc.
 
 Example files:  [example-table](example-table)
