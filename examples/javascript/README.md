@@ -9,4 +9,4 @@ and implement automated tests.
 Use of the API library will ensure that this code does not have to be redeveloped and that the API
 is consistent with the server-side web services.
 
-See also the example on the [HydroBase Rest Web Services website](https://dwr.state.co.us/rest/get/help).
+See also the example on the [HydroBase REST Web Services website](https://dwr.state.co.us/Rest/GET/Help#TechInfoHelp&#All&#gettingstarted&#jsonxml).

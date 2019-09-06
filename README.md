@@ -5,7 +5,7 @@ using various tools and technologies.
 This project enhances information that is presented on the 
 [Technical Information & Help](https://dwr.state.co.us/rest/get/help#TechInfoHelp) page.
 The goal of this project is to provide technical examples in a way that can be understood
-by wide audience of users and streamline implementing tools to consume data from the web services.
+by a wide audience of users and streamline implementing tools to consume data from the web services.
 
 * [Introduction](#introduction)
 * [Examples](#examples)
@@ -24,15 +24,25 @@ Colorado's HydroBase REST web services implement
 [Representational State Transfer (REST)](https://en.wikipedia.org/wiki/Representational_state_transfer) web service design.
 In general terms, this means that each URL provided by web services corresponds to a unique data resource.
 The web service URLs correspond to major datasets available in HydroBase, typically tables and views in the database.
-The uniqueness of a URL and corresponding data can be refined by adding query parameters.
+The uniqueness of a URL and corresponding data can be refined by adding query parameters.  An example URL is as follows
+(the `/` before the `?` is optional):
+
+```
+https://dwr.state.co.us/Rest/GET/api/v2/telemetrystations/telemetrytimeseriesraw/?format=jsonprettyprint&abbrev=PLAKERCO&parameter=DISCHRG
+```
+
 Each web service provides a default behavior and can be further configured by providing query parameters in the URL:
 
+* The first part of the URL specifies the server, application programmer interface (API) version, and service name.
 * Query parameters follow the `?` character in the URL.
 * Each query parameter includes a parameter name, `=`, and value, and value can take on various forms depending on the data type.
 * Query parameters are separated by `&` character.
 * The [Url Generator](https://dwr.state.co.us/rest/get/help) links on the HydroBase web service page help format URLs for the data resource being queried and corresponding query parameters.
+	+ Special characters in the query parameters may be encoded using [URL encoding or pecent encoding](https://en.wikipedia.org/wiki/Percent-encoding).
 * Default web service query limits are enforced and require an API key to increase limits above the defaults.
-See the [Technical Information & Help](https://dwr.state.co.us/rest/get/help#TechInfoHelp).
+See the [Technical Information & Help](https://dwr.state.co.us/rest/get/help#TechInfoHelp) to learn how to acquire an API key.
+* Web services have a built-in paging feature.
+Therefore, large queries that exceed the single page limit may need logic to be implemented to retrieve multiple pages of data.
 
 The REST web services can be called by various technologies and tools, as illustrated in the examples on this page.
 In some cases, basic data retrieval occurs (e.g., using `curl`).
@@ -42,18 +52,20 @@ integrating several web services, and providing additional useful features.
 The following should be considered when using web services:
 
 * Web services are convenient because public access to HydroBase can be provided without installing a local HydroBase database.
-However, Web services are typically slower than direct database queries because of layers of communication and data formatting.
-Therefore, heavy data users should consider breaking workflows into a download step,
+However, web services are typically slower than direct database queries because of layers of communication and data formatting.
+Therefore, heavy data users should consider breaking workflows into a download step
 and separate processing step that can be rerun without having to download data again.
-* Web services are a "snapshot in time".  Therefore, if it is important to have a timestamped version of the data,
+The second step would need to be able to read the file format saved in the first step.
+* Web services provide a "snapshot in time".  Therefore, if it is important to have a timestamped version of the data,
 downloaded files should be saved to a local computer with an appropriate date.
 * Software that has traditionally used HydroBase data, such as TSTool and StateDMI,
-may not be able to provide the same features because web services do not provide all needed data.
+may not be able to provide the same features for web service data because web services do not provide all needed data.
 It is expected that web services will be enhanced over time and will allow such tools to offer
 web services as an option for data access.
 * Like any website, web services may at times experience downtime.
 * Changes to web services may impact software that uses the web services.
-However, because the web service API is documented, such impacts should be relatively easy to troubleshoot.
+However, because the web service [API is documented](https://dwr.state.co.us/rest/get/help),
+such impacts should be relatively easy to troubleshoot.
 
 ## Examples ##
 
