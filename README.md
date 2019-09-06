@@ -1,12 +1,13 @@
 # cdss-rest-services-examples #
 
-This repository contains examples to consume the HydroBase REST web services,
-using various technologies.
-This is a new project that will enhance the information presented on the 
+This repository contains examples to access data from HydroBase REST web services,
+using various tools and technologies.
+This is a new project that will enhance information that is presented on the 
 [Technical Information & Help](https://dwr.state.co.us/rest/get/help#TechInfoHelp) page.
 The goal of this project is to provide technical examples in a way that can be understood
 by non-technical people and streamline implementing tools to consume the web services.
 
+* [Examples](#examples)
 * [Repository Contents](#repository-contents)
 * [Development Environment](#development-environment)
 * [License](#license)
@@ -16,9 +17,28 @@ by non-technical people and streamline implementing tools to consume the web ser
 
 ------------------
 
+## Examples ##
+
+This repository contains examples illustrating how to access HydroBase REST web services
+using various tools and technologies.
+
+| **Tool / Technology** | **Description** |
+| --------------------- | --------------- |
+| [ArcGIS](examples/arcgis/README.md) | ArcGIS Geographic Information System (GIS) software. |
+| [curl](examples/curl/README.md)<br>![curl](README-resources/images/curl-thumbnail.png) | `curl` command line tool to retrieve data and save to local file. |
+| [Excel](examples/excel/README.md) | Microsoft Excel workbook examples. |
+| [Google Sheets](examples/googlesheets/README.md) | Google Sheets, online spreadsheets. |
+| [JavaScript](examples/javascript/README.md) | JavaScript, used for web application development. |
+| [Python](examples/python/README.md) | Python programming language, used to automate data processing. |
+| [R](examples/r/README.md) | R programming language, used to automate data processing for statistical analysis. |
+| [StateDMI](examples/statedmi/README.md)| StateDMI software (part of Colorado's Decision Support Systems), used to automate creation of StateCU and StateMod model files. |
+| [TSTool](examples/tstool/README.md)<br>![TSTool](README-resources/images/tstool-thumbnail.png) | TSTool software (part of Colorado's Decision Support Systems), used to automate time series and other data processing. |
+
 ## Repository Contents ##
 
-The repository contains the following (**some of which have not yet been created**).
+The repository contains the following folders and files.
+Currently, README files are used to present information,
+but the content may be converted to a GitHub page, Wiki, or some other form in the future.
 `README.md` files provide information and can be viewed in the repository using a web browser.
 
 ```text
@@ -36,9 +56,10 @@ cdss-rest-services-examples/  Repository name and main folder.
     python/                   Python examples.
     r/                        R examples.
     tstool/                   TSTool examples.
-
 ```
-A recommended but not required folder structure to contain the repository files on the local computer is as follows.
+
+A recommended (but not required) folder structure to contain the repository files on the local computer is as follows.
+This folder structure is consistent with other CDSS products, and provides consistency and flexibility.
 Examples are constructed to work using relative paths or absolute paths that are dynamically determined
 from the local files.
 
@@ -74,4 +95,5 @@ Colorado Water Conservation Board and Colorado Division of Water Resources staff
 The following are major updates for the repository and examples.
 See the GitHub issues for details.
 
+* 2019-09-06 - Add initial TSTool and `curl` examples.
 * 2019-08-12 - Initialize the repository.
