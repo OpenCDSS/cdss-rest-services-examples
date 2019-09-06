@@ -74,14 +74,14 @@ using various tools and technologies.
 
 | **Tool / Technology** | **Description** |
 | --------------------- | --------------- |
-| [ArcGIS](examples/arcgis/README.md) | ArcGIS Geographic Information System (GIS) software. |
+| [ArcGIS](examples/arcgis/README.md) | ArcGIS Geographic Information System (GIS) software. **No content yet.** |
 | [curl](examples/curl/README.md)<br>[<img src="README-resources/images/curl-thumbnail.png">](examples/curl/README.md) | `curl` command line tool to retrieve data and save to local file. |
 | [Excel](examples/excel/README.md) | Microsoft Excel workbook examples. |
 | [Google Sheets](examples/googlesheets/README.md) | Google Sheets, online spreadsheets. |
 | [JavaScript](examples/javascript/README.md) | JavaScript, used for web application development. |
-| [Python](examples/python/README.md) | Python programming language, used to automate data processing. |
-| [R](examples/r/README.md) | R programming language, used to automate data processing for statistical analysis. |
-| [StateDMI](examples/statedmi/README.md)| StateDMI software (part of Colorado's Decision Support Systems), used to automate creation of StateCU and StateMod model files. |
+| [Python](examples/python/README.md) | Python programming language, used to automate data processing. **No content yet.** |
+| [R](examples/r/README.md) | R programming language, used to automate data processing for statistical analysis. **No content yet.** |
+| [StateDMI](examples/statedmi/README.md)| StateDMI software (part of Colorado's Decision Support Systems), used to automate creation of StateCU and StateMod model files. **No content yet.** |
 | [TSTool](examples/tstool/README.md)<br>[<img src="README-resources/images/tstool-thumbnail.png">](examples/tstool/README.md) | TSTool software (part of Colorado's Decision Support Systems), used to automate time series and other data processing. |
 
 ## Repository Contents ##
