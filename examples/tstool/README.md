@@ -129,9 +129,9 @@ For this example:
 using the
 [`ReadColoradoHydroBaseRest` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/ReadColoradoHydroBaseRest/ReadColoradoHydroBaseRest/),
 which is in the ***Commands / Read Time Series*** menu.
-Diversion comments are used to fill additional zeros.
+Diversion comments are used to fill missing values with additional zeros.
 2. Read daily `DivTotal` diversion records for the structure.
-Diversion comments are used to fill additional zeros.
+Diversion comments are used to fill missing values with additional zeros.
 3. Read daily `RelTotal` diversion records for the structure.
 	* The command generates an error for this example because there are no release time series for this structure.
 	* The command can be deleted or commented out to avoid generating an error.
@@ -140,20 +140,21 @@ The time series has zeros in years where water was not taken.
 	* To graph in TSTool, use a point graph because values are sparse and
 	have zero values.
 
-When the command file is run in TSTool, it is useful to click on the legend text to highlight each time series,
+When the command file is run and line graph is viewed in TSTool, it is useful to click on the legend text to highlight a specific time series of interest,
 as shown in the following figure.
 
 ![tstool-graph](example-divrec-day/tstool-graph.png)
 
-The TSTool table view can be used to view the time series data values and flags.
+The TSTool table view (see below) can be used to view the time series data values and flags.
 Use the ***Flags: Superscript*** option near the lower left in the table view.
-Note that some zero values have been filled using carry forward from an observed zero value.
+Note that some zero values have been filled using carry forward from an observed zero value,
+and that some daily values have been set using diversion comment.
 
 **Note also that daily diversion records read from HydroBase database may have more zeros than data read from web services.
-This is because the HydroBase `vw_CDSS_DailyAmt` and `vw_CDSS_DailyWC` views often provide
+This is because the HydroBase `vw_CDSS_DailyAmt` and `vw_CDSS_DailyWC` views may provide
 zero values where data may have been missing, due to how the view is created.
 These values typically are zero without a flag.
-This design approach is being evaluated and in the future HydroBase may be distributed with fewer zero values,
+The HydroBase database design approach is being evaluated and in the future HydroBase may be distributed with fewer zero values,
 in which case the fill carry forward default algorithm in TSTool should fill many of those zeros,
 especially at the start of the irrigation year.**
 
@@ -190,9 +191,9 @@ For this example:
 using the
 [`ReadColoradoHydroBaseRest` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/ReadColoradoHydroBaseRest/ReadColoradoHydroBaseRest/),
 which is in the ***Commands / Read Time Series*** menu.
-Diversion comments are used to fill additional zeros.
+Diversion comments are used to fill missing values with additional zeros.
 2. Read monthly `DivTotal` diversion records for the structure.
-Diversion comments are used to fill additional zeros.
+Diversion comments are used to fill missing values with additional zeros.
 3. Read monthly `RelTotal` diversion records for the structure.
 	* The command generates an error for this example because there are no release time series for this structure.
 	* The command can be deleted or commented out to avoid generating an error.
@@ -201,21 +202,22 @@ The time series has zeros in years where water was not taken.
 	* To graph in TSTool, use a point graph because values are sparse and
 	have zero values.
 
-When the command file is run in TSTool, it is useful to click on the legend text to highlight each time series,
+When the command file is run and line graph is viewed in TSTool, it is useful to click on the legend text to highlight a specific time series of interest,
 as shown in the following figure.
 
 ![tstool-graph](example-divrec-month/tstool-graph.png)
 
-The TSTool table view can be used to view the time series data values and flags.
+The TSTool table view (see below) can be used to view the time series data values and flags.
 Use the ***Flags: Superscript*** option near the lower left in the table view.
-Note that some zero values have been filled using carry forward from an observed zero value.
+Note that some zero values have been filled using carry forward from an observed zero value,
+and that some monthly values have been set using diversion comment.
 
 **Note also that monthly diversion records read from HydroBase database may have more zeros than data read from web services.
-This is because the HydroBase `vw_CDSS_AnnualAmt` and `vw_CDSS_AnnualWC` views often provide
+This is because the HydroBase `vw_CDSS_AnnualAmt` and `vw_CDSS_AnnualWC` views may provide
 zero values where data may have been missing, due to how the view is created.
-The HydroBase database for CDSS does not include observation code for monthly data,
-whereas web services do provide observation code.
-This design approach is being evaluated and in the future HydroBase may be distributed with fewer zero values,
+Unlike daily data tables, the HydroBase database for CDSS does not include observation code for monthly data.
+Web services do provide observation code.
+The HydroBase database design approach is being evaluated and in the future HydroBase may be distributed with fewer zero values,
 in which case some type of fill carry forward for monthly data will need to be implemented in TSTool.**
 
 ![tstool-table](example-divrec-month/tstool-table.png)
@@ -226,8 +228,9 @@ Example files:  [example-divrec-month](example-divrec-month)
 
 Annual diversion records are derived from monthly diversion records and
 infrequent monthly and annual diversion record data for a structure.
-The year is defined as "irrigation year" November 1 to October 31 
-and therefore care should be taken when comparing with other year types such as
+The year is defined as "irrigation year" November 1 to October 31,
+with the numerical year being consistent with the ending calendar year.
+Therefore care should be taken when comparing with other year types such as
 calendar year or USGS Water Year (October 1 to September 30).
 See the discussion of daily data in a previous section
 for more information about `WaterClass` and total time series.
@@ -252,9 +255,9 @@ For this example:
 using the
 [`ReadColoradoHydroBaseRest` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/ReadColoradoHydroBaseRest/ReadColoradoHydroBaseRest/),
 which is in the ***Commands / Read Time Series*** menu.
-Diversion comments are used to fill additional zeros.
+Diversion comments are used to fill missing values with additional zeros.
 2. Read annual `DivTotal` diversion records for the structure.
-Diversion comments are used to fill additional zeros.
+Diversion comments are used to fill missing values with additional zeros.
 3. Read annual `RelTotal` diversion records for the structure.
 	* The command generates an error for this example because there are no release time series for this structure.
 	* The command can be deleted or commented out to avoid generating an error.
@@ -263,14 +266,15 @@ The time series has zeros in years where water was not taken.
 	* To graph in TSTool, use a point graph because values are sparse and
 	have zero values.
 
-When the command file is run in TSTool, it is useful to click on the legend text to highlight each time series,
+When the command file is run and line graph is viewed in TSTool, it is useful to click on the legend text to highlight a specific time series of interest,
 as shown in the following figure.
 
 ![tstool-graph](example-divrec-year/tstool-graph.png)
 
-The TSTool table view can be used to view the time series data values and flags.
+The TSTool table view (see below) can be used to view the time series data values and flags.
 Use the ***Flags: Superscript*** option near the lower left in the table view.
-Note that some zero values have been filled using carry forward from an observed zero value.
+Note that some zero values have been filled using carry forward from an observed zero value,
+and that some year values have been set using diversion comment.
 
 ![tstool-table](example-divrec-year/tstool-table.png)
 
