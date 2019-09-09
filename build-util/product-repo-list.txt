@@ -1,0 +1,3 @@
+# Repositories that comprise REST web services examples
+# - assumes that local folder name will match the repository name
+cdss-rest-services-examples
