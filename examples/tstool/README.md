@@ -95,10 +95,10 @@ Example files:  [example-table](example-table)
 Daily diversion records are the most detailed diversion record data for a structure.
 Diversion records are initially recorded as `WaterClass` records, which indicate details
 about the source and destination and use of the data.
-Note that web services use the term `WaterClass` for all data records associated with structures,
-which include `WaterClass` and other records.
+Note that web services use the term `WaterClass` for all types of records associated with structures,
+including `WaterClass`, `DivTotal`, and other records.
 The `WaterClass` records are processed into `DivTotal` records, which record total through a structure,
-and for reservoirs `RelTotal`, which indicate total release from a structure.
+and `RelTotal`, which indicate total release from a structure, such as storage structures.
 
 Daily diversion records returned from web service contain measurements and user-reported values.
 DWR implements a carry-forward algorithm within water years (November to October) that fill missing
@@ -110,9 +110,10 @@ TSTool will also optionally add additional zeros when annual diversion comment i
 The zero values are flagged.
 This approach is consistent with common practice in using diversion records.
 
-To understand `WaterClass` records, use the [Water Classes URL Generator](https://dwr.state.co.us/Rest/GET/Help/WaterClassesGenerator) and
-query the water classes for the structure, in this case WDID 2000812:
-[https://dwr.state.co.us/Rest/GET/api/v2/structures/divrec/waterclasses/?format=jsonprettyprint&wdid=2000812](https://dwr.state.co.us/Rest/GET/api/v2/structures/divrec/waterclasses/?format=jsonprettyprint&wdid=2000812).
+To understand `WaterClass` records for a structure of interest,
+use the [Water Classes URL Generator](https://dwr.state.co.us/Rest/GET/Help/WaterClassesGenerator) and
+query the water classes for the structure, in this case WDID 0301121:
+[https://dwr.state.co.us/Rest/GET/api/v2/structures/divrec/waterclasses/?format=jsonprettyprint&wdid=0301121](https://dwr.state.co.us/Rest/GET/api/v2/structures/divrec/waterclasses/?format=jsonprettyprint&wdid=0301121).
 The list of available record types (`divrectype` for each water class web service record) indicate which web services can be used to retrieve data.
 For example, `divrectype` of `DivTotal` indicates that the `divrecday`, `divrecmonth`, and `divrecyear` web services should be used,
 depending on the `availableTimesteps` value in water class list.
@@ -123,13 +124,13 @@ For this example:
 
 1. Read daily `WaterClass` diversion records for the structure WDID, in this case 0301121,
 using the
-[`ReadColoradoHydroBaseRest` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/ReadColoradoHydroBaseRest/ReadColoradoHydroBaseRest/) command,
+[`ReadColoradoHydroBaseRest` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/ReadColoradoHydroBaseRest/ReadColoradoHydroBaseRest/),
 which is in the ***Commands / Read Time Series*** menu.
 Diversion records are used to fill additional zeros.
 2. Read daily `DivTotal` diversion records for the structure.
 Diversion records are used to fill additional zeros.
 3. Read daily `RelTotal` diversion records for the structure.
-	* This command generates an error because there are no release time series.
+	* The command generates an error for this example because there are no release time series.
 	* The command can be deleted or commented out to avoid generating an error.
 4. Read annual `DivComment` diversion records for the structure.
 The time series has zeros in years where water was not taken.
@@ -139,6 +140,6 @@ The time series has zeros in years where water was not taken.
 When the command file is run in TSTool, it is useful to click on the legend text to highlight each time series,
 as shown in the following figure.
 
-![tstool-graph](tstool-graph.png)
+![tstool-graph](example-divrec-day/tstool-graph.png)
 
 Example files:  [example-divrec-day](example-divrec-day)
