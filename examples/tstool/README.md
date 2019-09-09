@@ -146,6 +146,14 @@ The TSTool table view can be used to view the time series data values and flags.
 Use the ***Flags: Superscript*** option near the lower left in the table view.
 Note that some zero values have been filled using carry forward from an observed zero value.
 
+**Note also that daily diversion records read from HydroBase database may have more zeros than data read from web services.
+This is because the HydroBase `vw_CDSS_DailyAmt` and `vw_CDSS_DailyWC` views often provide
+zero values where data may have been missing, due to how the view is created.
+These values typically are zero without a flag.
+This design approach is being evaluated and in the future HydroBase may be distributed with fewer zero values,
+in which case the fill carry forward default algorithm in TSTool should fill many of those zeros,
+especially at the start of the irrigation year.**
+
 ![tstool-table](example-divrec-day/tstool-table.png)
 
 Example files:  [example-divrec-day](example-divrec-day)

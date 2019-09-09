@@ -4,7 +4,7 @@
 ReadColoradoHydroBaseRest(DataStore="ColoradoHydroBaseRest",DataType="WaterClass",Interval="Day",Where1="StructureWDID;Matches;0301121",FillUsingDivComments=True)
 ReadColoradoHydroBaseRest(DataStore="ColoradoHydroBaseRest",DataType="DivTotal",Interval="Day",Where1="StructureWDID;Matches;0301121",Alias="%L-DivTotal",FillUsingDivComments=True)
 # Reservoir total time series is not available.
-# ReadColoradoHydroBaseRest(DataStore="ColoradoHydroBaseRest",DataType="RelTotal",Interval="Day",Where1="StructureWDID;Matches;0301121",Alias="%L-RelTotal",FillUsingDivComments=True)
+ReadColoradoHydroBaseRest(DataStore="ColoradoHydroBaseRest",DataType="RelTotal",Interval="Day",Where1="StructureWDID;Matches;0301121",Alias="%L-RelTotal",FillUsingDivComments=True)
 ReadColoradoHydroBaseRest(DataStore="ColoradoHydroBaseRest",DataType="DivComment",Interval="Year",Where1="StructureWDID;Matches;0301121",Alias="%L-DivComment")
 # The returned time series can be further processed.
 # - fill missing values with historical averages or other method
