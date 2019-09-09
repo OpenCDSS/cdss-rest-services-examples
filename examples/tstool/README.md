@@ -7,6 +7,8 @@ This folder contains examples of how to access HydroBase REST web services using
 	+ [Download data to a file with `WebGet` command](#download-data-to-a-file-with-webget-command)
 	+ [Download data and read into a table](#download-data-and-read-into-a-table)
 	+ [Download daily diversion records for a structure](#download-daily-diversion-records-for-a-structure)
+	+ [Download monthly diversion records for a structure](#download-monthly-diversion-records-for-a-structure)
+	+ [Download annual diversion records for a structure](#download-annual-diversion-records-for-a-structure)
 
 ----------------------
 
@@ -106,7 +108,8 @@ values by repeating non-zero measurements.  The DWR approach does NOT fill zero 
 However, TSTool by default fills daily diversion records with additional zeros within irrigation years that
 have at least one measurement.  Zeros are filled at the beginning of the irrigation year (before first value)
 and by repeating zero values.
-TSTool will also optionally add additional zeros when annual diversion comment indicates that water was not taken.
+TSTool will also optionally set additional zeros for days in irrigation years
+when annual diversion comment indicates that water was not taken.
 The zero values are flagged.
 This approach is consistent with common practice in using diversion records.
 
@@ -126,11 +129,11 @@ For this example:
 using the
 [`ReadColoradoHydroBaseRest` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/ReadColoradoHydroBaseRest/ReadColoradoHydroBaseRest/),
 which is in the ***Commands / Read Time Series*** menu.
-Diversion records are used to fill additional zeros.
+Diversion comments are used to fill additional zeros.
 2. Read daily `DivTotal` diversion records for the structure.
-Diversion records are used to fill additional zeros.
+Diversion comments are used to fill additional zeros.
 3. Read daily `RelTotal` diversion records for the structure.
-	* The command generates an error for this example because there are no release time series.
+	* The command generates an error for this example because there are no release time series for this structure.
 	* The command can be deleted or commented out to avoid generating an error.
 4. Read annual `DivComment` diversion records for the structure.
 The time series has zeros in years where water was not taken.
@@ -157,3 +160,118 @@ especially at the start of the irrigation year.**
 ![tstool-table](example-divrec-day/tstool-table.png)
 
 Example files:  [example-divrec-day](example-divrec-day)
+
+### Download monthly diversion records for a structure ###
+
+Monthly diversion records are derived from daily diversion records and
+infrequent monthly diversion record data for a structure.
+See the discussion of daily data in the previous section
+for more information about `WaterClass` and total time series.
+
+Monthly diversion records returned from web service contain measurements and user-reported values.
+Unlike daily diversion records, DWR and TSTool DO NOT implement a carry-forward
+algorithm within water years (November to October) for monthly diversion records.
+TSTool will optionally set additional zeros for months when annual diversion comment indicates that water was not taken.
+The zero values are flagged.
+
+To understand `WaterClass` records for a structure of interest,
+use the [Water Classes URL Generator](https://dwr.state.co.us/Rest/GET/Help/WaterClassesGenerator) and
+query the water classes for the structure, in this case WDID 0301121:
+[https://dwr.state.co.us/Rest/GET/api/v2/structures/divrec/waterclasses/?format=jsonprettyprint&wdid=0301121](https://dwr.state.co.us/Rest/GET/api/v2/structures/divrec/waterclasses/?format=jsonprettyprint&wdid=0301121).
+The list of available record types (`divrectype` for each water class web service record) indicate which web services can be used to retrieve data.
+For example, `divrectype` of `DivTotal` indicates that the `divrecday`, `divrecmonth`, and `divrecyear` web services should be used,
+depending on the `availableTimesteps` value in water class list.
+TSTool streamlines accessing web services by calling web services as needed and returning data as time series
+that can be visualized and processed.
+
+For this example:
+
+1. Read monthly `WaterClass` diversion records for the structure WDID, in this case 0301121,
+using the
+[`ReadColoradoHydroBaseRest` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/ReadColoradoHydroBaseRest/ReadColoradoHydroBaseRest/),
+which is in the ***Commands / Read Time Series*** menu.
+Diversion comments are used to fill additional zeros.
+2. Read monthly `DivTotal` diversion records for the structure.
+Diversion comments are used to fill additional zeros.
+3. Read monthly `RelTotal` diversion records for the structure.
+	* The command generates an error for this example because there are no release time series for this structure.
+	* The command can be deleted or commented out to avoid generating an error.
+4. Read annual `DivComment` diversion records for the structure.
+The time series has zeros in years where water was not taken.
+	* To graph in TSTool, use a point graph because values are sparse and
+	have zero values.
+
+When the command file is run in TSTool, it is useful to click on the legend text to highlight each time series,
+as shown in the following figure.
+
+![tstool-graph](example-divrec-month/tstool-graph.png)
+
+The TSTool table view can be used to view the time series data values and flags.
+Use the ***Flags: Superscript*** option near the lower left in the table view.
+Note that some zero values have been filled using carry forward from an observed zero value.
+
+**Note also that monthly diversion records read from HydroBase database may have more zeros than data read from web services.
+This is because the HydroBase `vw_CDSS_AnnualAmt` and `vw_CDSS_AnnualWC` views often provide
+zero values where data may have been missing, due to how the view is created.
+The HydroBase database for CDSS does not include observation code for monthly data,
+whereas web services do provide observation code.
+This design approach is being evaluated and in the future HydroBase may be distributed with fewer zero values,
+in which case some type of fill carry forward for monthly data will need to be implemented in TSTool.**
+
+![tstool-table](example-divrec-month/tstool-table.png)
+
+Example files:  [example-divrec-month](example-divrec-month)
+
+### Download annual diversion records for a structure ###
+
+Annual diversion records are derived from monthly diversion records and
+infrequent monthly and annual diversion record data for a structure.
+The year is defined as "irrigation year" November 1 to October 31 
+and therefore care should be taken when comparing with other year types such as
+calendar year or USGS Water Year (October 1 to September 30).
+See the discussion of daily data in a previous section
+for more information about `WaterClass` and total time series.
+
+Annual diversion records returned from web service contain measurements and user-reported values.
+TSTool will optionally set additional zeros for years when annual diversion comment indicates that water was not taken.
+The zero values are flagged.
+
+To understand `WaterClass` records for a structure of interest,
+use the [Water Classes URL Generator](https://dwr.state.co.us/Rest/GET/Help/WaterClassesGenerator) and
+query the water classes for the structure, in this case WDID 0301121:
+[https://dwr.state.co.us/Rest/GET/api/v2/structures/divrec/waterclasses/?format=jsonprettyprint&wdid=0301121](https://dwr.state.co.us/Rest/GET/api/v2/structures/divrec/waterclasses/?format=jsonprettyprint&wdid=0301121).
+The list of available record types (`divrectype` for each water class web service record) indicate which web services can be used to retrieve data.
+For example, `divrectype` of `DivTotal` indicates that the `divrecday`, `divrecmonth`, and `divrecyear` web services should be used,
+depending on the `availableTimesteps` value in water class list.
+TSTool streamlines accessing web services by calling web services as needed and returning data as time series
+that can be visualized and processed.
+
+For this example:
+
+1. Read annual `WaterClass` diversion records for the structure WDID, in this case 0301121,
+using the
+[`ReadColoradoHydroBaseRest` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/ReadColoradoHydroBaseRest/ReadColoradoHydroBaseRest/),
+which is in the ***Commands / Read Time Series*** menu.
+Diversion comments are used to fill additional zeros.
+2. Read annual `DivTotal` diversion records for the structure.
+Diversion comments are used to fill additional zeros.
+3. Read annual `RelTotal` diversion records for the structure.
+	* The command generates an error for this example because there are no release time series for this structure.
+	* The command can be deleted or commented out to avoid generating an error.
+4. Read annual `DivComment` diversion records for the structure.
+The time series has zeros in years where water was not taken.
+	* To graph in TSTool, use a point graph because values are sparse and
+	have zero values.
+
+When the command file is run in TSTool, it is useful to click on the legend text to highlight each time series,
+as shown in the following figure.
+
+![tstool-graph](example-divrec-year/tstool-graph.png)
+
+The TSTool table view can be used to view the time series data values and flags.
+Use the ***Flags: Superscript*** option near the lower left in the table view.
+Note that some zero values have been filled using carry forward from an observed zero value.
+
+![tstool-table](example-divrec-year/tstool-table.png)
+
+Example files:  [example-divrec-year](example-divrec-year)
