@@ -142,4 +142,10 @@ as shown in the following figure.
 
 ![tstool-graph](example-divrec-day/tstool-graph.png)
 
+The TSTool table view can be used to view the time series data values and flags.
+Use the ***Flags: Superscript*** option near the lower left in the table view.
+Note that some zero values have been filled using carry forward from an observed zero value.
+
+![tstool-table](example-divrec-day/tstool-table.png)
+
 Example files:  [example-divrec-day](example-divrec-day)
