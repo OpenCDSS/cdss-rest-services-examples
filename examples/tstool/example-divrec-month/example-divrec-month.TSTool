@@ -1,11 +1,11 @@
 # This command file illustrates how to download HydroBase REST web service
 # month diversion records for a structure (WDID 0301121).
 # Search and replace the WDID to process another structure.
-ReadColoradoHydroBaseRest(DataStore="ColoradoHydroBaseRest",DataType="WaterClass",Interval="Month",Where1="StructureWDID;Matches;0301121",FillUsingDivComments=True)
-ReadColoradoHydroBaseRest(DataStore="ColoradoHydroBaseRest",DataType="DivTotal",Interval="Month",Where1="StructureWDID;Matches;0301121",Alias="%L-DivTotal",FillUsingDivComments=True)
+ReadColoradoHydroBaseRest(DataStore="HydroBaseWeb",DataType="WaterClass",Interval="Month",Where1="StructureWDID;Matches;0301121",FillUsingDivComments=True)
+ReadColoradoHydroBaseRest(DataStore="HydroBaseWeb",DataType="DivTotal",Interval="Month",Where1="StructureWDID;Matches;0301121",Alias="%L-DivTotal",FillUsingDivComments=True)
 # Reservoir total time series is not available.
-ReadColoradoHydroBaseRest(DataStore="ColoradoHydroBaseRest",DataType="RelTotal",Interval="Month",Where1="StructureWDID;Matches;0301121",Alias="%L-RelTotal",FillUsingDivComments=True)
-ReadColoradoHydroBaseRest(DataStore="ColoradoHydroBaseRest",DataType="DivComment",Interval="Year",Where1="StructureWDID;Matches;0301121",Alias="%L-DivComment")
+ReadColoradoHydroBaseRest(DataStore="HydroBaseWeb",DataType="RelTotal",Interval="Month",Where1="StructureWDID;Matches;0301121",Alias="%L-RelTotal",FillUsingDivComments=True)
+ReadColoradoHydroBaseRest(DataStore="HydroBaseWeb",DataType="DivComment",Interval="Year",Where1="StructureWDID;Matches;0301121",Alias="%L-DivComment")
 # The returned time series can be further processed.
 # - fill missing values with historical averages or other method
 # - output to Excel, delimited file, or other formats

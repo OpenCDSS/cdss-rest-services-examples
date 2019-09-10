@@ -1,0 +1,12 @@
+# This command file illustrates how to download HydroBase REST web service
+# streaflow data for a station (abbrev identifier 0301121).
+# Search and replace the station ID to process another structure.
+# Use the SetInputPeriod command or specify period of interest in each read command.
+SetInputPeriod(InputStart="CurrentToMinute.Round(15Min) - 30Day")
+ReadColoradoHydroBaseRest(DataStore="HydroBaseWeb",DataType="DISCHRG",Interval="15Min",Where1="StationAbbreviation;Matches;PLAKERCO",FillUsingDivComments=True)
+ReadColoradoHydroBaseRest(DataStore="HydroBaseWeb",DataType="DISCHRG",Interval="Hour",Where1="StationAbbreviation;Matches;PLAKERCO",FillUsingDivComments=True)
+ReadColoradoHydroBaseRest(DataStore="HydroBaseWeb",DataType="DISCHRG",Interval="Day",Where1="StationAbbreviation;Matches;PLAKERCO",FillUsingDivComments=True)
+# The returned time series can be further processed.
+# - fill missing values with historical averages or other method
+# - output to Excel, delimited file, or other formats
+# - create graphical products

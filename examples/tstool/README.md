@@ -6,6 +6,7 @@ This folder contains examples of how to access HydroBase REST web services using
 * [Examples](#examples)
 	+ [Download data to a file with `WebGet` command](#download-data-to-a-file-with-webget-command)
 	+ [Download data and read into a table](#download-data-and-read-into-a-table)
+	+ [Download time series for streamflow telemetry station](#download-time-series-for-streamflow-telemetry-station)
 	+ [Download daily diversion records for a structure](#download-daily-diversion-records-for-a-structure)
 	+ [Download monthly diversion records for a structure](#download-monthly-diversion-records-for-a-structure)
 	+ [Download annual diversion records for a structure](#download-annual-diversion-records-for-a-structure)
@@ -23,7 +24,7 @@ TSTool can be run in interactive or batch modes.
 
 TSTool uses "datastores" to configure data sources including web services.
 TSTool version 13 and later is distributed with `HydroBaseWeb` datastore automatically configured,
-but with no API key.
+but with no API key defined in the configuration file.
 
 If an API key is needed, for example to allow processing large datasets,
 see the [REST Web Services Help](https://dwr.state.co.us/Rest/GET/Help#TechInfoHelp&#All&#gettingstarted&#jsonxml)
@@ -91,6 +92,92 @@ This basic logic can be used to iterate through lists of structures, stations, o
 automate data download, quality control, etc.
 
 Example files:  [example-table](example-table)
+
+### Download time series for streamflow telemetry station ###
+
+Telemetry stations are locations where real-time data are collected.
+Data observations are collected from various data networks,
+including State of Colorado's Satellite Monitoring System,
+third-party data from systems with independent access (e.g., USGS, Northern Water),
+and third party data submissions for systems that are not available online (e.g., communities).
+DWR archives third-party data at a point in time can be retrieved to
+understand administrative decisions.
+Third-party data are not updated for changes such as data corrections and therefore if
+authoritative data are needed, those systems
+(e.g., USGS) should be used for historical data if authoritative dataset is needed.
+TSTool provides access to State data and USGS (for example see the
+[`UsgsNwisInstantaneous` datastore](http://opencdss.state.co.us/tstool/latest/doc-user/datastore-ref/USGS-NWIS-Instantaneous/USGS-NWIS-Instantaneous/)
+and
+[`UsgsNwisDaily` datastore](http://opencdss.state.co.us/tstool/latest/doc-user/datastore-ref/USGS-NWIS-Instantaneous/USGS-NWIS-Daily/).
+
+Streamflow data are used for real-time operational decisions such as evaluating
+whether water can be diverted in priority and to monitor environmental flow conditions.
+Other data types (parameters) such as reservoir level, water temperature, and other parameters are available at some stations.
+Real-time telemetry station data have not received significant review and should be considered provisional data.
+
+**Note that HydroBase historical station data are not yet available as web services and are therefore
+not available in TSTool.  Historical data have typically received additional scrutiny
+and are suitable for planning and other studies.**
+
+See the [telemetry station dataset web services](https://dwr.state.co.us/rest/get/help#Datasets&#TelemetryStationsController&#gettingstarted&#jsonxml).
+Telemetry station data are made available for multiple intervals (timesteps) and the
+default web services period is short to ensure fast data access.
+There is latency between original observation and access to the data, due to transmission and data processing time.
+
+* original measurement interval:
+	+ varies depending on data collection system (e.g., 5-minute or instantaneous depending on weather events)
+	+ is not available through web service
+* 15-minute interval (timestep):
+	+ data may be a statistic over the interval but are essentially instantaneous or "real time"
+	+ see [`telemetrytimeseriesraw` web service](https://dwr.state.co.us/Rest/GET/Help/TelemetryTimeSeriesRawGenerator)
+	+ data are useful to inform time-sensitive decisions
+	+ streamflow data are useful to understand peak flows (although historical data that is quality controlled is better for long-term data record)
+	+ streamflow data are useful to understand environmental flows
+	+ data issues will be emphasized as spikes or dips, such as single values that are different than neighboring values
+* 1-hour interval (timestep):
+	+ data may be a statistic over the interval, for example to create average flow
+	+ see [`telemetrytimeserieshour` web service](https://dwr.state.co.us/Rest/GET/Help/TelemetryTimeSeriesHourGenerator)
+	+ peaks and dips will be dampened because extreme values will have been distributed across multiple timesteps
+* 1-day interval (timestep):
+	+ data may be a statistic over the day, for example to create average flow
+	+ see [`telemetrytimeseriesday` web service](https://dwr.state.co.us/Rest/GET/Help/TelemetryTimeSeriesDayGenerator)
+	+ peaks and dips will be further dampened because extreme values will have been distributed across multiple timesteps
+	+ streamflow data are useful for water management
+	+ data can be aggregated to larger timestep for historical analysis (quality-controlled historical data should be used if available)
+
+It can be difficult to understand which parameter should be uses for telemetry station data.
+Streamflow is recorded using parameter name `DISCHRG`, `DISCHRG1`, `DISCHRG2`, `DISCHRG3`, or `DISCHRG4`.
+The parameter that is used depends on the station configuration.
+For example, a single gage at a confluence may collect data for each tributary using the same station identifier.
+TSTool can help understand the available data by listing all available time series.
+For example, select the following in the TSTool interface:
+
+* ***Datastore*** - `HydroBaseWeb`
+* ***Data type*** - `Telemetry Station - *`
+* ***Time step:*** - `15Min`
+
+Then press ***Get Time Series List***.  Because `*` is specified for the data type,
+all available 15-minute time series will be listed.
+The list can be sorted by station identifier or name to determine which data types (parameters)
+are available for the station.
+
+For this example:
+
+1. Set the input period to read data, to override the web service default.
+The [`SetInputPeriod` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/SetInputPeriod/SetInputPeriod/)
+allows setting the period relative to current time.
+2. Read 15-minute `DISCHRG` data , in this case PLAKERCO (SOUTH PLATT RIVER NEAR KERSEY, CO)
+using the
+[`ReadColoradoHydroBaseRest` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/ReadColoradoHydroBaseRest/ReadColoradoHydroBaseRest/),
+which is in the ***Commands / Read Time Series*** menu.
+3. Read 1-hour `DISCHRG` time series for the station.
+4. Read daily `DISCHRG` time series for the station.
+
+TSTool allows viewing time series of different interval on the same graph, as shown below.
+The graph has been zoomed to a single storm and shows how the time series values vary
+depending on data interval.
+
+![tstool-graph](example-streamflow/tstool-graph.png)
 
 ### Download daily diversion records for a structure ###
 
