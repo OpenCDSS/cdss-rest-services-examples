@@ -66,8 +66,11 @@ and will be output in some formats such as the `DateValue` format.
 ## Examples ##
 
 The following sections describe specific examples that use TSTool to access HydroBase REST web service data.
+Links are provided to access repository example files, which can be downloaded and run using TSTool.
 
 ### Download data to a file with `WebGet` command ###
+
+Example files:  [example-webget](example-webget)
 
 The TSTool [`WebGet` command](http://opencdss.state.co.us/tstool/latest/doc-user/command-ref/WebGet/WebGet/),
 found in the ***File Handling*** commands, can
@@ -76,9 +79,9 @@ This is useful for bulk download of data.
 Because other software will need to process the file, choose a data format that can be processed,
 such as comma-separated-value (CSV).
 
-Example files:  [example-webget](example-webget)
-
 ### Download data and read into a table ###
+
+Example files:  [example-table](example-table)
 
 If a CSV file has been downloaded, it can be read into a table and used for further processing.
 For example, this example:
@@ -92,9 +95,9 @@ For example, this example:
 This basic logic can be used to iterate through lists of structures, stations, or other data to
 automate data download, quality control, etc.
 
-Example files:  [example-table](example-table)
-
 ### Download time series for streamflow telemetry station ###
+
+Example files:  [example-streamflow](example-streamflow)
 
 Telemetry stations are locations where real-time data are collected.
 Data observations are collected from various data networks,
@@ -185,6 +188,8 @@ depending on data interval.
 
 ### Download daily diversion time series for a structure ###
 
+Example files:  [example-divrec-day](example-divrec-day)
+
 Daily diversion records are the most detailed diversion record data for a structure.
 Diversion records are initially recorded as `WaterClass` records, which indicate details
 about the source and destination and use of the data.
@@ -251,9 +256,9 @@ especially at the start of the irrigation year.**
 
 ![tstool-table](example-divrec-day/tstool-table.png)
 
-Example files:  [example-divrec-day](example-divrec-day)
-
 ### Download monthly diversion time series for a structure ###
+
+Example files:  [example-divrec-month](example-divrec-month)
 
 Monthly diversion records are derived from daily diversion records and
 infrequent monthly diversion record data for a structure.
@@ -313,9 +318,9 @@ in which case some type of fill carry forward for monthly data will need to be i
 
 ![tstool-table](example-divrec-month/tstool-table.png)
 
-Example files:  [example-divrec-month](example-divrec-month)
-
 ### Download annual diversion time series for a structure ###
+
+Example files:  [example-divrec-year](example-divrec-year)
 
 Annual diversion records are derived from monthly diversion records and
 infrequent monthly and annual diversion record data for a structure.
@@ -369,9 +374,9 @@ and that some year values have been set using diversion comment.
 
 ![tstool-table](example-divrec-year/tstool-table.png)
 
-Example files:  [example-divrec-year](example-divrec-year)
-
 ### Download call data as table and time series ###
+
+Example files:  [example-calls](example-calls)
 
 Call data indicate structures that are calling for water because they would otherwise be shorted.
 Structures with water rights that are junior to the calling structure are required to curtail diversions.
