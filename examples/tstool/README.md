@@ -10,6 +10,7 @@ This folder contains examples of how to access HydroBase REST web services using
 	+ [Download daily diversion time series for a structure](#download-daily-diversion-time-series-for-a-structure)
 	+ [Download monthly diversion time series for a structure](#download-monthly-diversion-time-series-for-a-structure)
 	+ [Download annual diversion time series for a structure](#download-annual-diversion-time-series-for-a-structure)
+	+ [Download call data as table and time series](#download-call-data-as-table-and-time-series)
 
 ----------------------
 
@@ -369,3 +370,38 @@ and that some year values have been set using diversion comment.
 ![tstool-table](example-divrec-year/tstool-table.png)
 
 Example files:  [example-divrec-year](example-divrec-year)
+
+### Download call data as table and time series ###
+
+Call data indicate structures that are calling for water because they would otherwise be shorted.
+Structures with water rights that are junior to the calling structure are required to curtail diversions.
+
+TSTool does not automatically treat call data as time series.
+However, the data can be converted to time series to view the historical occurrence of calls.
+The resulting graph is as shown below.
+
+For this example:
+
+1. Set the input period to read data, to override the web service default.
+The [`SetInputPeriod` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/SetInputPeriod/SetInputPeriod/),
+available in the ***Commmands / Read Time Series*** menu,
+allows setting the period relative to current time.
+2. Download historical call data to a CSV file using the
+[`WebGet` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/WebGet/WebGet/),
+which is in the ***Commands / General - File Handling*** menu.
+	* The period to query is specified in order to read multiple historical years.
+	* Specify the division as 1.
+3. Read the table using the 
+[`ReadTableFromDelimitedFile` command](http://opencdss.state.co.us/tstool/latest/doc-user/command-ref/ReadTableFromDelimitedFile/ReadTableFromDelimitedFile/),
+which is in the ***Commands(Table) / Read Table*** menu.
+	* The CSV file date is converted to a date to facilitate processing.
+4. Convert the table to time series for each calling structure using the
+[`TableToTimeSeries` command](http://opencdss.state.co.us/tstool/latest/doc-user/command-ref/TableToTimeSeries/TableToTimeSeries/),
+which is in the ***Commands(Table) / Table, Time Series Processing*** menu.
+	* The administration number is used for the time series value,
+	indicating which right in a structure's portfolio of water rights is calling.
+
+The calls can be viewed using a point graph, as shown below,
+in this case for several selected structures.  The full dataset in this case has nearly 200 time series.
+
+![tstool-graph](example-calls/tstool-graph.png)

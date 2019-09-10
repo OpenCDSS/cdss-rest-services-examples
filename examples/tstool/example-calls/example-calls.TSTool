@@ -1,0 +1,18 @@
+# This command file illustrates how to download HydroBase REST web service
+# call data for a structures to view historical call time series.
+#
+# First download the historical call data.
+WebGet(URI="https://dwr.state.co.us/Rest/GET/api/v2/administrativecalls/historical?format=csv&min-dateTimeSet=01%2F01%2F2010&division=1",LocalFile="hist-calls.csv",ResponseCodeProperty="WebGetStatusCode")
+If(Name="ErrorCheck",Condition="${WebGetStatusCode} != 200")
+Message(Message="Error ${WebGetStatusCode} downloading data.",CommandStatus=FAILURE)
+EndIf(Name="ErrorCheck")
+#
+# Read call data file into a table.
+# - the CSV date/time format needs to be reformatted for TSTool to handle
+ReadTableFromDelimitedFile(TableID="HistoricalCalls",InputFile="hist-calls.csv",SkipLines="1-2",HeaderLines="3",TextColumns="dateTimeSet,dateTimeReleased,locationWdid,priorityDatem")
+ManipulateTableString(TableID="HistoricalCalls",InputColumn1="dateTimeSet",Operator="Substring",InputValue2="1",InputValue3="10",OutputColumn="dateTimeSetDate")
+#
+# Convert the table into time series.
+TableToTimeSeries(TableID="HistoricalCalls",DateTimeColumn="dateTimeSetDate",LocationColumn="locationWdid",DataTypeColumn="callType",ValueColumn="priorityAdminNumber",Interval=Day)
+#
+# Can then graph or otherwise process data.

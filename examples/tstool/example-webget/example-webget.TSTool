@@ -1,7 +1,7 @@
 # This command file illustrates how to download HydroBase REST web service data
 # for a real-time streamflow station, using default period.
 # The return code is checked in case there is an error.
-WebGet(URI="https://dwr.state.co.us/Rest/GET/api/v2/telemetrystations/telemetrytimeseriesraw/?format=csv&abbrev=PLAKERCO&parameter=DISCHRG",LocalFile="PLAKERCO.csv",ResponseCodeProperty="StatusCode")
-If(Name="ErrorCheck",Condition="${StatusCode} != 200")
-Message(Message="Error ${StatusCode} downloading data.",CommandStatus=FAILURE)
+WebGet(URI="https://dwr.state.co.us/Rest/GET/api/v2/telemetrystations/telemetrytimeseriesraw/?format=csv&abbrev=PLAKERCO&parameter=DISCHRG",LocalFile="PLAKERCO.csv",ResponseCodeProperty="WebGetStatusCode")
+If(Name="ErrorCheck",Condition="${WebGetStatusCode} != 200")
+Message(Message="Error ${WebGetStatusCode} downloading data.",CommandStatus=FAILURE)
 EndIf(Name="ErrorCheck")

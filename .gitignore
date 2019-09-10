@@ -8,6 +8,9 @@
 *.swp
 *.swo
 
+# Ignore dynamic files created by running commands
+examples/tstool/example-calls/hist-calls.csv
+
 # Office temporary files
 
 *.tmp
