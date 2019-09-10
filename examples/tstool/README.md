@@ -387,26 +387,23 @@ The resulting graph is as shown below.
 
 For this example:
 
-1. Set the input period to read data, to override the web service default.
-The [`SetInputPeriod` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/SetInputPeriod/SetInputPeriod/),
-available in the ***Commmands / Read Time Series*** menu,
-allows setting the period relative to current time.
-2. Download historical call data to a CSV file using the
+1. Download historical call data to a CSV file using the
 [`WebGet` command](http://opencdss.state.co.us/tstool/13.02.00dev/doc-user/command-ref/WebGet/WebGet/),
 which is in the ***Commands / General - File Handling*** menu.
-	* The period to query is specified in order to read multiple historical years.
-	* Specify the division as 1.
-3. Read the table using the 
+	* The period to query is specified in order to read a historical data period.
+	* Specify the division as 1 to limit the number of structures that are processed.
+2. Read the table using the 
 [`ReadTableFromDelimitedFile` command](http://opencdss.state.co.us/tstool/latest/doc-user/command-ref/ReadTableFromDelimitedFile/ReadTableFromDelimitedFile/),
 which is in the ***Commands(Table) / Read Table*** menu.
-	* The CSV file date is converted to a date to facilitate processing.
-4. Convert the table to time series for each calling structure using the
+	* The CSV file `setDateTime` is converted to a date to day precision to facilitate processing.
+3. Convert the table to time series for each calling structure using the
 [`TableToTimeSeries` command](http://opencdss.state.co.us/tstool/latest/doc-user/command-ref/TableToTimeSeries/TableToTimeSeries/),
 which is in the ***Commands(Table) / Table, Time Series Processing*** menu.
 	* The administration number is used for the time series value,
 	indicating which right in a structure's portfolio of water rights is calling.
 
 The calls can be viewed using a point graph, as shown below,
-in this case for several selected structures.  The full dataset in this case has nearly 200 time series.
+in this case for several selected structures.
+The full dataset in this case has nearly 200 time series and would be difficult to show in the legend.
 
 ![tstool-graph](example-calls/tstool-graph.png)
