@@ -1,0 +1,4 @@
+# Don't let any file or directory into github
+*
+# Except this .gitignore file
+!.gitignore

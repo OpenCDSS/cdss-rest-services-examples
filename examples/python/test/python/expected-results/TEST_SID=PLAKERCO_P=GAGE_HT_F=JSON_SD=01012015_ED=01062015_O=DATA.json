@@ -1,0 +1,4811 @@
+{ "ResultList": [{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T00:00:00",
+    "measValue": 3.84,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T00:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T00:15:00",
+    "measValue": 3.85,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T00:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T00:30:00",
+    "measValue": 3.83,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T00:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T00:45:00",
+    "measValue": 3.81,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T00:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T01:00:00",
+    "measValue": 3.82,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T01:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T01:15:00",
+    "measValue": 3.81,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T01:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T01:30:00",
+    "measValue": 3.82,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T01:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T01:45:00",
+    "measValue": 3.83,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T01:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T02:00:00",
+    "measValue": 3.84,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T02:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T02:15:00",
+    "measValue": 3.85,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T02:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T02:30:00",
+    "measValue": 3.86,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T02:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T02:45:00",
+    "measValue": 3.85,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T02:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T03:00:00",
+    "measValue": 3.82,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T03:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T03:15:00",
+    "measValue": 3.81,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T03:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T03:30:00",
+    "measValue": 3.81,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T03:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T03:45:00",
+    "measValue": 3.82,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T03:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T04:00:00",
+    "measValue": 3.84,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T04:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T04:15:00",
+    "measValue": 3.85,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T04:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T04:30:00",
+    "measValue": 3.85,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T04:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T04:45:00",
+    "measValue": 3.86,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T04:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T05:00:00",
+    "measValue": 3.86,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T05:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T05:15:00",
+    "measValue": 3.85,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T05:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T05:30:00",
+    "measValue": 3.83,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T05:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T05:45:00",
+    "measValue": 3.81,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T05:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T06:00:00",
+    "measValue": 3.83,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T06:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T06:15:00",
+    "measValue": 3.83,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T06:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T06:30:00",
+    "measValue": 3.83,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T06:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T06:45:00",
+    "measValue": 3.87,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T06:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T07:00:00",
+    "measValue": 3.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T07:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T07:15:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T07:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T07:30:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T07:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T07:45:00",
+    "measValue": 4.18,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T07:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T08:00:00",
+    "measValue": 4.35,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T08:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T08:15:00",
+    "measValue": 4.51,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T08:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T08:30:00",
+    "measValue": 4.67,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T08:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T08:45:00",
+    "measValue": 4.88,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T08:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T09:00:00",
+    "measValue": 5.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T09:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T09:15:00",
+    "measValue": 5.12,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T09:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T09:30:00",
+    "measValue": 5.42,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T09:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T09:45:00",
+    "measValue": 5.54,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T09:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T10:00:00",
+    "measValue": 5.71,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T10:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T10:15:00",
+    "measValue": 5.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T10:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T10:30:00",
+    "measValue": 6.15,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T10:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T10:45:00",
+    "measValue": 6.17,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T10:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T11:00:00",
+    "measValue": 5.36,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T11:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T11:15:00",
+    "measValue": 4.67,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T11:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T11:30:00",
+    "measValue": 4.3,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T11:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T11:45:00",
+    "measValue": 4.12,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T11:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T12:00:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T12:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T12:15:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T12:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T12:30:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T12:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T12:45:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T12:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T13:00:00",
+    "measValue": 4.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T13:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T13:15:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T13:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T13:30:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T13:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T13:45:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T13:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T14:00:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T14:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T14:15:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T14:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T14:30:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T14:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T14:45:00",
+    "measValue": 4.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T14:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T15:00:00",
+    "measValue": 4.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T15:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T15:15:00",
+    "measValue": 4.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T15:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T15:30:00",
+    "measValue": 4.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T15:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T15:45:00",
+    "measValue": 4.01,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T15:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T16:00:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T16:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T16:15:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T16:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T16:30:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T16:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T16:45:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T16:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T17:00:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T17:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T17:15:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T17:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T17:30:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T17:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T17:45:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T17:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T18:00:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T18:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T18:15:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T18:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T18:30:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T18:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T18:45:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T18:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T19:00:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T19:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T19:15:00",
+    "measValue": 4.08,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T19:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T19:30:00",
+    "measValue": 4.08,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T19:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T19:45:00",
+    "measValue": 4.07,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T19:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T20:00:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T20:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T20:15:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T20:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T20:30:00",
+    "measValue": 4.07,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T20:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T20:45:00",
+    "measValue": 4.09,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T20:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T21:00:00",
+    "measValue": 4.12,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T21:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T21:15:00",
+    "measValue": 4.12,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T21:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T21:30:00",
+    "measValue": 4.11,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T21:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T21:45:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T21:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T22:00:00",
+    "measValue": 4.09,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T22:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T22:15:00",
+    "measValue": 4.09,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T22:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T22:30:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T22:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T22:45:00",
+    "measValue": 4.12,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T22:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T23:00:00",
+    "measValue": 4.13,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T23:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T23:15:00",
+    "measValue": 4.14,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T23:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T23:30:00",
+    "measValue": 4.12,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T23:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-01T23:45:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-01T23:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T00:00:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T00:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T00:15:00",
+    "measValue": 4.13,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T00:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T00:30:00",
+    "measValue": 4.15,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T00:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T00:45:00",
+    "measValue": 4.14,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T00:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T01:00:00",
+    "measValue": 4.13,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T01:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T01:15:00",
+    "measValue": 4.13,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T01:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T01:30:00",
+    "measValue": 4.15,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T01:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T01:45:00",
+    "measValue": 4.15,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T01:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T02:00:00",
+    "measValue": 4.13,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T02:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T02:15:00",
+    "measValue": 4.11,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T02:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T02:30:00",
+    "measValue": 4.13,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T02:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T02:45:00",
+    "measValue": 4.13,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T02:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T03:00:00",
+    "measValue": 4.14,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T03:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T03:15:00",
+    "measValue": 4.14,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T03:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T03:30:00",
+    "measValue": 4.12,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T03:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T03:45:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T03:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T04:00:00",
+    "measValue": 4.09,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T04:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T04:15:00",
+    "measValue": 4.09,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T04:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T04:30:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T04:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T04:45:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T04:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T05:00:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T05:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T05:15:00",
+    "measValue": 4.11,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T05:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T05:30:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T05:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T05:45:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T05:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T06:00:00",
+    "measValue": 4.08,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T06:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T06:15:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T06:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T06:30:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T06:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T06:45:00",
+    "measValue": 4.08,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T06:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T07:00:00",
+    "measValue": 4.08,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T07:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T07:15:00",
+    "measValue": 4.07,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T07:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T07:30:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T07:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T07:45:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T07:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T08:00:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T08:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T08:15:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T08:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T08:30:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T08:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T08:45:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T08:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T09:00:00",
+    "measValue": 4.01,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T09:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T09:15:00",
+    "measValue": 4.01,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T09:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T09:30:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T09:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T09:45:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T09:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T10:00:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T10:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T10:15:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T10:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T10:30:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T10:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T10:45:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T10:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T11:00:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T11:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T11:15:00",
+    "measValue": 4.01,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T11:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T11:30:00",
+    "measValue": 4.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T11:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T11:45:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T11:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T12:00:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T12:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T12:15:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T12:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T12:30:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T12:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T12:45:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T12:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T13:00:00",
+    "measValue": 3.96,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T13:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T13:15:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T13:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T13:30:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T13:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T13:45:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T13:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T14:00:00",
+    "measValue": 3.9,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T14:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T14:15:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T14:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T14:30:00",
+    "measValue": 3.91,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T14:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T14:45:00",
+    "measValue": 3.9,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T14:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T15:00:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T15:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T15:15:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T15:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T15:30:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T15:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T15:45:00",
+    "measValue": 3.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T15:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T16:00:00",
+    "measValue": 3.9,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T16:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T16:15:00",
+    "measValue": 3.89,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T16:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T16:30:00",
+    "measValue": 3.89,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T16:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T16:45:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T16:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T17:00:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T17:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T17:15:00",
+    "measValue": 3.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T17:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T17:30:00",
+    "measValue": 3.91,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T17:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T17:45:00",
+    "measValue": 3.9,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T17:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T18:00:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T18:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T18:15:00",
+    "measValue": 3.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T18:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T18:30:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T18:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T18:45:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T18:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T19:00:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T19:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T19:15:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T19:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T19:30:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T19:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T19:45:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T19:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T20:00:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T20:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T20:15:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T20:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T20:30:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T20:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T20:45:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T20:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T21:00:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T21:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T21:15:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T21:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T21:30:00",
+    "measValue": 3.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T21:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T21:45:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T21:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T22:00:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T22:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T22:15:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T22:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T22:30:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T22:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T22:45:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T22:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T23:00:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T23:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T23:15:00",
+    "measValue": 3.96,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T23:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T23:30:00",
+    "measValue": 3.96,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T23:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-02T23:45:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-02T23:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T00:00:00",
+    "measValue": 3.96,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T00:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T00:15:00",
+    "measValue": 3.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T00:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T00:30:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T00:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T00:45:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T00:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T01:00:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T01:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T01:15:00",
+    "measValue": 3.96,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T01:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T01:30:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T01:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T01:45:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T01:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T02:00:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T02:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T02:15:00",
+    "measValue": 3.91,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T02:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T02:30:00",
+    "measValue": 3.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T02:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T02:45:00",
+    "measValue": 3.96,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T02:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T03:00:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T03:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T03:15:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T03:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T03:30:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T03:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T03:45:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T03:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T04:00:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T04:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T04:15:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T04:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T04:30:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T04:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T04:45:00",
+    "measValue": 3.9,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T04:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T05:00:00",
+    "measValue": 3.9,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T05:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T05:15:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T05:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T05:30:00",
+    "measValue": 3.91,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T05:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T05:45:00",
+    "measValue": 3.91,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T05:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T06:00:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T06:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T06:15:00",
+    "measValue": 3.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T06:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T06:30:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T06:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T06:45:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T06:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T07:00:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T07:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T07:15:00",
+    "measValue": 3.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T07:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T07:30:00",
+    "measValue": 3.9,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T07:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T07:45:00",
+    "measValue": 3.9,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T07:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T08:00:00",
+    "measValue": 3.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T08:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T08:15:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T08:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T08:30:00",
+    "measValue": 3.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T08:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T08:45:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T08:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T09:00:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T09:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T09:15:00",
+    "measValue": 3.89,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T09:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T09:30:00",
+    "measValue": 3.87,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T09:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T09:45:00",
+    "measValue": 3.85,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T09:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T10:00:00",
+    "measValue": 3.86,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T10:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T10:15:00",
+    "measValue": 3.88,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T10:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T10:30:00",
+    "measValue": 3.89,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T10:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T10:45:00",
+    "measValue": 3.89,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T10:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T11:00:00",
+    "measValue": 3.88,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T11:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T11:15:00",
+    "measValue": 3.86,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T11:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T11:30:00",
+    "measValue": 3.84,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T11:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T11:45:00",
+    "measValue": 3.84,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T11:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T12:00:00",
+    "measValue": 3.86,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T12:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T12:15:00",
+    "measValue": 3.89,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T12:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T12:30:00",
+    "measValue": 3.9,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T12:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T12:45:00",
+    "measValue": 3.9,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T12:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T13:00:00",
+    "measValue": 3.89,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T13:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T13:15:00",
+    "measValue": 3.87,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T13:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T13:30:00",
+    "measValue": 3.87,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T13:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T13:45:00",
+    "measValue": 3.89,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T13:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T14:00:00",
+    "measValue": 3.91,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T14:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T14:15:00",
+    "measValue": 3.9,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T14:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T14:30:00",
+    "measValue": 3.89,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T14:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T14:45:00",
+    "measValue": 3.88,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T14:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T15:00:00",
+    "measValue": 3.89,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T15:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T15:15:00",
+    "measValue": 3.91,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T15:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T15:30:00",
+    "measValue": 3.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T15:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T15:45:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T15:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T16:00:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T16:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T16:15:00",
+    "measValue": 3.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T16:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T16:30:00",
+    "measValue": 3.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T16:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T16:45:00",
+    "measValue": 3.93,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T16:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T17:00:00",
+    "measValue": 3.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T17:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T17:15:00",
+    "measValue": 3.96,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T17:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T17:30:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T17:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T17:45:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T17:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T18:00:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T18:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T18:15:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T18:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T18:30:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T18:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T18:45:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T18:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T19:00:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T19:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T19:15:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T19:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T19:30:00",
+    "measValue": 4.01,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T19:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T19:45:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T19:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T20:00:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T20:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T20:15:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T20:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T20:30:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T20:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T20:45:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T20:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T21:00:00",
+    "measValue": 4.01,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T21:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T21:15:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T21:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T21:30:00",
+    "measValue": 4.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T21:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T21:45:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T21:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T22:00:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T22:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T22:15:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T22:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T22:30:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T22:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T22:45:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T22:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T23:00:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T23:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T23:15:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T23:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T23:30:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T23:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-03T23:45:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-03T23:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T00:00:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T00:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T00:15:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T00:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T00:30:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T00:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T00:45:00",
+    "measValue": 4.08,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T00:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T01:00:00",
+    "measValue": 4.07,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T01:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T01:15:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T01:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T01:30:00",
+    "measValue": 4.08,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T01:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T01:45:00",
+    "measValue": 4.08,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T01:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T02:00:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T02:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T02:15:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T02:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T02:30:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T02:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T02:45:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T02:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T03:00:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T03:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T03:15:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T03:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T03:30:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T03:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T03:45:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T03:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T04:00:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T04:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T04:15:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T04:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T04:30:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T04:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T04:45:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T04:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T05:00:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T05:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T05:15:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T05:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T05:30:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T05:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T05:45:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T05:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T06:00:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T06:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T06:15:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T06:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T06:30:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T06:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T06:45:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T06:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T07:00:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T07:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T07:15:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T07:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T07:30:00",
+    "measValue": 4.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T07:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T07:45:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T07:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T08:00:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T08:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T08:15:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T08:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T08:30:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T08:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T08:45:00",
+    "measValue": 4.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T08:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T09:00:00",
+    "measValue": 4.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T09:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T09:15:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T09:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T09:30:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T09:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T09:45:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T09:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T10:00:00",
+    "measValue": 4.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T10:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T10:15:00",
+    "measValue": 4.01,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T10:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T10:30:00",
+    "measValue": 4.01,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T10:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T10:45:00",
+    "measValue": 4.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T10:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T11:00:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T11:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T11:15:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T11:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T11:30:00",
+    "measValue": 3.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T11:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T11:45:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T11:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T12:00:00",
+    "measValue": 3.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T12:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T12:15:00",
+    "measValue": 3.99,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T12:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T12:30:00",
+    "measValue": 4.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T12:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T12:45:00",
+    "measValue": 4.01,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T12:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T13:00:00",
+    "measValue": 4.02,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T13:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T13:15:00",
+    "measValue": 4.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T13:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T13:30:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T13:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T13:45:00",
+    "measValue": 4.05,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T13:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T14:00:00",
+    "measValue": 4.04,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T14:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T14:15:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T14:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T14:30:00",
+    "measValue": 4.08,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T14:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T14:45:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T14:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T15:00:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T15:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T15:15:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T15:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T15:30:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T15:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T15:45:00",
+    "measValue": 4.09,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T15:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T16:00:00",
+    "measValue": 4.08,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T16:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T16:15:00",
+    "measValue": 4.07,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T16:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T16:30:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T16:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T16:45:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T16:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T17:00:00",
+    "measValue": 4.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T17:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T17:15:00",
+    "measValue": 4.07,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T17:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T17:30:00",
+    "measValue": 4.08,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T17:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T17:45:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T17:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T18:00:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T18:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T18:15:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T18:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T18:30:00",
+    "measValue": 4.11,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T18:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T18:45:00",
+    "measValue": 4.12,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T18:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T19:00:00",
+    "measValue": 4.12,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T19:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T19:15:00",
+    "measValue": 4.12,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T19:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T19:30:00",
+    "measValue": 4.11,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T19:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T19:45:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T19:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T20:00:00",
+    "measValue": 4.1,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T20:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T20:15:00",
+    "measValue": 4.12,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T20:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T20:30:00",
+    "measValue": 4.14,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T20:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T20:45:00",
+    "measValue": 4.17,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T20:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T21:00:00",
+    "measValue": 4.19,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T21:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T21:15:00",
+    "measValue": 4.2,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T21:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T21:30:00",
+    "measValue": 4.2,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T21:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T21:45:00",
+    "measValue": 4.2,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T21:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T22:00:00",
+    "measValue": 4.19,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T22:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T22:15:00",
+    "measValue": 4.21,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T22:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T22:30:00",
+    "measValue": 4.22,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T22:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T22:45:00",
+    "measValue": 4.23,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T22:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T23:00:00",
+    "measValue": 4.24,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T23:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T23:15:00",
+    "measValue": 4.26,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T23:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T23:30:00",
+    "measValue": 4.28,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T23:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-04T23:45:00",
+    "measValue": 4.31,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-04T23:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T00:00:00",
+    "measValue": 4.33,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T00:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T00:15:00",
+    "measValue": 4.36,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T00:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T00:30:00",
+    "measValue": 4.43,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T00:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T00:45:00",
+    "measValue": 4.51,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T00:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T01:00:00",
+    "measValue": 4.58,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T01:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T01:15:00",
+    "measValue": 4.65,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T01:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T01:30:00",
+    "measValue": 4.69,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T01:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T01:45:00",
+    "measValue": 4.75,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T01:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T02:00:00",
+    "measValue": 4.83,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T02:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T02:15:00",
+    "measValue": 4.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T02:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T02:30:00",
+    "measValue": 5.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T02:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T02:45:00",
+    "measValue": 5.09,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T02:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T03:00:00",
+    "measValue": 5.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T03:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T03:15:00",
+    "measValue": 5.14,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T03:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T03:30:00",
+    "measValue": 5.23,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T03:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T03:45:00",
+    "measValue": 5.32,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T03:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T04:00:00",
+    "measValue": 5.43,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T04:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T04:15:00",
+    "measValue": 5.52,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T04:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T04:30:00",
+    "measValue": 5.62,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T04:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T04:45:00",
+    "measValue": 5.72,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T04:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T05:00:00",
+    "measValue": 5.78,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T05:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T05:15:00",
+    "measValue": 5.86,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T05:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T05:30:00",
+    "measValue": 5.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T05:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T05:45:00",
+    "measValue": 6.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T05:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T06:00:00",
+    "measValue": 6.19,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T06:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T06:15:00",
+    "measValue": 6.34,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T06:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T06:30:00",
+    "measValue": 6.44,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T06:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T06:45:00",
+    "measValue": 6.61,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T06:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T07:00:00",
+    "measValue": 6.73,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T07:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T07:15:00",
+    "measValue": 6.84,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T07:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T07:30:00",
+    "measValue": 6.79,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T07:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T07:45:00",
+    "measValue": 6.84,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T07:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T08:00:00",
+    "measValue": 6.85,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T08:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T08:15:00",
+    "measValue": 7.18,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T08:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T08:30:00",
+    "measValue": 7.3,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T08:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T08:45:00",
+    "measValue": 7.42,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T08:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T09:00:00",
+    "measValue": 7.4,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T09:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T09:15:00",
+    "measValue": 7.37,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T09:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T09:30:00",
+    "measValue": 7.34,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T09:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T09:45:00",
+    "measValue": 7.35,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T09:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T10:00:00",
+    "measValue": 7.3,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T10:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T10:15:00",
+    "measValue": 7.39,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T10:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T10:30:00",
+    "measValue": 7.31,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T10:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T10:45:00",
+    "measValue": 7.35,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T10:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T11:00:00",
+    "measValue": 7.37,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T11:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T11:15:00",
+    "measValue": 7.39,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T11:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T11:30:00",
+    "measValue": 7.36,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T11:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T11:45:00",
+    "measValue": 7.47,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T11:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T12:00:00",
+    "measValue": 7.5,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T12:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T12:15:00",
+    "measValue": 7.55,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T12:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T12:30:00",
+    "measValue": 7.64,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T12:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T12:45:00",
+    "measValue": 7.76,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T12:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T13:00:00",
+    "measValue": 7.79,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T13:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T13:15:00",
+    "measValue": 7.78,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T13:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T13:30:00",
+    "measValue": 7.88,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T13:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T13:45:00",
+    "measValue": 7.86,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T13:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T14:00:00",
+    "measValue": 7.79,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T14:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T14:15:00",
+    "measValue": 7.74,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T14:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T14:30:00",
+    "measValue": 7.72,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T14:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T14:45:00",
+    "measValue": 7.69,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T14:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T15:00:00",
+    "measValue": 7.66,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T15:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T15:15:00",
+    "measValue": 7.63,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T15:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T15:30:00",
+    "measValue": 7.61,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T15:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T15:45:00",
+    "measValue": 7.59,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T15:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T16:00:00",
+    "measValue": 7.58,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T16:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T16:15:00",
+    "measValue": 7.56,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T16:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T16:30:00",
+    "measValue": 7.53,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T16:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T16:45:00",
+    "measValue": 7.88,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T16:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T17:00:00",
+    "measValue": 7.97,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T17:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T17:15:00",
+    "measValue": 7.94,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T17:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T17:30:00",
+    "measValue": 7.92,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T17:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T17:45:00",
+    "measValue": 7.9,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T17:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T18:00:00",
+    "measValue": 7.86,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T18:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T18:15:00",
+    "measValue": 7.8,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T18:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T18:30:00",
+    "measValue": 7.76,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T18:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T18:45:00",
+    "measValue": 7.35,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T18:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T19:00:00",
+    "measValue": 7.26,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T19:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T19:15:00",
+    "measValue": 7.26,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T19:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T19:30:00",
+    "measValue": 7.27,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T19:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T19:45:00",
+    "measValue": 7.2,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T19:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T20:00:00",
+    "measValue": 7.13,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T20:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T20:15:00",
+    "measValue": 7.18,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T20:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T20:30:00",
+    "measValue": 7.17,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T20:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T20:45:00",
+    "measValue": 7.16,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T20:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T21:00:00",
+    "measValue": 7.09,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T21:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T21:15:00",
+    "measValue": 7.06,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T21:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T21:30:00",
+    "measValue": 7.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T21:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T21:45:00",
+    "measValue": 7.0,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T21:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T22:00:00",
+    "measValue": 7.03,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T22:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T22:15:00",
+    "measValue": 7.01,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T22:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T22:30:00",
+    "measValue": 6.98,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T22:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T22:45:00",
+    "measValue": 6.95,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T22:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T23:00:00",
+    "measValue": 6.91,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T23:00:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T23:15:00",
+    "measValue": 6.88,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T23:15:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T23:30:00",
+    "measValue": 6.85,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T23:30:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-05T23:45:00",
+    "measValue": 6.81,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-05T23:45:00"
+},
+{
+    "abbrev": "PLAKERCO",
+    "parameter": "GAGE_HT",
+    "measDateTime": "2015-01-06T00:00:00",
+    "measValue": 6.78,
+    "measUnit": "ft",
+    "flagA": null,
+    "flagB": null,
+    "modified": "2015-01-06T00:00:00"
+}
+]}

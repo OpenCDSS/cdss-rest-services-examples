@@ -1,0 +1,5 @@
+# Don't add any files or directories in results/
+*
+
+# Except this .gitignore file, or else results won't be pushed to github
+!.gitignore
