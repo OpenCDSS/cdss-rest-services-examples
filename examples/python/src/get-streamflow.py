@@ -18,25 +18,22 @@ def parse_command_line() -> None:
     parser = argparse.ArgumentParser(description='Querying the HydroBase web services')
 
     # Add the first two optional arguments, -m and --output
-    parser.add_argument('-o', '--output', metavar='filename', default='stdout',
+    parser.add_argument('--output', metavar='filename', default='stdout',
                         help='Write the data obtained to filename instead of stdout')
-    parser.add_argument('-m', '--minutes', metavar='<integer>', default=15, type=int,
-                        help='an integer to obtain time increments from data in minutes; options are '
-                             '30, 60, 90, etc. (15 is default)')
-    parser.add_argument('-sd', '--startDate', metavar='start_date', default='',
+    parser.add_argument('--startDate', metavar='start_date', default='',
                         help='The date to start the query in the form mm/dd/yyyy')
-    parser.add_argument('-ed', '--endDate', metavar='end_date', default='',
+    parser.add_argument('--endDate', metavar='end_date', default='',
                         help='The date to end the query in the form mm/dd/yyyy')
 
     # Add an argument group that is required from the user
     required = parser.add_argument_group('required arguments')
-    required.add_argument('-sid', '--stationid', metavar='abbrev', help='The station identifier',
+    required.add_argument('--abbrev', metavar='abbrev', help='The station identifier',
                           required=True)
-    required.add_argument('-p', '--parameter', nargs='+', metavar='param_name',
+    required.add_argument('--parameter', nargs='+', metavar='param_name',
                           help='The measured parameter name', required=True)
-    required.add_argument('-f', '--format', metavar='data_format',
+    required.add_argument('--format', metavar='data_format',
                           help='format the data is displayed as; options are '
-                                'CSV or JSON', required=True)
+                               'CSV or JSON', required=True)
 
     # If no arguments are given at all, print help to let user know argument options
     if len(sys.argv) == 1:
@@ -47,15 +44,13 @@ def parse_command_line() -> None:
     # Create our global variables so we don't pass 5+ parameters to every function
     global STATIONID
     global PARAMETERS
-    global MINUTES
     global DATA_FORMAT
     global OUTPUT
     global START_DATE
     global END_DATE
 
-    STATIONID = args.stationid
+    STATIONID = args.abbrev
     PARAMETERS = args.parameter
-    MINUTES = args.minutes
     DATA_FORMAT = args.format
     OUTPUT = args.output
     START_DATE = args.startDate
@@ -102,7 +97,7 @@ def process_json(param: str, response: str) -> None:
     # Printing to terminal here
     if OUTPUT == 'stdout':
         pp = pprint.PrettyPrinter(indent=4)
-        pp.pprint(json_obj["ResultList"][:: MINUTES // 15])
+        pp.pprint(json_obj["ResultList"])
 
         if page_count > 1:
             print_remaining(param, page_count)
@@ -137,9 +132,8 @@ def process_csv(param: str, first_page: bool, response: str) -> None:
     if OUTPUT == 'stdout':
         # Write the CSV headers
         print(lines[2])
-        # Write the rest of the list from the first data index and go up by amount given,
-        # or default if not given
-        print(*lines[3:: MINUTES // 15], sep='\n')
+        # Write the rest of the list from the first data index
+        print(*lines[3::], sep='\n')
         # If more than one page, print them all
         if page_count > 1:
             print_remaining(param, page_count)
@@ -148,13 +142,12 @@ def process_csv(param: str, first_page: bool, response: str) -> None:
     else:
         # First parameter (and its corresponding pages if any)
         if first_page:
-            write_file(lines, first_page=True, last_page=False)
+            write_file(lines[2:], first_page=True, last_page=False)
             if page_count > 1:
                 write_remaining(param, page_count)
-
         # Second parameter and beyond (and its corresponding pages if any)
         else:
-            write_file(lines, first_page=False, last_page=False)
+            write_file(lines[3:], first_page=False, last_page=False)
             if page_count > 1:
                 write_remaining(param, page_count)
 
@@ -202,11 +195,11 @@ def print_remaining(param: str, page_count: int) -> None:
 
         if DATA_FORMAT == 'csv':
             lines = response.text.split('\r\n')
-            print(*lines[3:: MINUTES // 15], sep='\n')
+            print(*lines[3::], sep='\n')
         else:
             json_obj = json.loads(response.text)
             pp = pprint.PrettyPrinter(indent=4)
-            pp.pprint(json_obj["ResultList"][:: MINUTES // 15])
+            pp.pprint(json_obj["ResultList"])
 
 
 def write_remaining(param: str, page_count: int) -> None:
@@ -217,7 +210,7 @@ def write_remaining(param: str, page_count: int) -> None:
 
         if DATA_FORMAT == 'csv':
             lines = response.text.split('\r\n')
-            write_file(lines, first_page=False, last_page=False)
+            write_file(lines[3:], first_page=False, last_page=False)
         else:
             json_obj = json.loads(response.text)
             if page_index == page_count:
@@ -237,11 +230,8 @@ def write_file(lines: list, first_page: bool, last_page: bool) -> None:
     with open(OUTPUT, 'a') as outputFile:
         # Write CSV
         if DATA_FORMAT == 'csv':
-            # Write the CSV headers at the top since we're writing the first page
-            if first_page:
-                outputFile.write(lines[2] + '\n')
-            # Write the rest of the CSV to file
-            for item in lines[3:: MINUTES // 15]:
+            # Write the CSV to file
+            for item in lines:
                 outputFile.write(item + '\n')
         # Write JSON
         else:
@@ -250,9 +240,9 @@ def write_file(lines: list, first_page: bool, last_page: bool) -> None:
                 outputFile.write('{ \"ResultList\": [')
             # Get the amount of data lines in the page to determine if we're
             # at the last line
-            page_length = len(lines[:: MINUTES // 15])
+            page_length = len(lines)
             index = 0
-            for item in lines[:: MINUTES // 15]:
+            for item in lines:
                 # If we're on the last line of the page AND the last page, end
                 # our list from ResultList (we don't want a comma at the end)
                 if index == page_length - 1 and last_page:

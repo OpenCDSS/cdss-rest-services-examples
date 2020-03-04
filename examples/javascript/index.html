@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="javascript.example.js"></script>
+    <title>JavaScript Chart Example</title>
+  </head>
+
+  <body style="text-align:center;">
+    <div>
+      <script type="text/javascript"
+              src="https://dwr.state.co.us/Rest/GET/Help/TelemetryTimeSeriesDayGenerator?js=1">
+      </script>
+
+      <script type="text/javascript">retrieveAllData();</script>
+
+      <canvas id="myChart" width="800" height="400"></canvas>
+      <!-- Here is the URL that can also be used for the src= to use https://cdn.jsdelivr.net/npm/chart.js@2.8.0 -->
+      <script type="text/javascript" src="js/Chart.js"></script>
+      <script>displayGraph();</script>
+
+    </div>
+  </body>
+</html>

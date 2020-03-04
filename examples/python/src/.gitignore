@@ -1,1 +1,3 @@
-run.sh
+# Ignore any data test files
+data*.csv
+data*.json
