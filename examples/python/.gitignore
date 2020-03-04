@@ -1,0 +1,10 @@
+# Ignore Pycharm environment
+.idea/
+__pycache__/
+
+# Ignore compiled Python files
+*.py[cod]
+
+# Ignore vim editor files
+*.swp
+*.swo

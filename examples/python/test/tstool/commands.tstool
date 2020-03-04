@@ -1,0 +1,2 @@
+ReadColoradoHydroBaseRest(DataStore="HydroBaseWeb",TSID="PLAKERCO..AIRTEMP.15Min~HydroBaseWeb",Alias="Read_Rest",InputStart="01/01/2016",InputEnd="07/01/2016")
+WriteDelimitedFile(OutputFile="delimited_file")
