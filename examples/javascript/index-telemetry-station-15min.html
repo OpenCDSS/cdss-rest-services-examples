@@ -1,0 +1,98 @@
+<!-- This html file is the main entry point for the JavaScript example program
+for querying the South Platte River Near Kersey, CO (PLAKERCO) Telemetry Station.
+This is raw data, so it returns -in this case- DISCHRG from the aforementioned
+telemetry station in 15 minute intervals throughout the last month. It is
+composed of a simple title, a line graph displaying the data, and a clusterize
+table with the Date/Time and values taken of streamflow in cubic feet per
+second -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="data:;base64,="/>
+    <script type="text/javascript" src="js/javascript-example.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="css/clusterize.css">
+    <title>JavaScript Chart Example</title>
+
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/Chart.min.js"></script>
+    <script type="text/javascript" src="js/hammer.min.js"></script>
+    <script type="text/javascript" src="js/chartjs-plugin-zoom.min.js"></script>
+    <script type="text/javascript" src="js/clusterize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  </head>
+
+  <body>
+
+    <div class="title">
+      <h2>JavaScript Graphing Example that Links to the
+        State of Colorado's HydroBase Web Services</h2>
+      <p>
+        This is an example of how to use JavaScript to query the State of
+        Colorado's Web Services. It illustrates how to retrieve and display
+        real-time 15 minute streamflow data. It accomplishes this by using a
+        line graph that's easy to use, and a table that's easy to view, while
+        taking care of behind the scenes issues such as missing data values.
+        This example uses the South Platte River Near Kersey, CO (PLAKERCO)
+        Telemetry Station, using the DISCHRG parameter in Cubic Feet per
+        Second (CFS) over the last month.
+      </p>
+    </div>
+
+    <!-- Below are the variables that can be acquired on the web page and
+    passed to the javascript-example.js file for querying. -->
+    <var id="input-api-key"></var>
+    <var id="input-abbrev"></var>
+    <var id="input-end-date"></var>
+    <var id="input-include-third-party"></var>
+    <var id="input-modified"></var>
+    <var id="input-parameter"></var>
+    <var id="input-start-date"></var>
+    <!-- Above are the variables that can be acquired on the web page and
+    passed to the javascript-example.js file for querying. -->
+
+    <!-- Variable letting the JavaScript know what kind of GET request
+    to perform -->
+    <var id="html-type" hidden>15min</var>
+
+    <div class="all-data">
+      
+      <div class="lineGraph">
+        <script type="text/javascript"
+        src="https://dwr.state.co.us/Rest/GET/Help/TelemetryTimeSeriesRawGenerator?js=1">
+        </script>
+        <script type="text/javascript">retrieveAllData();</script>
+        <canvas id="myChart"></canvas>
+      </div>
+
+      <div class="clusterize">
+          <table>
+            <thead>
+              <tr>
+                <th id="date"></th>
+                <th id="units"></th>
+                <th id="filler"></th>
+              </tr>
+            </thead>
+          </table>
+        <div id="scroll-area" class="clusterize-scroll">
+          <table>
+            <tbody id="content-area" class="clusterize-content">
+              <tr class="clusterize-no-data">
+              <td>Loading data…</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="version">
+        <p>Version 0.9.5 (2020-03-11)</p>
+      </div>
+
+    </div>
+
+  </body>
+</html>

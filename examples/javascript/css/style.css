@@ -1,0 +1,128 @@
+/* The parents of everything, we want the same font and background color
+for the entire web page */
+html, body {
+  font-family: Trebuchet,Helvetica,sans-serif;
+  background: #eeeeee;
+}
+
+/* The upper title shouldn't be too close to the top of the page, and should
+be centered */
+.title {
+  background: #eeeeee;
+  padding-top: 1%;
+  text-align:center;
+}
+
+/* The main title for the example */
+.title h2 {
+  background: #eeeeee;
+}
+
+/* The paragraph in the title div shouldn't be too close to the things around
+it as well, and shouldn't go out to the very edge of the page, which can be
+difficult to read. Most importantly, bootstrap be default has a margin-bottom
+of 1rem, which messes up the background color of the divs around it. We set it
+to 0 here by using !important and overriding what bootstrap is doing to it */
+.title p {
+  padding-top: 1%;
+  padding-right: 25%;
+  padding-left: 25%;
+  margin-bottom: 0px !important;
+}
+
+/* This is the top div that holds our graph, table and version number to be
+displayed. It also shouldn't be too close to content above it, or to the sides
+of the page */
+.all-data {
+  padding-top: 3%;
+  padding-right: 3%;
+  padding-left: 3%;
+  background: #eeeeee;
+}
+
+/* The lineGraph is the graph to be shown; Its height and width should be about
+half of the div, so it can be shared with the cluster table to its right.
+float: left is needed to have them both displayed side by side */
+.lineGraph {
+  float: left;
+  width: 65%;
+  height: 50%;
+  padding-right: 1%;
+}
+
+/* Like the lineGraph, we float left to display side by side. Unlike lineGraph,
+only the width is set here because the clusterize package has its own css file
+named clusterize.css, located in css/. There we set the exact pixels of the
+table */
+.clusterize {
+  float: left;
+  width: 35%;
+  padding-left: 1%;
+ }
+
+ /* The date header width for the clusterize graph */
+ #date {
+   width: 49%;
+ }
+
+ /* The units width of the clusterize graph */
+ #units {
+   width: 49%;
+ }
+
+ /* This is hopefully not needed soon. It is a small offset on the right
+ side of the header so the header divider and table divider line up.
+ (For some reason the scroll bar on the right side of the table pushes the
+ data over to the left and messes up the alignment of the dividers. This
+ problem was on Windows, but not on macOS */
+ #filler {
+   width: 2%;
+ }
+
+ /* The header styling for the clusterize table. It is 50px tall, and has a
+ border around it that is 1 pixel wide. The background color is slightyly darker
+ than the background color of the page, and they are centered in their boxes */
+.clusterize th {
+  height: 50px;
+  border: 1px solid black;
+  background-color: #d4d4d4;
+  text-align: center;
+}
+
+/* For the actual size of the clusterize table, it needs to be 100% large compared
+to the div it's in (which is pulled in 3% from the sides of the page. The border
+is 1 pixel, and the border (theoretically) collapses in on itself so there's no
+space between each row border and that of the border around the entire table */
+.clusterize table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+/* For the clusterize table data, it also needs to be 50% (or else it will default
+to weird sizes) and has a border of 1 pixel. The padding puts a little space
+between the data and the border, which makes it look a little nicer */
+.clusterize td {
+  width: 50%;
+  border: 1px solid black;
+  padding: 3px;
+}
+
+/* This is notifying the table that for each even row, the background color should
+be darker, so it's a little simpler to tell the difference between them. */
+tr:nth-child(even) {
+  background-color: #d4d4d4;
+}
+
+/* The version class is just a little div that describes how to display the
+version info, i.e. same background color, writing it on the far right so it's
+a little more out of the way, and a font size of 11 */
+.version {
+  background: #eeeeee;
+  text-align: right;
+  font-size: 11px;
+}
+
+.right {
+  text-align: right;
+}
