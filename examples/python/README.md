@@ -3,21 +3,66 @@
 This folder contains examples of how to use Python programs to access the
 State of Colorado's HydroBase REST web services.
 
+[Python](https://www.python.org/doc/essays/blurb/) is an interpreted,
+object-oriented, high-level programming language with dynamic semantics. Python
+can query the web services by running a simple Python program, using command line
+parameters to indicate which data to retrieve.
 
-[Python](https://www.python.org/doc/essays/blurb/) is an interpreted, object-oriented,
-high-level programming language with dynamic semantics. Python can query the web
-services by running a simple Python program, using command line parameters to indicate
-which data to retrieve.
+The following sections provide a summary of the project and instructions for getting
+started:
+
+* [Python Example Folder Structure](#python-example-folder-structure)
+* [Python Prerequisites](#python-prerequisites)
+* [Running the Program](#running-the-program)
+* [Available Python Example Arguments](#available-python-example-arguments)
+* [Examples](#examples)
+* [Testing](#testing)
+
+----
+## Python Example Folder Structure
+
+The following folder structure is recommended for development. Top-level folders
+should be created as necessary. The following folder structure clearly separates
+user files (as per operating system) and development area (cdss-dev) as follows:
+
+    C:\Users\user\                             User's home folder, Windows style.
+    /c/Users/user/                             User's home folder, Git Bash style.
+    /cygdrive/C/Users/user/                    User's home folder, Cygwin style.
+    /home/user/                                User's home folder, Linux style.
+      cdss-dev/                                Work done on Colorado Decision Support Systems projects.
+
+This repository and the Python example contains the following:
+
+    cdss-rest-services-examples/               The top-level CDSS example repository file.
+      examples/                                The directory with all CDSS web services examples.
+        python/                                Top-level directory for this Python example.
+          src/                                 The source code for the Python example.
+            .gitignore                         Git ignore file for ignoring dynamic files.
+            streamflow.py                      The Python script that retrieves the HydroBase data.
+            streamfloy.sh                      The bash script that runs the Python script.
+          test/                                The testing folder
+            python/                            Python testing folder
+              expected-results/                The verified result files retrieved earlier that subsequent queries will compare to.
+              results/                         A folder with iles that new queries will be written to and compared with expected-results/ files.
+              test_streamflow.py               The Python example end-to-end testing script
+            tstool/                            TSTool testing folder
+              TODO
+            README.md                          The testing folder README
+          .gitignore                           Top-level Git ignore for dynamic files
+          README.md                            This introductory README file
+
 
 ----
 ## Python Prerequisites
-The following are prerequisites to creating a Python program to access the web services:
+The following are prerequisites to creating a Python program to access the web
+services:
 
-* Install the most up-to-date version of Python. The Python 2 end of life was reached on
-January 1, 2020 and will not be maintained anymore, even if security issues are found;
-Because of this, the get-streamflow program used here will not be able to run on Python 2.
-Python Version 3.6 or newer is strongly recommended. Installation instructions can be
-found at [python.org](https://www.python.org/downloads/)
+* Install the most up-to-date version of Python. The Python 2 end-of-life was
+reached on January 1, 2020 and will not be maintained anymore, even if security
+issues are found; Because of this, the streamflow program used here will not be
+able to run on Python 2. Python Version 3.6 or newer is strongly recommended.
+Installation instructions can be found at
+[python.org](https://www.python.org/downloads/).
 
 * Install the [requests](https://requests.readthedocs.io/en/master/user/install/) 
 module. For example, `python -m pip install requests`
@@ -26,12 +71,12 @@ module. For example, `python -m pip install requests`
 ## Running the Program
 
 This example python program is a command line program, so open up a shell of choice
-(Cygwin, Git Bash, Terminal, Windows Command Prompt, etc.). Change directories to the 
-`src/` folder.
+(Cygwin, Git Bash, Terminal, Windows Command Prompt, etc.). Change directories to
+the `src/` folder.
 
 The program can be run using 3 required arguments and 5 optional arguments, as follows:
 
-### Optional Arguments
+### Available Python Example Arguments
 
 Parameter | Description | Default
 --------- | ----------- | -------
@@ -51,21 +96,29 @@ responds with the last month of data.
 ----
 ## Examples
 
-Use the `get-streamflow.sh` script to run the get-streamflow.py program along with 
+Use the `streamflow.sh` script to run the streamflow.py program along with 
 the arguments needed for the query. Note the output file name given is `data`. The
-get-streamflow program will automatically attach the ending `.json` or `.csv` 
-depending on the format given.
+streamflow program will automatically attach the ending `.json` or `.csv` 
+depending on the format given. The following example runs a standard query:
 
-    get-streamflow.sh --abbrev PLAKERCO --parameter AIRTEMP --format csv --output data
+### Linux, macOS, Git Bash, Cygwin and Windows PowerShell
+
+    ./streamflow.sh --abbrev PLAKERCO --parameter AIRTEMP --format csv --output data
+
+### Windows Command Prompt
+
+    streamflow.sh --abbrev PLAKERCO --parameter AIRTEMP --format csv --output data
 
 The program will also write multiple parameters differently depending on format.
 Multiple parameters in CSV will be written to the same file. Multiple parameters in
-JSON will be written to seperate files in the form `filename_PARAM.json`. Examples
+JSON will be written to seperate files in the form `filename_PARAM.json`. Like the
+example above, leave off the `./` from the command line if using Window Command Prompt.
+Examples
 as follows:
 
 ### Multiple CSV parameters
 
-    get-streamflow.sh --abbrev PLAKERCO --parameter AIRTEMP DISCHRG --format csv --output data
+    ./streamflow.sh --abbrev PLAKERCO --parameter AIRTEMP DISCHRG --format csv --output data
       Fetching data for AIRTEMP...
       Data successfully received and written to file 'data.csv'
 
@@ -74,7 +127,7 @@ as follows:
 
 ### Multiple JSON parameters
 
-    get-streamflow.sh --abbrev PLAKERCO --parameter AIRTEMP DISCHRG --format json --output data
+    ./streamflow.sh --abbrev PLAKERCO --parameter AIRTEMP DISCHRG --format json --output data
       Fetching data for AIRTEMP...
       Data successfully received and written to file 'data_AIRTEMP.json'
 
@@ -84,4 +137,5 @@ as follows:
 ----
 ## Testing
 
-Work in progress
+The testing for the Python example has its own README page under the
+[test](https://github.com/OpenCDSS/cdss-rest-services-examples/tree/master/examples/python/test) folder

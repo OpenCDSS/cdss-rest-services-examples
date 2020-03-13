@@ -1,2 +1,7 @@
 ReadColoradoHydroBaseRest(DataStore="HydroBaseWeb",TSID="PLAKERCO..AIRTEMP.15Min~HydroBaseWeb",Alias="Read_Rest",InputStart="01/01/2016",InputEnd="07/01/2016")
 WriteDelimitedFile(OutputFile="delimited_file")
+
+# This also works
+SetInputPeriod(InputStart="01/01/2015",InputEnd"01/06/2015")
+ReadColoradoHydroBaseRest(DataStore="HydroBaseWeb",TSID="PLAKERCO..GAGE_HT.15Min~HydroBaseWeb",Alias="%L",IfMissing=Warn)
+WriteDelimitedFile(OutputFile="delimited_file")

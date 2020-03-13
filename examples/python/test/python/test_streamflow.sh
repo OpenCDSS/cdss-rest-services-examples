@@ -1,9 +1,10 @@
 #!/bin/bash
 
 (set -o igncr) 2>/dev/null && set -o igncr; # this comment is required
-# The above line ensures that the script can be run on Cygwin/Linux even with Windows CRNL
+# The above line ensures that the script can be run on Cygwin/Linux even with
+# Windows CRNL
 
-# Declaring functions here
+# Declaring functions here, entry point of script further down
 checkOperatingSystem()
 {
 	if [[ -n "${operatingSystem}" ]]; then
@@ -31,7 +32,7 @@ checkOperatingSystem()
 determinePythonVersion()
 {
 	# Version is printed to stderr or stdout so a bit trickier to redirect
-	# -see:  https://stackoverflow.com/questions/2342826/how-to-pipe-stderr-and-not-stdout
+	# https://stackoverflow.com/questions/2342826/how-to-pipe-stderr-and-not-stdout
 	# First try the general Python launcher
 	pythonVersion=$(py --version 2>&1 | cut -d ' ' -f 2 | cut -d . -f 1)
 	usePy="false"
@@ -41,7 +42,7 @@ determinePythonVersion()
 		pythonVersion=$(python3 --version 2>&1 | cut -d ' ' -f 2 | cut -d . -f 1)
 
 		if [ ${pythonVersion} != "3" ]; then
-		echo Error: get-streamflow.py can only be run using Python Version 3
+		echo Error: streamflow.py can only be run using Python Version 3
 		echo Please update to the most up-to-date version try again
 		exit 1
 		fi
@@ -55,31 +56,34 @@ determinePythonVersion()
 checkOperatingSystem
 determinePythonVersion
 
+
+
 # Get the absolute path where this script is located
 scriptFolder=$(cd $(dirname "${0}") && pwd)
 # Changes to the directory where the script is located
 cd ${scriptFolder}
 
-# Determine what OS is being used. Also, "$@" is an element seperated 
+# Determine what OS is being used.
 # Cygwin, Linux and macOS
 if [[ "${operatingSystem}" = "cygwin" ]] || [[ "${operatingSystem}" = "linux" ]] || [[ "${operatingSystem}" = "macos" ]]; then
 	# Use py command
 	if [[ ${usePy} = "true" ]]; then
-		py get-streamflow.py "$@"
+		py test_streamflow.py
 	# Use python3 command
 	else
-		python3 get-streamflow.py "$@"
+		python3 test_streamflow.py
 	fi
 # Git Bash
 elif [[ "${operatingSystem}" = "mingw" ]]; then
 	# Use py command
 	if [[ ${usePy} = "true" ]]; then
-		py get-streamflow.py "$@"
+		py test_streamflow.py
 	# Use the python executable
 	else
 		# We need to know the absolute path of where python.exe is located
 		pythonPath=$(which python)
-		# Finally, put quotes around the file path in case a directory has a space in its name
-		"${pythonPath}" get-streamflow.py "$@"
+		# Finally, put quotes around the file path in case a directory has a space in
+    # its name
+		"${pythonPath}" test_streamflow.py
 	fi
 fi

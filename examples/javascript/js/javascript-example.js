@@ -181,8 +181,13 @@ function displayGraph() {
         tooltips: {                                  // When hovered over each
           callbacks: {                               // data point, this changes
             title: (tooltipItem, data) => {          // what will be shown
-              return moment(data['labels'][tooltipItem[0]['index']])// The title
-              .format('YYYY-MM-DD');// is the top item displayed while hovering
+              if (html_type == 'day') {              // The title is the top item
+                return moment(data['labels'][tooltipItem[0]['index']])// displayed
+              .format('YYYY-MM-DD');                 // while hovering
+              } else if (html_type == '15min') {
+                return moment(data['labels'][tooltipItem[0]['index']])
+              .format('YYYY-MM-DD HH:mm');
+              }
             },
             label: (tooltipItem, data) => {
               let datasetLabel = data.datasets[tooltipItem.datasetIndex].label;

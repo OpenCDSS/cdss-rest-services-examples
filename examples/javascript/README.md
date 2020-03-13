@@ -104,6 +104,12 @@ followed by March 20th data. Because of this, the consuming application will nee
 to handle this feature appropriately. This example folder takes care of the
 specific Day and Raw queries that it displays.
 
+**Local Time Zones** - The HydroBase Web Service return all dates and times in
+local time zones, instead of UTC. Because of this, the JavaScript example will
+dislay all x- and y-labels, legends, and table values in
+[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) compliant local
+date and time formats.
+
 ----
 ## Getting Started
 What's nice about JavaScript is that unlike other coding languages, it does not
@@ -120,11 +126,16 @@ server. Installation instructions can be found at
 ----
 ## JavaScript Example Arguments
 The separate html files listed in the Folder Structure above are each their own
-examples for linking JavaScript code to the HydroBase REST Services. The 
-arguments for each one are a little different and are as follows:
+examples for linking JavaScript code to the HydroBase REST Services. In each, there
+are variables that, when assigned a value, act as the arguments given to the
+HyrdoBase query. These variables don't need to be used as is, obviously. They could
+also be assigned with an `<input>` tag and dealt with a `<button>`, etc. They are
+mainly there to show what the corresponding JavaScript id will look for. The 
+arguments for each one are as follows:
 
-### Telemetry Station 15 Minute Raw Data
-Parameters for the index-telemetry-station-15min html file:
+### Telemetry Station 15 Minute Raw and Day Data
+The following parameters are taken by both the index-telemetry-station-15min and
+index-telemetry-station-day html files:
 
 Parameter | Description | Default
 --------- | ----------- | -------
@@ -144,7 +155,8 @@ period.
 
 ----
 ## Running the Example
-There are multiple html examples, and there are two ways to run each one. The first method is opening the html file in a browser. This is handy when wanting
+There are multiple html examples, and there are two ways to run each one. The first
+method is opening the html file in a browser. This is handy when wanting
 to display the contents quickly and easily. The second method is a little more 
 involved, and runs the file using a server in localhost. It's generally a better 
 idea to use this method when actually developing a potential web page, as it
