@@ -44,8 +44,10 @@ This repository and the Python example contains the following:
             python/                            Python testing folder
               expected-results/                The verified result files retrieved earlier that subsequent queries will compare to.
               results/                         A folder with iles that new queries will be written to and compared with expected-results/ files.
-              test_streamflow.py               The Python example end-to-end testing script
+              test_streamflow.py               The Python example end-to-end testing program.
+              test_streamflow.sh               The bash script to run the Python program.
             tstool/                            TSTool testing folder
+              TEST_commands.tstool             The testing Command file for TSTool.
             README.md                          The testing folder README
           .gitignore                           Top-level Git ignore for dynamic files
           README.md                            This introductory README file
