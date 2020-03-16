@@ -1,7 +1,8 @@
 import filecmp     # For comparing two files to see if they are different
-import glob        # Finds all pathnames matching a specified pattern
-import os          # Used for miscellaneous operating system inferfaces
+import glob        # Finds all path names matching a specified pattern
+import os          # Used for miscellaneous operating system interfaces
 import subprocess  # Spawn new processes, connect to their pipes, and get the return code
+import sys         # For ending the program if an error occurs
 
 
 # Set up the three query arrays for the testing
@@ -29,12 +30,12 @@ def compare_csv_files():
     for number in range(1, 4):
         subprocess.run(['python3',
                         '../../src/streamflow.py',
-                        '--abbrev','PLAKERCO',
-                        '--parameter','{}'.format(PARAMETER[number - 1]),
-                        '--format','csv',
-                        '--startDate','{}'.format(START_DATE[number - 1]),
-                        '--endDate','{}'.format(END_DATE[number - 1]),
-                        '--output','data'])
+                        '--abbrev', 'PLAKERCO',
+                        '--parameter', '{}'.format(PARAMETER[number - 1]),
+                        '--format', 'csv',
+                        '--startDate', '{}'.format(START_DATE[number - 1]),
+                        '--endDate', '{}'.format(END_DATE[number - 1]),
+                        '--output', 'data'])
         # Try to mv the newly created file with the returned data and move it into the
         # results directory with the number from 1 - 3 for each test performed
         try:
@@ -43,8 +44,10 @@ def compare_csv_files():
             assert outcome
         except FileNotFoundError:
             print('\n  {}Error: File does not exist!{}\n'.format(FAIL, ENDC))
+            sys.exit(1)
         except AssertionError:
             print('\n  {}Error: The files do not match. Test failed{}\n'.format(FAIL, ENDC))
+            sys.exit(1)
 
 
 # Perform the exact same test with the JSON formatted data
@@ -58,20 +61,22 @@ def compare_json_files():
     for number in range(1, 4):
         subprocess.run(['python3',
                         '../../src/streamflow.py',
-                        '--abbrev','PLAKERCO',
-                        '--parameter','{}'.format(PARAMETER[number - 1]),
-                        '--format','json',
-                        '--startDate','{}'.format(START_DATE[number - 1]),
-                        '--endDate','{}'.format(END_DATE[number - 1]),
-                        '--output','data'])
+                        '--abbrev', 'PLAKERCO',
+                        '--parameter', '{}'.format(PARAMETER[number - 1]),
+                        '--format', 'json',
+                        '--startDate', '{}'.format(START_DATE[number - 1]),
+                        '--endDate', '{}'.format(END_DATE[number - 1]),
+                        '--output', 'data'])
         try:
             subprocess.run(['mv', 'data.json', results.format(number)])
             outcome = filecmp.cmp(expected[number - 1], results.format(number))
             assert outcome
         except FileNotFoundError:
             print('\n  {}Error: File does not exist!{}\n'.format(FAIL, ENDC))
+            sys.exit(1)
         except AssertionError:
             print('\n  {}Error: The files do not match. Test failed{}\n'.format(FAIL, ENDC))
+            sys.exit(1)
 
 
 if __name__ == '__main__':
