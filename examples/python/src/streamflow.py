@@ -6,6 +6,7 @@ in CSV or JSON format. Run    python3 file_name.py -h    to display help message
 """
 
 import argparse
+import dateutil.parser as p
 import json
 import pprint
 import requests
@@ -125,6 +126,8 @@ def process_json(param: str, response: str) -> None:
 def process_csv(param: str, first_page: bool, response: str) -> None:
     # response.text is a string, so we can split on CRLF
     lines = response.split('\r\n')
+    # Format the output of the response
+    lines = format_output(lines)
     # Determine the amount of pages that the returned data was split into (if any)
     page_count = int(lines[1].split(',')[1])
 
@@ -154,6 +157,45 @@ def process_csv(param: str, first_page: bool, response: str) -> None:
         print('  Data successfully received and written to file \'{}\'\n'.format(OUTPUT))
 
 
+# The data received from the database returns a time format that is convoluted and
+# difficult to read. This goes through and ISO 8601 formats the date the data was
+# taken on
+def format_output(lines: list) -> list:
+    temp1 = []
+
+    meas_date_time = lines[2].split(',')[2] if lines[2].split(',')[2] == 'measDateTime' else ''
+    modified = lines[2].split(',')[7] if lines[2].split(',')[7] == 'modified' else ''
+    meas_date_time_index = lines[2].split(',').index('measDateTime')
+    modified_index = lines[2].split(',').index('modified')
+
+    # Go through each line in the file
+    for i, line in enumerate(lines):
+        temp2 = []
+        # Split the line by commas into a list of strings and go through each element
+        for index, elem in enumerate(line.split(',')):
+            # The next four slightly convoluted lines check to see if the measDateTime
+            # and modified variables have been set (they exist), and if they do,
+            # make sure we skip the first 3 lines of the data (they're metadata) and
+            # double check the index we're at in the line of split strings is the
+            # same as the original measDateTime and modified columns we found. Then
+            # replace the dates there with ISO 8601 dates with no 'T' in between the
+            # date and time, and don't display anything faster than a second, or else
+            # it will import weirdly in Excel.
+            if meas_date_time != '' and i > 2 and index == meas_date_time_index:
+                temp2.append(p.parse(elem).isoformat(sep=' ', timespec='minutes'))
+            elif modified != '' and i > 2 and index == modified_index:
+                temp2.append(p.parse(elem).isoformat(sep=' ', timespec='minutes'))
+            # The element is not a date so just append to our temp list
+            else:
+                temp2.append(elem)
+        # Now join all the elements in the temp list into a string and append to temp1
+        # list. This way it's being put back the way we got it, except for the extra
+        # date formatting
+        temp1.append(','.join(temp2))
+    # Now that the outer for loop is finished, return the new list
+    return temp1
+
+
 # Build our URL for querying the HydroBase web services
 def build_url(param: str, page_index: int) -> str:
     data_format = DATA_FORMAT
@@ -178,6 +220,7 @@ def build_url(param: str, page_index: int) -> str:
         .format(data_format, page_index, STATIONID, param, start_date, end_date)
 
 
+# Determine if the date given from the user will work or not
 def check_date_list(date_list) -> None:
     if len(date_list) > 3:
         print('Date input incorrect. Input must be in the form mm/dd/yyyy')
@@ -186,8 +229,8 @@ def check_date_list(date_list) -> None:
 
 
 # We have our first query, and determined that the page count is greater than one. Since it is,
-# we have multiple pages and need to query the rest of the pages for both CSV or JSON. print_remaining
-# prints the pages to stdout, and write_remaining writes the pages to a file
+# we have multiple pages and need to query the rest of the pages for both CSV or JSON.
+# print_remaining prints the pages to stdout, and write_remaining writes the pages to a file
 def print_remaining(param: str, page_count: int) -> None:
     for page_index in range(2, page_count + 1):
         url = build_url(param, page_index)
@@ -202,6 +245,7 @@ def print_remaining(param: str, page_count: int) -> None:
             pp.pprint(json_obj["ResultList"])
 
 
+# The data returned has more than one page, so write the rest of the pages to file
 def write_remaining(param: str, page_count: int) -> None:
     # Write the rest of the pages to a file
     for page_index in range(2, page_count + 1):
@@ -210,6 +254,7 @@ def write_remaining(param: str, page_count: int) -> None:
 
         if DATA_FORMAT == 'csv':
             lines = response.text.split('\r\n')
+            lines = format_output(lines)
             write_file(lines[3:], first_page=False, last_page=False)
         else:
             json_obj = json.loads(response.text)
@@ -219,7 +264,7 @@ def write_remaining(param: str, page_count: int) -> None:
                 write_file(json_obj["ResultList"], first_page=False, last_page=False)
 
 
-# Depending on if we have multiple pages, we write the data to a file
+# Write the data to a file
 def write_file(lines: list, first_page: bool, last_page: bool) -> None:
     global OUTPUT
 

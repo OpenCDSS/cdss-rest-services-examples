@@ -37,11 +37,11 @@ determinePythonVersion()
 	pythonVersion=$(py --version 2>&1 | cut -d ' ' -f 2 | cut -d . -f 1)
 	usePy="false"
 
-	if [ "${pythonVersion}" != "3" ]; then
+	if [[ "${pythonVersion}" != "3" ]]; then
 		# Did not find the correct py version so try whether python3 is found
 		pythonVersion=$(python3 --version 2>&1 | cut -d ' ' -f 2 | cut -d . -f 1)
 
-		if [ ${pythonVersion} != "3" ]; then
+		if [[ ${pythonVersion} != "3" ]]; then
 		echo Error: streamflow.py can only be run using Python Version 3
 		echo Please update to the most up-to-date version try again
 		exit 1
@@ -81,7 +81,7 @@ elif [[ "${operatingSystem}" = "mingw" ]]; then
 	# Use the python executable
 	else
 		# We need to know the absolute path of where python.exe is located
-		pythonPath=$(which python)
+		pythonPath=$(command -v python)
 		# Finally, put quotes around the file path in case a directory has a space in
     # its name
 		"${pythonPath}" test_streamflow.py

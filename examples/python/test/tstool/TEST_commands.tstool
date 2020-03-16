@@ -1,9 +1,26 @@
-# Test filling with interpolation where maximum gap interval to fill is 2.
-StartLog(LogFile="Results/Test_FillInterpolate_MaxIntervals=2.TSTool.log")
-RemoveFile(InputFile="Results/Test_FillInterpolate_MaxIntervals=2_out.dv",IfNotFound=Ignore)
-NewPatternTimeSeries(Alias="ts1_day",NewTSID="ts1...Day",Description="test data 1",SetStart="2000-01-01",SetEnd="2003-05-13",PatternValues="1,2,3,2,1,-999,5,1,-999,-999,-999,1,3,5")
-FillInterpolate(TSList=AllMatchingTSID,TSID="ts1_day",MaxIntervals=2)
-# Uncomment the following command to regenerate expected results.
-# WriteDateValue(OutputFile="ExpectedResults/Test_FillInterpolate_MaxIntervals=2_out.dv")
-WriteDateValue(OutputFile="Results/Test_FillInterpolate_MaxIntervals=2_out.dv")
-CompareFiles(InputFile1="ExpectedResults/Test_FillInterpolate_MaxIntervals=2_out.dv",InputFile2="Results/Test_FillInterpolate_MaxIntervals=2_out.dv",IfDifferent=Warn)
+# Testing the first query here
+RunProgram(CommandLine="cd ../../src/ && streamflow.sh --abbrev PLAKERCO --parameter DISCHRG --format csv --startDate 06/01/2019 --endDate 12/01/2019 --output data1")
+RunProgram(CommandLine="mv ../../src/data1.csv results/")
+# PLAKERCO (0103203) - SOUTH PLATTE RIVER NEAR KERSEY, CO
+SetInputPeriod(InputStart="06/01/2019",InputEnd="12/01/2019")
+abbrev:PLAKERCO.DWR.DISCHRG.15Min~HydroBaseWeb
+ReadDelimitedFile(InputFile="results\data1.csv",Delimiter=",",ColumnNames="abbrev,parameter,measDateTime,measValue,measUnit,flagA,flagB,modified",DateTimeColumn="measDateTime",ValueColumn="measValue",SkipRows="1",LocationID="PLAKERCO",Interval=15Minute,Alias="%L-Python")
+CompareTimeSeries(TSID1="abbrev:PLAKERCO.DWR.DISCHRG.15Min",TSID2="PLAKERCO-Python",WarnIfDifferent=True)
+
+# Testing the second query here
+RunProgram(CommandLine="cd ../../src/ && streamflow.sh --abbrev PLAKERCO --parameter AIRTEMP --format csv --startDate 01/01/2019 --endDate 01/01/2020 --output data2")
+RunProgram(CommandLine="mv ../../src/data2.csv results/")
+# PLAKERCO (0103203) - SOUTH PLATTE RIVER NEAR KERSEY, CO
+SetInputPeriod(InputStart="01/01/2019",InputEnd="01/01/2020")
+abbrev:PLAKERCO.DWR.AIRTEMP.15Min~HydroBaseWeb
+ReadDelimitedFile(InputFile="results\data2.csv",Delimiter=",",ColumnNames="abbrev,parameter,measDateTime,measValue,measUnit,flagA,flagB,modified",DateTimeColumn="measDateTime",ValueColumn="measValue",SkipRows="1",LocationID="PLAKERCO",Interval=15Minute,Alias="%L-Python")
+CompareTimeSeries(TSID1="abbrev:PLAKERCO.DWR.AIRTEMP.15Min",TSID2="PLAKERCO-Python",WarnIfDifferent=True)
+
+# Testing the second query here
+RunProgram(CommandLine="cd ../../src/ && streamflow.sh --abbrev PLAKERCO --parameter GAGE_HT --format csv --startDate 01/01/2015 --endDate 01/06/2015 --output data3")
+RunProgram(CommandLine="mv ../../src/data3.csv results/")
+# PLAKERCO (0103203) - SOUTH PLATTE RIVER NEAR KERSEY, CO
+SetInputPeriod(InputStart="01/01/2015",InputEnd="01/06/2015")
+abbrev:PLAKERCO.DWR.GAGE_HT.15Min~HydroBaseWeb
+ReadDelimitedFile(InputFile="results\data3.csv",Delimiter=",",ColumnNames="abbrev,parameter,measDateTime,measValue,measUnit,flagA,flagB,modified",DateTimeColumn="measDateTime",ValueColumn="measValue",SkipRows="1",LocationID="PLAKERCO",Interval=15Minute,Alias="%L-Python")
+CompareTimeSeries(TSID1="abbrev:PLAKERCO.DWR.GAGE_HT.15Min",TSID2="PLAKERCO-Python",WarnIfDifferent=True)

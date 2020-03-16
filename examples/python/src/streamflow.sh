@@ -37,11 +37,11 @@ determinePythonVersion()
 	pythonVersion=$(py --version 2>&1 | cut -d ' ' -f 2 | cut -d . -f 1)
 	usePy="false"
 
-	if [ "${pythonVersion}" != "3" ]; then
+	if [[ "${pythonVersion}" != "3" ]]; then
 		# Did not find the correct py version so try whether python3 is found
 		pythonVersion=$(python3 --version 2>&1 | cut -d ' ' -f 2 | cut -d . -f 1)
 
-		if [ ${pythonVersion} != "3" ]; then
+		if [[ ${pythonVersion} != "3" ]]; then
 		echo Error: streamflow.py can only be run using Python Version 3
 		echo Please update to the most up-to-date version try again
 		exit 1
@@ -61,7 +61,7 @@ scriptFolder=$(cd $(dirname "${0}") && pwd)
 # Changes to the directory where the script is located
 cd ${scriptFolder}
 
-# Determine what OS is being used. Also, "$@" is shorthand for an element seperated
+# Determine what OS is being used. Also, "$@" is shorthand for an element separated
 # list of the command line arguments.
 # Cygwin, Linux and macOS
 if [[ "${operatingSystem}" = "cygwin" ]] || [[ "${operatingSystem}" = "linux" ]] || [[ "${operatingSystem}" = "macos" ]]; then

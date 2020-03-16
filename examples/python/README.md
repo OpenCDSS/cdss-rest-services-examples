@@ -46,7 +46,6 @@ This repository and the Python example contains the following:
               results/                         A folder with iles that new queries will be written to and compared with expected-results/ files.
               test_streamflow.py               The Python example end-to-end testing script
             tstool/                            TSTool testing folder
-              TODO
             README.md                          The testing folder README
           .gitignore                           Top-level Git ignore for dynamic files
           README.md                            This introductory README file
@@ -97,9 +96,14 @@ responds with the last month of data.
 ## Examples
 
 Use the `streamflow.sh` script to run the streamflow.py program along with 
-the arguments needed for the query. Note the output file name given is `data`. The
-streamflow program will automatically attach the ending `.json` or `.csv` 
-depending on the format given. The following example runs a standard query:
+the arguments needed for the query. The program will respond with either a CSV
+or JSON file containing the data returned from the HydroBase Web Service. Keep
+in mind that each file returned is one time series and one only. This example does
+not support multiple time series in one file, since the example's purpose is a 
+basic way to show how to retrieve information using Python. Note the output file
+name given is `data`. The streamflow program will automatically attach the ending
+`.json` or `.csv` depending on the format given. The following example runs a
+standard query:
 
 ### Linux, macOS, Git Bash, Cygwin and Windows PowerShell
 
@@ -112,7 +116,8 @@ depending on the format given. The following example runs a standard query:
 The program will also write multiple parameters differently depending on format.
 Multiple parameters in CSV will be written to the same file. Multiple parameters in
 JSON will be written to seperate files in the form `filename_PARAM.json`. Like the
-example above, leave off the `./` from the command line if using Window Command Prompt.
+example above, leave off the `./` from the command line if using Window Command
+Prompt.
 Examples
 as follows:
 
@@ -138,4 +143,4 @@ as follows:
 ## Testing
 
 The testing for the Python example has its own README page under the
-[test](https://github.com/OpenCDSS/cdss-rest-services-examples/tree/master/examples/python/test) folder
+[test folder](https://github.com/OpenCDSS/cdss-rest-services-examples/tree/master/examples/python/test).
