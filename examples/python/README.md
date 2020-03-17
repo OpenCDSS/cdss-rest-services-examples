@@ -66,7 +66,15 @@ Installation instructions can be found at
 [python.org](https://www.python.org/downloads/).
 
 * Install the [requests](https://requests.readthedocs.io/en/master/user/install/) 
-module. For example, `python -m pip install requests`
+module. For example, `python -m pip install requests`. This is for implementing
+HTTP requests to retrieve the data.
+
+* Install the [dateutil](https://dateutil.readthedocs.io/en/stable/) module. If
+pip installing is giving a Permission Denied error, try
+`sudo pip install python-dateutil`, which will need a system password. If that
+does not work, try `pip install python-dateutil --user`. Instead of installing
+the module to a system directory that requires root access, this installs it
+to the user's home directory.
 
 ----
 ## Running the Program
