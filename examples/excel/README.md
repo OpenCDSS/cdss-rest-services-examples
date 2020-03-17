@@ -23,5 +23,4 @@ the file system to import to Excel. Below is an example of a query using the
 PLAKERCO Telemetry Station, using the GAGE_HT parameter during the period between
 01/01/2015 and 01/06/2015.
 
-[<img src="../../README-resources/images/GAGE_HT_excel_example.png">]()
 
