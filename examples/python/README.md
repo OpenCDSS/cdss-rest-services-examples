@@ -3,7 +3,7 @@
 This folder contains examples of how to use Python programs to access the
 State of Colorado's HydroBase REST web services.
 
-[Python](https://www.python.org/doc/essays/blurb/) is an interpreted,
+<a href="https://www.python.org/doc/essays/blurb/" target="_blank">Python</a> is an interpreted,
 object-oriented, high-level programming language with dynamic semantics. Python
 can query the web services by running a simple Python program, using command line
 parameters to indicate which data to retrieve.
@@ -43,10 +43,11 @@ This repository and the Python example contains the following:
           test/                                The testing folder
             python/                            Python testing folder
               expected-results/                The verified result files retrieved earlier that subsequent queries will compare to.
-              results/                         A folder with iles that new queries will be written to and compared with expected-results/ files.
+              results/                         A folder with files that new queries will be written to and compared with expected-results/ files.
               test_streamflow.py               The Python example end-to-end testing program.
               test_streamflow.sh               The bash script to run the Python program.
             tstool/                            TSTool testing folder
+              results/                         File containing dynamically created testing files for TSTool
               TEST_commands.tstool             The testing Command file for TSTool.
             README.md                          The testing folder README
           .gitignore                           Top-level Git ignore for dynamic files
@@ -126,7 +127,7 @@ standard query:
 
 The program will also write multiple parameters differently depending on format.
 Multiple parameters in CSV will be written to the same file. Multiple parameters in
-JSON will be written to seperate files in the form `filename_PARAM.json`. Like the
+JSON will be written to separate files in the form `filename_PARAM.json`. Like the
 example above, leave off the `./` from the command line if using Window Command
 Prompt.
 Examples
