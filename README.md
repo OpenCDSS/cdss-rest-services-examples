@@ -38,7 +38,7 @@ Each web service provides a default behavior and can be further configured by pr
 * Each query parameter includes a parameter name, `=`, and value, and value can take on various forms depending on the data type.
 * Query parameters are separated by `&` character.
 * The [Url Generator](https://dwr.state.co.us/rest/get/help) links on the HydroBase web service page help format URLs for the data resource being queried and corresponding query parameters.
-	+ Special characters in the query parameters may be encoded using [URL encoding or pecent encoding](https://en.wikipedia.org/wiki/Percent-encoding).
+	+ Special characters in the query parameters may be encoded using [URL encoding or percent encoding](https://en.wikipedia.org/wiki/Percent-encoding).
 	* Accessing a web service URL to download data may behave differently depending on the request.
 	For example, JSON and XML content may display in the browser, but CSV content may automatically download.
 * Default web service query limits are enforced and require an API key to increase limits above the defaults.

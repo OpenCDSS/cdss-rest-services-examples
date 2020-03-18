@@ -46,14 +46,13 @@ cdss-rest-services-examples/               The top-level CDSS example repository
       js/                                  A JavaScript directory for all JavaScript files used for the example.
         Chart.min.js                       The source code for the TPP Chart.js, used for showing data on a graph.
         chartjs-plugin-zoom.min.js         Plugin for chartjs to zoom and pan, and displaying axes dynamically.
-        clusterize.min.js                  TPP for easily creating a table to display large amounts of data effeciently.
+        clusterize.min.js                  TPP for easily creating a table to display large amounts of data efficiently.
         hammer.min.js                      Needed along with chartjs zoom plugin, and used for gesture recognition.
         javascript-example.js              The OWF-created file that uses JavaScript to query the HydroBase Web Services.
         moment.min.js                      TPP that deals with dates, times and the formatting of them using moments().
       index-telemetry-station-15min.html   The main html for displaying the raw 15 minute data example on a web page.
       index-telemetry-station-day.html     The main html for displaying the per day example on a web page.
-      TODO
-      package-lock.json                    A required json file listing the depenedencies for the web page, e.g. the chartjs version.
+      package-lock.json                    A required json file listing the dependencies for the web page, e.g. the chartjs version.
       README.md                            This README file.
       run-server.sh                        The bash script that uses python to begin the local server to run the example.
 ```
@@ -63,7 +62,7 @@ The state of Colorado has created its own automated JavaScript code to help with
 the querying. They provide the function `getData()` that performs an HTTP GET
 request, and returns back the data. What these examples do is takes that data,
 and displays them using graphs and tables so they can easily be put in a web
-page by anyone wanting to utlilize it. There are a few principal items to cover
+page by anyone wanting to utilize it. There are a few principal items to cover
 that this example uses or utilizes:
 
 **Chart.js Package** - This third party package is a pretty popular graphing
@@ -78,7 +77,7 @@ more than their [GitHub](https://github.com/chartjs/chartjs-plugin-zoom) page.
 
 **Clusterize.js Package** - This third party package is used for displaying the
 table next to the graph. It specializes in displaying large amounts of data
-effeciently, so lag isn't noticable to users. It also has an easy to use
+efficiently, so lag isn't noticeable to users. It also has an easy to use
 set up for populating a `<table>` component by putting each row (`<tr>`) and
 column (`<td>`) in an array that's passed to the Clusterize constructor.
 Documentation can be found [here](https://clusterize.js.org/).
@@ -91,7 +90,7 @@ argument to be added to any request. Go to the CDSS REST Web Services help page
 api key.
 
 **Paging** - By default, the State of Colorado will return more pages of
-information to the user if the amount of data rows it returns exceeds 50,000.
+information to the user if the amount of data rows exceeds 50,000.
 Normally, a user would have to make additional requests to retrieve the
 remaining rows. This JavaScript example will take care of that, so that only one
 query is sent; If there are multiple pages, they will be subsequently queried,
@@ -106,7 +105,7 @@ specific Day and Raw queries that it displays.
 
 **Local Time Zones** - The HydroBase Web Service return all dates and times in
 local time zones, instead of UTC. Because of this, the JavaScript example will
-dislay all x- and y-labels, legends, and table values in
+display all x- and y-labels, legends, and table values in
 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) compliant local
 date and time formats.
 
@@ -128,7 +127,7 @@ server. Installation instructions can be found at
 The separate html files listed in the Folder Structure above are each their own
 examples for linking JavaScript code to the HydroBase REST Services. In each, there
 are variables that, when assigned a value, act as the arguments given to the
-HyrdoBase query. These variables don't need to be used as is, obviously. They could
+HydroBase query. These variables don't need to be used as is, obviously. They could
 also be assigned with an `<input>` tag and dealt with a `<button>`, etc. They are
 mainly there to show what the corresponding JavaScript id will look for. The 
 arguments for each one are as follows:
@@ -162,7 +161,7 @@ involved, and runs the file using a server in localhost. It's generally a better
 idea to use this method when actually developing a potential web page, as it
 more closely resembles a web service, rather than just changing local files like
 in the first method. The following describes running the 
-index-telemtry-station-15min.html file:
+index-telemetry-station-15min.html file:
 
 ### Method 1: Opening the html file in Chrome
 1. Open a browser of choice.
@@ -182,7 +181,7 @@ structure. This is the top-level directory for the javascript example.
 `./run-server.sh`. For Command Prompt, type `run-server.sh`.
 4. Now that the server is running, open up a browser of choice and type
 `http://localhost:8000`. There are multiple html files as described in the
-folder structure above, so the brower will show all files where the html
+folder structure above, so the browser will show all files where the html
 files are located.
 5. Click on the index html file to run, and the example will show up.
 

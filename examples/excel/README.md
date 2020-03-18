@@ -6,7 +6,36 @@ Colorado's HydroBase REST web services.
 See also the example on the
 [HydroBase REST Web Services website](https://dwr.state.co.us/rest/get/help#TechInfoHelp&#All&#gettingstarted&#jsonxml).
 
-## Importing data to Excel from the CDSS REST Services
+The following sections provide a summary of the project and instructions for
+getting started:
+
+* [Excel Example Folder Structure](#excel-example-folder-structure)
+* [Importing Data to Excel from the CDSS REST Services](#importing-data-to-excel-from-theo-cdss-rest-services)
+* [Calling the Query URL from a Web Browser](#calling-the-query-url-from-a-web-browser)
+* [Using Excel from a Web Page](#using-excel-from-a-web-page)
+* [Using Another Example from this Repository](#using-another-example-from-this-repository)
+
+## Excel Example Folder Structure
+```text
+C:\Users\user\                             User's home folder, Windows style.
+/c/Users/user/                             User's home folder, Git Bash style.
+/cygdrive/C/Users/user/                    User's home folder, Cygwin style.
+/home/user/                                User's home folder, Linux style.
+  cdss-dev/                                Work done on Colorado Decision Support Systems projects.
+```
+
+This repository and Excel example contains the following:
+```text
+cdss-rest-services-examples/               The top-level CDSS example repository file.
+  examples/                                The directory with all CDSS web services examples.
+    excel/                                 Top-level directory for this Excel example.
+      GAGE_HT_PLAKERCO_PYTHON_RAW.xlsx     Excel example Book showing data retrieved by Python from the HydroBase web service.
+      GAGE_HT_PLAKERCO_RAW.xlsx            Excel example Book showing data returned straight from a HydroBase query URL.
+      README.md                            This README file.
+```
+
+
+## Importing Data to Excel from the CDSS REST Services
 [Excel](https://products.office.com/en-us/excel) is a spreadsheet program
 created by Microsoft. It's used to create grids of text, numbers and formulas
 specifying calculations, among many other things.
@@ -19,7 +48,7 @@ executable. One of the options on this new page is a download button to download
 the files separately instead of having to pull down the entire repo.
 
 ----
-### Calling the query URL from a web Browser
+### Calling the Query URL from a Web Browser
 
 A URL can be generated to query the HydroBase Web Service at the 
 [Colorado's Decision Support System](https://dwr.state.co.us/Rest/GET/Help)
@@ -73,7 +102,7 @@ in multiple pages. This means that even though the user may think at first all
 data has been fetched, in reality only the first of X amount of pages have
 been returned.<br>Unless a user is familiar with paging and makes multiple
 queries with the page indexes, figuring paging out can be a hassle. Luckily,
-the Python program takes care of paging for the user, and returns back however
+the Python program takes care of paging, and returns back however
 many pages are generated due to the query.
 
 Instructions for running the Python example can be found at its

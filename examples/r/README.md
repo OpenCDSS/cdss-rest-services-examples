@@ -11,7 +11,8 @@ onto a local machine before anything else. If R is not install, install it by
 going to the [R Project](https://www.r-project.org/).
 
 **Note:** This example does not take into account querying issues unlike some
-other examples in this repository such as HydroBase paging and missing values
+other examples in this repository such as HydroBase paging
+([learn more here](../../README#introduction)) and missing values
 from the data. It is only meant to be an introduction to retrieving data from
 the web server and being able to manipulate it from there.
 
@@ -35,7 +36,7 @@ reads Import Dataset; Click on that, followed by `From Text (readr)...`
 * Clicking update in the upper right will show you a data preview. Extra options can
 be changed, and then the data can be imported using the Import button.
 
-Below is a screenshot of querying the HyrdoBase web service using the PLAKERCO Telemetry Station, DISCHRG parameter in a CSV format.
+Below is a screenshot of querying the HydroBase web service using the PLAKERCO Telemetry Station, DISCHRG parameter in a CSV format.
 ****
 ![R Example](../../README-resources/images/R_example.png)
 ****
