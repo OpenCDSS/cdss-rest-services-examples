@@ -7,6 +7,9 @@ See also the example on the
 [HydroBase REST Web Services website](https://dwr.state.co.us/rest/get/help#TechInfoHelp&#All&#gettingstarted&#jsonxml).
 
 ## Importing data to Excel from the CDSS REST Services
+[Excel](https://products.office.com/en-us/excel) is a spreadsheet program
+created by Microsoft. It's used to create grids of text, numbers and formulas
+specifying calculations, among many other things.
 
 ----
 ### Calling the query URL from a web Browser
@@ -22,13 +25,11 @@ machine.
 From here click the DATA tab, then From Text and select the downloaded file from
 the file system to import to Excel. Below is an example of a query using the
 PLAKERCO Telemetry Station, using the GAGE_HT parameter during the period between
-01/01/2015 and 01/06/2015. You can download the Excel Book below.
+01/01/2015 and 01/06/2015.
 
 ![](../../README-resources/images/excel_example.png)
-
-<a href="../../README-resources/files/Book1.xlsx"
-download="GAGE_HT_PLAKERCO_Raw.xlsx">
-Download the GAGE_HT, PLAKERCO Telemetry Station Raw Excel Book</a>
+The full example of the Excel Book is in this folder under the file name
+`GAGE_HT_PLAKERCO_RAW.xlsx`
 
 ### Using Excel to Query from a Web Page
 
@@ -80,7 +81,6 @@ as the only non-data row in the data set. The dates and times are also in a bett
 format for interpreting, as seen below.
 
 ![](../../README-resources/images/python_excel_example.png)
+The full example of the Excel Book is in this folder under the file name
+`GAGE_HT_PLAKERCO_PYTHON_RAW.xlsx`
 
-<a href="../../README-resources/files/Book2.xlsx"
-download="GAGE_HT_PLAKERCO_Raw_Python.xlsx">
-Download the GAGE_HT, PLAKERCO Telemetry Station Raw Excel Book</a>
