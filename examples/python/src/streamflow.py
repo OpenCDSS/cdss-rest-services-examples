@@ -25,6 +25,8 @@ def parse_command_line() -> None:
                         help='The date to start the query in the form mm/dd/yyyy')
     parser.add_argument('--endDate', metavar='end_date', default='',
                         help='The date to end the query in the form mm/dd/yyyy')
+    parser.add_argument('--apiKey', metavar='api_key', default='',
+                        help='The API Key to increase request limit from HydroBase')
 
     # Add an argument group that is required from the user
     required = parser.add_argument_group('required arguments')
@@ -49,6 +51,7 @@ def parse_command_line() -> None:
     global OUTPUT
     global START_DATE
     global END_DATE
+    global API_KEY
 
     STATIONID = args.abbrev
     PARAMETERS = args.parameter
@@ -56,6 +59,7 @@ def parse_command_line() -> None:
     OUTPUT = args.output
     START_DATE = args.startDate
     END_DATE = args.endDate
+    API_KEY = args.apiKey
 
 
 # The principal method in our program. Given the arguments specified on command line,
@@ -72,7 +76,8 @@ def run_batch() -> None:
         # Build our url to fit what the user wants to query. We need to query first to see
         # if we get back more than one page from the database
         url = build_url(param, 1)
-        response = requests.get(url)
+        headers = {'Accept-Encoding': 'gzip'}
+        response = requests.get(url, headers=headers)
 
         # Through some means (usually incorrect parameter name) nothing was returned from the database
         if 'zero records from CDSS' in response.text:
@@ -215,9 +220,15 @@ def build_url(param: str, page_index: int) -> str:
         check_date_list(end_date)
         end_date = '%2F'.join(end_date)
 
-    return 'https://dwr.state.co.us/Rest/GET/api/v2/telemetrystations/telemetrytimeseriesraw/' \
-        '?format={}&pageIndex={}&abbrev={}&parameter={}&startDate={}&endDate={}'\
-        .format(data_format, page_index, STATIONID, param, start_date, end_date)
+    if API_KEY == '':
+        return 'https://dwr.state.co.us/Rest/GET/api/v2/telemetrystations/telemetrytimeseriesraw/' \
+            '?format={}&pageIndex={}&abbrev={}&parameter={}&startDate={}&endDate={}'\
+            .format(data_format, page_index, STATIONID, param, start_date, end_date)
+    else:
+        apiKey = API_KEY.replace('/', '%2F')
+        return 'https://dwr.state.co.us/Rest/GET/api/v2/telemetrystations/telemetrytimeseriesraw/' \
+            '?format={}&pageIndex={}&abbrev={}&parameter={}&startDate={}&endDate={}&apiKey={}'\
+            .format(data_format, page_index, STATIONID, param, start_date, end_date, apiKey)
 
 
 # Determine if the date given from the user will work or not

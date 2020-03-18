@@ -13,7 +13,7 @@ var html_type = ''            // Which html file is being run (Raw, Day, etc.)
 var units = '';               // After query, this populates the table units
 var x_axis_label = '';        // The dynamic x-axis label for the graph
 var pager = {                 // The pager object that is passed to the
-  pageSize: 50000,            // TelemetryTimeSeriesDay function, the automated
+  pageSize: 50000,            // TelemetryTimeSeries function, the automated
   pageIndex: 1                // code generated from the State of Colorado
 }
 
@@ -48,8 +48,6 @@ function dataRetrieved(data) {
   let tr_td = '<tr><td>';
   let td_td = '</td><td class=\"right\">';
   let td_tr = '</td></tr>';
-  // TODO: Delete this line. It is a debug log to see the object being returned
-  console.log(data.responseObject);  
   
   let test_index = 0;
   // Go through the array of results returned and push the date, measured value, and
@@ -293,11 +291,12 @@ function getDates(startDate, endDate) {
 
 /* The main and only function that is directly called from the html file. The rest
 are called from getData function below and subsequent functions below that. The
-agruments from the html are assigned here and passed to the automated source code
+arguments from the html are assigned here and passed to the automated source code
 from the State of Colorado. NOTE: As of right now, all of these variables are in
-between the two comments below and are hard-coded so as to display the example
-data. */
+between the two comments below in each of the switch cases, and are hard-coded so
+as to display the example data. */
 function retrieveAllData() {
+
   input_api_key = document.getElementById("input-api-key");
   input_abbrev = document.getElementById("input-abbrev");
   input_end_date = document.getElementById("input-end-date");
@@ -320,9 +319,6 @@ function retrieveAllData() {
       input_modified = '';
       input_parameter = 'DISCHRG';
       input_start_date = '';
-      
-      // Only for TelemetryTimeSeriesDay
-      input_offset = '';
       // Above, the arguments are hard-coded for example purposes and can be removed
       
       TelemetryTimeSeriesRaw.getData(dataRetrieved,
@@ -344,7 +340,6 @@ function retrieveAllData() {
       input_modified = '';
       input_parameter = 'STORAGE';
       input_start_date = '';
-      
       // Only for TelemetryTimeSeriesDay
       input_offset = '';
       // Above, the arguments are hard-coded for example purposes and can be removed

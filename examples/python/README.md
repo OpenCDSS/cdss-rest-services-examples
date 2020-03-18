@@ -92,10 +92,11 @@ Parameter | Description | Default
 `--abbrev ABBREV`<br>**required** | The telemetry station ID abbreviation, as given by the [Colorado Division of Water Resources](https://cdnr.us/#/division/DWR). `ABBREV` **must** be in all caps. The full list can be viewed [here](https://dwr.state.co.us/surfacewater/). | None - must be specified.
 `--parameter PARAM_NAME [PARAM_NAME ...]`<br>**required** | One or more parameters to query at the aforementioned telemetry station. `PARAM_NAME` **must** be in all caps. (e.g. DISCHRG, AIRTEMP, GAGE\_HT) | None - must be specified.
 `--format data_format`<br>**required** | The format for the retrieved information, either `csv` or `json`. | None - must be specified.
- `--end_date end_date` | The ending date of the data returned in the form mm/dd/yyyy. If the end date is given and the start date is not given, the web service will return one month's worth of data before the end date. | Empty
+ `--endDate end_date` | The ending date of the data returned in the form mm/dd/yyyy. If the end date is given and the start date is not given, the web service will return one month's worth of data before the end date. | Empty
 `-h`, `--help` | Displays the help message and exits | Empty
 `--output filename` | Instead of printing the information retrieved to the terminal (default), this specifies that it needs to be written to an output file, name determined by the user. | Empty
-`--start_date start_date` | The starting date of the data returned in the form mm/dd/yyyy. If the start date is given and end date is not given, the web service will return one month's worth of data after the start date. | Empty
+`--startDate start_date` | The starting date of the data returned in the form mm/dd/yyyy. If the start date is given and end date is not given, the web service will return one month's worth of data after the start date. | Empty
+`--apiKey api_key` | The API key to allow more daily returned rows/requests than the default amounts. An API key can be obtained by creating an account on the [CDSS REST Web Services Website](https://dwr.state.co.us/rest/get/help). | Empty
 
 #### Additional constraints for start_date and end_date include:
 * By default, if no starting or ending date is given, the HydroBase web service 

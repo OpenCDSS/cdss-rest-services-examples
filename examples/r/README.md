@@ -12,7 +12,7 @@ going to the [R Project](https://www.r-project.org/).
 
 **Note:** This example does not take into account querying issues unlike some
 other examples in this repository such as HydroBase paging
-([learn more here](../../README#introduction)) and missing values
+([learn more here](../../README.md#introduction)) and missing values
 from the data. It is only meant to be an introduction to retrieving data from
 the web server and being able to manipulate it from there.
 
