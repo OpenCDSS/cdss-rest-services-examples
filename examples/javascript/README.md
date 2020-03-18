@@ -58,10 +58,11 @@ cdss-rest-services-examples/               The top-level CDSS example repository
 ```
 
 ## Example Description
+
 The state of Colorado has created its own automated JavaScript code to help with 
 the querying. They provide the function `getData()` that performs an HTTP GET
-request, and returns back the data. What these examples do is takes that data,
-and displays them using graphs and tables so they can easily be put in a web
+request, and returns the data. What these examples do is take the data
+and displays it using graphs and tables so they can easily be put in a web
 page by anyone wanting to utilize it. There are a few principal items to cover
 that this example uses or utilizes:
 

@@ -3,13 +3,13 @@
 This folder contains examples of how to use Python programs to access the
 State of Colorado's HydroBase REST web services.
 
-<a href="https://www.python.org/doc/essays/blurb/" target="_blank">Python</a> is an interpreted,
+[Python](https://www.python.org/doc/essays/blurb/) is an interpreted,
 object-oriented, high-level programming language with dynamic semantics. Python
 can query the web services by running a simple Python program, using command line
 parameters to indicate which data to retrieve.
 
-The following sections provide a summary of the project and instructions for getting
-started:
+The following sections provide a summary of the project and instructions for
+getting started:
 
 * [Python Example Folder Structure](#python-example-folder-structure)
 * [Python Prerequisites](#python-prerequisites)
@@ -53,9 +53,36 @@ This repository and the Python example contains the following:
           .gitignore                           Top-level Git ignore for dynamic files
           README.md                            This introductory README file
 
+----
+## Example Description
+
+This example uses Python to build a query for the State of Colorado's HydroBase
+Web Services. It is set up to run with the complementary `streamflow.sh` bash
+script that auto-detects the installed Python on the system (instructions to
+install Python in the next section). When running the bash script, arguments
+will need to be given so that the Python streamflow program can build the correct
+URL for the query. A table of the available arguments are below. This Python example does and does not take care of some technological issues as follows:
+
+**Paging** - By default, the State of Colorado will return more pages of
+data to the user if the amount of data rows exceeds 50,000.
+Normally, a user would have to make additional requests to retrieve the
+remaining rows in subsequent pages. This Python example will take care of that,
+so that only one query is sent; If there are multiple pages, they will be
+automatically queried, retrieved, and added to the whole data set.
+
+**Missing Values** - This Python example *does not* take care of missing values.
+In the `test/tstool/` directory, TSTool can be used to test for missing values.
+Instructions for testing can be found in the [test README.md](test/README.md).
+More information about TSTool can be found
+[here](https://www.colorado.gov/pacific/cdss/tstool).
+
+**Local Time Zones** - By default, the HydroBase will return all dates and times
+in local time zones, instead of UTC. This Python example will not manipulate the
+data/times in any way, only displaying what is returned.
 
 ----
 ## Python Prerequisites
+
 The following are prerequisites to creating a Python program to access the web
 services:
 
@@ -100,6 +127,7 @@ Parameter | Description | Default
 `--apiKey api_key` | The API key to allow more daily returned rows/requests than the default amounts. An API key can be obtained by creating an account on the [CDSS REST Web Services Website](https://dwr.state.co.us/rest/get/help). | Empty
 
 #### Additional constraints for start_date and end_date include:
+
 * By default, if no starting or ending date is given, the HydroBase web service 
 responds with the last month of data.
 * If both are given, the web service will return the data for the specified period.
