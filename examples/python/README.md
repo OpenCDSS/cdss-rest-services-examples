@@ -39,7 +39,7 @@ This repository and the Python example contains the following:
           src/                                 The source code for the Python example.
             .gitignore                         Git ignore file for ignoring dynamic files.
             streamflow.py                      The Python script that retrieves the HydroBase data.
-            streamfloy.sh                      The bash script that runs the Python script.
+            streamflow.sh                      The bash script that runs the Python script.
           test/                                The testing folder
             python/                            Python testing folder
               expected-results/                The verified result files retrieved earlier that subsequent queries will compare to.
