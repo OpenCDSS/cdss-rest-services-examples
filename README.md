@@ -82,7 +82,7 @@ using various tools and technologies.
 | [Google Sheets](examples/googlesheets/README.md) | Google Sheets, online spreadsheets. |
 | [JavaScript](examples/javascript/README.md)<br>[<img src="README-resources/images/javascript_example.png" width="250px" height="90px" />](examples/javascript) | JavaScript, used for web application development. |
 | [Python](examples/python/README.md)<br>[<img src="README-resources/images/python_example.png" width="250px" height="90px" />](examples/python) | Python programming language, used to automate data processing. |
-| [R](examples/r/README.md) | R programming language, used to automate data processing for statistical analysis. **No content yet.** |
+| [R](examples/r/README.md)<br>[<img src="README-resources/images/R_example.png" width="250px" height="90px">](examples/r) | R programming language, used to automate data processing for statistical analysis. |
 | [StateDMI](examples/statedmi/README.md)| StateDMI software (part of Colorado's Decision Support Systems), used to automate creation of StateCU and StateMod model files. **No content yet.** |
 | [TSTool](examples/tstool/README.md)<br>[<img src="README-resources/images/tstool-thumbnail.png">](examples/tstool/README.md) | TSTool software (part of Colorado's Decision Support Systems), used to automate time series and other data processing. |
 

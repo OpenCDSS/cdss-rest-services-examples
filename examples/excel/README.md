@@ -11,6 +11,13 @@ See also the example on the
 created by Microsoft. It's used to create grids of text, numbers and formulas
 specifying calculations, among many other things.
 
+**Note:** There are two images below showing examples of Excel Books with a query
+to the HydroBase web service. Both of these can be downloaded. If this repository
+is cloned, the two .xlsx files in this example folder can be opened in Excel to
+view. Otherwise, either can be clicked above, which will "show" the file as an
+executable. One of the options on this new page is a download button to download
+the files separately instead of having to pull down the entire repo.
+
 ----
 ### Calling the query URL from a web Browser
 
@@ -27,7 +34,9 @@ the file system to import to Excel. Below is an example of a query using the
 PLAKERCO Telemetry Station, using the GAGE_HT parameter during the period between
 01/01/2015 and 01/06/2015.
 
+****
 ![](../../README-resources/images/excel_example.png)
+****
 The full example of the Excel Book is in this folder under the file name
 `GAGE_HT_PLAKERCO_RAW.xlsx`
 
@@ -80,7 +89,9 @@ The Python program discards them, making the headers more easily distinguishable
 as the only non-data row in the data set. The dates and times are also in a better
 format for interpreting, as seen below.
 
+****
 ![](../../README-resources/images/python_excel_example.png)
+****
 The full example of the Excel Book is in this folder under the file name
 `GAGE_HT_PLAKERCO_PYTHON_RAW.xlsx`
 
