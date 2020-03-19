@@ -70,13 +70,13 @@ table */
    width: 50%;
  }
 
- /* IMPORTANT: The javascript code run at the very beginning decided this browser
- is running on Windows and not Mac. This means that by default, the scroll bar
- used in the table is obtrusive, and will change the width of the table rows.
- Here we offset the header width by the size of the scroll bar (17 pixels) so
- the header and row dividers align. The table1 class is for the headers */
+ /* IMPORTANT: This is the only difference between macStyle.css and style.css.
+ Because macOS has built in unobtrusive scroll bars, it does not take up any
+ width in the table rows; The table headers can go all the way to the width of
+ the surrounding <div>, and the scroll bar will be placed over the table rows.
+ This will allow the header and row dividers to stay lined up. */
  .table1 {
-   width: calc(100% - 17px);
+   width: 100%;
  }
 
  /* The header styling for the clusterize table. It is 50px tall, and has a
@@ -98,9 +98,9 @@ space between each row border and that of the border around the entire table */
   border: 1px solid black;
 }
 
-/* The table row can still do out to the edges of the <div>, because the scroll
-bar is considered a part of the rows. The headers will align because its width
-is 17 pixels smaller than the row width, the size of the scroll bar at the end */
+/* The width of the table rows can go all the way to the edge of the surrounding
+<div>, because the header width is 100% as well and the scroll bar is
+unobtrusive */
 .table2 {
   width: 100%;
 }
@@ -115,7 +115,7 @@ between the data and the border, which makes it look a little nicer */
 }
 
 /* This is notifying the table that for each even row, the background color should
-be darker, so it's a little simpler to tell the difference between them. */
+be darker, so it's a little simpler to tell the difference between them */
 tr:nth-child(even) {
   background-color: #d4d4d4;
 }
