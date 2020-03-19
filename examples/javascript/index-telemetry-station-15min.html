@@ -12,8 +12,11 @@ second -->
     <meta charset="utf-8">
     <link rel="icon" href="data:;base64,="/>
     <script type="text/javascript" src="js/javascript-example.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <!-- This detectOS function determines the client's OS and uses the correct
+    operating system css to call -->
+    <script type="text/javascript">detectOS();</script>
     <link rel="stylesheet" href="css/clusterize.css">
+
     <title>JavaScript Chart Example</title>
 
     <script type="text/javascript" src="js/moment.min.js"></script>
@@ -68,25 +71,24 @@ second -->
       </div>
 
       <div class="clusterize">
-          <table>
-            <thead>
-              <tr>
-                <th id="date"></th>
-                <th id="units"></th>
-                <th id="filler"></th>
-              </tr>
-            </thead>
-          </table>
-        <div id="scroll-area" class="clusterize-scroll">
-          <table>
-            <tbody id="content-area" class="clusterize-content">
-              <tr class="clusterize-no-data">
-              <td>Loading data…</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <table class="table1">
+          <thead>
+            <tr>
+              <th id="date"></th>
+              <th id="units"></th>
+            </tr>
+          </thead>
+        </table>
+      <div id="scroll-area" class="clusterize-scroll">
+        <table class="table2">
+          <tbody id="content-area" class="clusterize-content">
+            <tr class="clusterize-no-data">
+            <td>Loading data…</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+    </div>
 
       <div class="version">
         <p>Version 0.9.5 (2020-03-11)</p>

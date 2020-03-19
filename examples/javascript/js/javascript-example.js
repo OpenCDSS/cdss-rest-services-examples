@@ -150,6 +150,19 @@ function dataRetrieved(data) {
   }
 }
 
+function detectOS() {
+  let mac_css = 'css/macStyle.css'
+  let pc_css = 'css/style.css'
+
+  let mac = navigator.userAgent.indexOf("Mac") != -1;
+  document.write('<link rel="stylesheet" type="text/css" href="')
+  if (mac)
+    document.write(mac_css);
+  else
+    document.write(pc_css);
+  document.write('" />')
+}
+
 // After all the data has been retrieved, configurate the graph, then display
 // it along with the clusterize table.
 function displayGraph() {
