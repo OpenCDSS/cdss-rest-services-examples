@@ -124,6 +124,9 @@ from the local files.
 
 ```
 C:\Users\user\                         Windows user files.
+/home/user/                            Linux user files.
+/cygdrive/C/Users/user/                Cygdrive user files.
+/C/Users/user/                         Git Bash user files.
   cdss-dev/                            CDSS development files.
     REST-Examples/                     This product.
       git-repos/                       Git repositories for the website.
