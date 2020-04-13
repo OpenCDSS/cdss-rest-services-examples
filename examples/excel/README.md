@@ -32,8 +32,9 @@ This repository and Excel example contains the following:
 cdss-rest-services-examples/               The top-level CDSS example repository file.
   examples/                                The directory with all CDSS web services examples.
     excel/                                 Top-level directory for this Excel example.
+      DISCHRG_PLAKERCO_RAW.xlsx            Excel example Book showing data returned from a HydroBase query URL.
       GAGE_HT_PLAKERCO_PYTHON_RAW.xlsx     Excel example Book showing data retrieved by Python from the HydroBase web service.
-      GAGE_HT_PLAKERCO_RAW.xlsx            Excel example Book showing data returned straight from a HydroBase query URL.
+      GAGE_HT_PLAKERCO_RAW.xlsx            Excel example Book showing data returned from a HydroBase query URL.
       README.md                            This README file.
 ```
 
@@ -42,7 +43,7 @@ cdss-rest-services-examples/               The top-level CDSS example repository
 [Excel](https://products.office.com/en-us/excel) is a spreadsheet program
 created by Microsoft. It's used to create grids of text, numbers and formulas
 specifying calculations, among many other things.
-Different versions of Excel are available, including desktop Excel 2013 and later,
+Different versions of Excel are available, including desktop Excel versions,
 Microsoft Office 365 online subscriptions, etc.
 The underlying features are similar.
 
@@ -60,8 +61,9 @@ A URL can be generated to query the HydroBase Web Service by using the
 [Colorado's Decision Support System](https://dwr.state.co.us/Rest/GET/Help) website.
 For example, a Telemetry Time Series Raw URL can be created
 [here](https://dwr.state.co.us/Rest/GET/Help/TelemetryTimeSeriesRawGenerator).
-Using a browser of choice, paste the URL indicating  csv as the format into the browser search bar
-and a .csv (comma separated values) file will be downloaded to the local machine.
+Using a browser of choice, paste the URL into the browser search bar and query the page.
+Make sure to indicate that the format is `csv` so that
+comma separated value file will be downloaded to the local machine.
 CSV is used because its tabular form imports directly into Excel.
 For example, use the following URL:
 
@@ -109,31 +111,30 @@ Use the ***DATA / From Web*** tool and enter a URL such as the example in the pr
 Another option is to use another technology example from this repository to
 retrieve the data, and then import into Excel.
 The following leverages the Python example.
-Python can be used to query the data, create a CSV file,
-and then provide it to Excel.
-What's nice about using Python is that it takes care of some technical issues:
+Python can be used to query the data and create a CSV file that can be imported into Excel.
+Python handles the following technical issues:
 
-1. CSV returned from the web services contain extra metadata lines containing record count
-and query time that are useful but not part of the data.
+1. CSV returned from the web services contain an extra metadata line containing the record count
+and query time, which are useful but not part of the data.
 The Python code strips these lines from the data representation.
 
 2. The data returned by Web Services may include dates and times
-with higher precision than the actual data precision and these longer date/times can be difficult to process in Excel.
-In the Python example created Excel Book below, the dates and times
-are have appropriate precision for the data and are easier to work with.
+with higher precision than the actual data precision and these longer date/times can cause issues for Excel.
+The Excel workbook created from Python (below) illustrates how the dates and times
+have appropriate precision for the data.
 
 3. Web services results also contain information related to paging,
 which is used for large queries.
 Sometimes queries can be quite large, and if the
-amount of data rows retrieved exceeds 50,000, the Web Service will require
+amount of data rows retrieved exceeds 50,000, the web service will require
 multiple queries to download all data pages.
-The Python program takes care of paging, and returns all data even if on multiple pages.
+The Python program takes care of paging, and returns all data even if multiple pages are required.
 
 Instructions for running the Python example can be found in the
-[Python exammples README](../python/README.md).
+[Python examples README](../python/README.md).
 
-Similar to previous examples described above, once the Python program runs and
-creates a local CSV file on the computer, import the downloaded CSV file into Excel
+Similar to previous example described above,
+import the Python-generated CSV file into Excel
 by opening Excel, clicking the ***DATA*** tab and then ***From Text***.
 Specify necessary ***Import Wizard*** options to import the data, as discussed in the example above.
 
@@ -141,3 +142,7 @@ Specify necessary ***Import Wizard*** options to import the data, as discussed i
 
 The full example of the Excel Book is in this folder under the file name
 `GAGE_HT_PLAKERCO_PYTHON_RAW.xlsx`
+
+The TSTool software also handles technical issues and can be used to download data,
+especially time series, for import into Excel.
+See the [TSTool examples README](../tstool/README.md).
