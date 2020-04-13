@@ -1,6 +1,6 @@
 # examples/statedmi
 
-This folder contains examples of how to access the State of Colorado's HydroBase REST web services from StateDMI software.
+This folder contains examples of how to access the State of Colorado's HydroBase REST web services with StateDMI software.
 StateDMI is used to process data from HydroBase and other sources into model data files.
 Whereas TSTool focuses on time series, StateDMI handles other files such as station files, water rights, and irrigated acreage.
 
