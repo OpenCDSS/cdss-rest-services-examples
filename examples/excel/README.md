@@ -18,20 +18,25 @@ getting started:
 -------
 
 ## Excel Example Folder Structure
+
+The following folder structure is recommended for development, consistent with other OpenCDSS software.
+
 ```text
 C:\Users\user\                             User's home folder, Windows style.
 /c/Users/user/                             User's home folder, Git Bash style.
 /cygdrive/C/Users/user/                    User's home folder, Cygwin style.
 /home/user/                                User's home folder, Linux style.
   cdss-dev/                                Work done on Colorado Decision Support Systems projects.
-    cdss-rest-services-examples/           This repository's files.
+    REST-examples/                         REST examples.
+      git-repos/                           Git repositories for the REST examples.
+        cdss-rest-services-examples/       See below.
 ```
 
 This repository and Excel example contains the following:
 ```text
-cdss-rest-services-examples/               The top-level CDSS example repository file.
+cdss-rest-services-examples/               The CDSS REST example repository folder.
   examples/                                The directory with all CDSS web services examples.
-    excel/                                 Top-level directory for this Excel example.
+    excel/                                 Folder for these Excel examples.
       DISCHRG_PLAKERCO_RAW.xlsx            Excel example Book showing data returned from a HydroBase query URL.
       GAGE_HT_PLAKERCO_PYTHON_RAW.xlsx     Excel example Book showing data retrieved by Python from the HydroBase web service.
       GAGE_HT_PLAKERCO_RAW.xlsx            Excel example Book showing data returned from a HydroBase query URL.
@@ -108,7 +113,7 @@ Use the ***DATA / From Web*** tool and enter a URL such as the example in the pr
 
 ### Using Excel with Another Technology in this Repository
 
-Another option is to use another technology example from this repository to
+Another option is to use another technology illustrated in examples in this repository to
 retrieve the data, and then import into Excel.
 The following leverages the Python example.
 Python can be used to query the data and create a CSV file that can be imported into Excel.
@@ -116,9 +121,9 @@ Python handles the following technical issues:
 
 1. CSV returned from the web services contain an extra metadata line containing the record count
 and query time, which are useful but not part of the data.
-The Python code strips these lines from the data representation.
+The Python code strips this line from the data representation.
 
-2. The data returned by Web Services may include dates and times
+2. The data returned by web services may include dates and times
 with higher precision than the actual data precision and these longer date/times can cause issues for Excel.
 The Excel workbook created from Python (below) illustrates how the dates and times
 have appropriate precision for the data.
@@ -145,4 +150,6 @@ The full example of the Excel Book is in this folder under the file name
 
 The TSTool software also handles technical issues and can be used to download data,
 especially time series, for import into Excel.
-See the [TSTool examples README](../tstool/README.md).
+TSTool also has commands to directly write to Excel workbook files,
+which is useful to automate Excel file creation.
+See the [TSTool examples README](../tstool/README.md) for information about TSTool.
