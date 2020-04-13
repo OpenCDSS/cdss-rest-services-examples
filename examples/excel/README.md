@@ -10,10 +10,12 @@ The following sections provide a summary of the project and instructions for
 getting started:
 
 * [Excel Example Folder Structure](#excel-example-folder-structure)
-* [Importing Data to Excel from the CDSS REST Services](#importing-data-to-excel-from-theo-cdss-rest-services)
-* [Calling the Query URL from a Web Browser](#calling-the-query-url-from-a-web-browser)
-* [Using Excel from a Web Page](#using-excel-from-a-web-page)
-* [Using Another Example from this Repository](#using-another-example-from-this-repository)
+* [Importing Data into Excel from the CDSS REST Services](#importing-data-into-excel-from-the-cdss-rest-services)
+	+ [Importing a CSV from a Web Browser Download](#importing-a-csv-from-a-web-browser-download)
+	+ [Using Excel to Query from a Web Page](#using-excel-to-query-from-a-web-page)
+	+ [Using Excel with Another Technology in this Repository](#using-excel-with-another-technology-in-this-repository)
+
+-------
 
 ## Excel Example Folder Structure
 ```text
@@ -22,6 +24,7 @@ C:\Users\user\                             User's home folder, Windows style.
 /cygdrive/C/Users/user/                    User's home folder, Cygwin style.
 /home/user/                                User's home folder, Linux style.
   cdss-dev/                                Work done on Colorado Decision Support Systems projects.
+    cdss-rest-services-examples/           This repository's files.
 ```
 
 This repository and Excel example contains the following:
@@ -34,93 +37,107 @@ cdss-rest-services-examples/               The top-level CDSS example repository
       README.md                            This README file.
 ```
 
+## Importing Data into Excel from the CDSS REST Services
 
-## Importing Data to Excel from the CDSS REST Services
 [Excel](https://products.office.com/en-us/excel) is a spreadsheet program
 created by Microsoft. It's used to create grids of text, numbers and formulas
 specifying calculations, among many other things.
+Different versions of Excel are available, including desktop Excel 2013 and later,
+Microsoft Office 365 online subscriptions, etc.
+The underlying features are similar.
 
-**Note:** There are two images below showing examples of Excel Books with a query
-to the HydroBase web service. Both of these can be downloaded. If this repository
-is cloned, the two .xlsx files in this example folder can be opened in Excel to
-view. Otherwise, either can be clicked above, which will "show" the file as an
-executable. One of the options on this new page is a download button to download
-the files separately instead of having to pull down the entire repo.
+**Note:** There are two images below showing examples of Excel workbooks with a query
+to the HydroBase web service. Both of these workbooks can be downloaded from the repository
+and opened on the computer or the repository can be cloned.
+Web browsers behave differently when clicking on an Excel file in a website.
 
-----
-### Calling the Query URL from a Web Browser
+### Importing a CSV from a Web Browser Download ###
 
-A URL can be generated to query the HydroBase Web Service at the 
-[Colorado's Decision Support System](https://dwr.state.co.us/Rest/GET/Help)
-website. For example, a Telemetry Time Series Raw URL can be created
+This example explains how to import a comma-separated-value (CSV) file into Excel
+that has been downloaded using a web browser.
+
+A URL can be generated to query the HydroBase Web Service by using the 
+[Colorado's Decision Support System](https://dwr.state.co.us/Rest/GET/Help) website.
+For example, a Telemetry Time Series Raw URL can be created
 [here](https://dwr.state.co.us/Rest/GET/Help/TelemetryTimeSeriesRawGenerator).
-Using a browser of choice, paste the URL into the search bar containing csv as the
-format, and a .csv (comma separated values) file will be downloaded on the local
-machine.
+Using a browser of choice, paste the URL indicating  csv as the format into the browser search bar
+and a .csv (comma separated values) file will be downloaded to the local machine.
+CSV is used because its tabular form imports directly into Excel.
+For example, use the following URL:
 
-From here click the DATA tab, then From Text and select the downloaded file from
-the file system to import to Excel. Below is an example of a query using the
-PLAKERCO Telemetry Station, using the GAGE_HT parameter during the period between
-01/01/2015 and 01/06/2015.
+```
+https://dwr.state.co.us/Rest/GET/api/v2/telemetrystations/telemetrytimeseriesraw/?format=csv&abbrev=PLAKERCO&parameter=DISCHRG
+```
 
-****
-![](../../README-resources/images/excel_example.png)
-****
-The full example of the Excel Book is in this folder under the file name
-`GAGE_HT_PLAKERCO_RAW.xlsx`
+In Excel, click the ***DATA*** tab, then ***From Text*** and select the downloaded file from
+the file system to import to Excel, an auto-generated filename such as:
+
+```
+DWR_REST_TelemetryStations_TelemetryTimeSeriesRawDMs_202004130046_.csv
+```
+
+The first two lines of the CSV file will cause issues because they indicate paging information.
+Therefore, in the import wizard, specify the following information and
+otherwise use defaults:
+
+* ***Original data type*** - choose ***Delimited***
+* ***Start import at row*** - `3`
+* ***My data has headers*** - select this since row 3 has headers
+* ***Delimiters*** - select ***Comma***
+* The ***Import Wizard*** can also be used to explicitly specify the column data types.
+
+Below is an example of a query using the
+PLAKERCO Telemetry Station, using the DISCHRG parameter for a recent period.
+
+![excel_example.png](../../README-resources/images/excel_example.png)
+
+The Excel workbook can then be saved.
+The full example of the Excel Book is saved in the repository as
+`DISCHRG_PLAKERCO_RAW.xlsx`
 
 ### Using Excel to Query from a Web Page
 
-Excel can create a query that imports data from the web. It does not come
-default on Excel 2013 (or older) but does on Excel 2016. Microsoft has a well
-made introduction tutorial on the Office support website [here](https://support.office.com/en-us/article/power-query-101-008b3f46-5b14-4f8b-9a07-d3da689091b5).
+The previous example performed the query in the web browser and then
+Excel imported the file saved from the web browser.
+Another option is for Excel to query directly from the web.
+Use the ***DATA / From Web*** tool and enter a URL such as the example in the previous section.
 
-### Using Another Example from this Repository
+* See more information in the [Power Query 101 Tutorial](https://support.office.com/en-us/article/power-query-101-008b3f46-5b14-4f8b-9a07-d3da689091b5).
+
+### Using Excel with Another Technology in this Repository
 
 Another option is to use another technology example from this repository to
-retrieve the data, and then import into Excel. For instance, take the Python
-example. It can be used to query the data, create a CSV file, then send it to
-Excel. What's nice about running the Python, is that it takes care of a couple
-things behind the scenes:
+retrieve the data, and then import into Excel.
+The following leverages the Python example.
+Python can be used to query the data, create a CSV file,
+and then provide it to Excel.
+What's nice about using Python is that it takes care of some technical issues:
 
-1. As can be seen in the Excel image above, when querying the Web Services
-from the CDSS itself, some metadata is returned that is not really wanted nor
-needed for the remaining results. When queried, the HydroBase returns the 
-entire response object; So when the results are written and saved to a file,
-that is what's being opened and displayed in the Excel Book. The Python example
-will discard these rows.
+1. CSV returned from the web services contain extra metadata lines containing record count
+and query time that are useful but not part of the data.
+The Python code strips these lines from the data representation.
 
-2. Since the Web Services returns all data as is, dates and times are returned
-with very high precision, and are difficult to read and unnecessary in some
-cases. In the Python example created Excel Book below, the dates and times
-are manipulated to still have accuracy while also being more user friendly.
+2. The data returned by Web Services may include dates and times
+with higher precision than the actual data precision and these longer date/times can be difficult to process in Excel.
+In the Python example created Excel Book below, the dates and times
+are have appropriate precision for the data and are easier to work with.
 
-3. When using Python, the streamflow program that fetches the data takes care
-of something called paging. Sometimes queries can be quite large, and if the
-amount of data "rows" retrieved exceeds 50,000, the Web Service will respond
-in multiple pages. This means that even though the user may think at first all
-data has been fetched, in reality only the first of X amount of pages have
-been returned.<br>Unless a user is familiar with paging and makes multiple
-queries with the page indexes, figuring paging out can be a hassle. Luckily,
-the Python program takes care of paging, and returns back however
-many pages are generated due to the query.
+3. Web services results also contain information related to paging,
+which is used for large queries.
+Sometimes queries can be quite large, and if the
+amount of data rows retrieved exceeds 50,000, the Web Service will require
+multiple queries to download all data pages.
+The Python program takes care of paging, and returns all data even if on multiple pages.
 
-Instructions for running the Python example can be found at its
-[README](../python/README.md) page in its repository.
+Instructions for running the Python example can be found in the
+[Python exammples README](../python/README.md).
 
-Similar to the URL query above, import the downloaded CSV file into Excel
-by opening Excel, clicking the DATA tab, then the From Text option below it.
-Select the CSV file from the file system to import and follow the instructions.
-Using the same GAGE_HT parameter, PLAKERCO Telemetry Station, and time period
-between 01/01/2015 and 01/06/2015, the output in the Excel Book is quite a bit
-more readable. The first two metadata lines are gone, since they won't be needed.
-The Python program discards them, making the headers more easily distinguishable
-as the only non-data row in the data set. The dates and times are also in a better
-format for interpreting, as seen below.
+Similar to previous examples described above, once the Python program runs and
+creates a local CSV file on the computer, import the downloaded CSV file into Excel
+by opening Excel, clicking the ***DATA*** tab and then ***From Text***.
+Specify necessary ***Import Wizard*** options to import the data, as discussed in the example above.
 
-****
-![](../../README-resources/images/python_excel_example.png)
-****
+![python_execl_example](../../README-resources/images/python_excel_example.png)
+
 The full example of the Excel Book is in this folder under the file name
 `GAGE_HT_PLAKERCO_PYTHON_RAW.xlsx`
-
