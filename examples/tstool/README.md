@@ -21,7 +21,7 @@ TSTool and StateDMI are the main tools used to create CDSS StateCU and StateMod 
 However, TSTool can also be used for general data processing.
 TSTool can be run in interactive or batch modes.
 
-* See the [TSTool website](http://opencdss.state.co.us/opencdss/tstool/)
+* See the [OpenCDSS TSTool website](http://opencdss.state.co.us/opencdss/tstool/)
 
 TSTool uses "datastores" to configure data sources including web services.
 TSTool version 13 and later is distributed with `HydroBaseWeb` datastore automatically configured,
@@ -62,6 +62,7 @@ For example, diversion records processed by TSTool may have additional zeros bec
 logic agreed to with the State of Colorado, consistent with common practices in using diversion records.
 Additional filled zero values are flagged and can be viewed in TSTool table and graph views,
 and will be output in some formats such as the `DateValue` format.
+**Funding has been allocated to address this issue starting July, 2020.**
 
 ## Examples ##
 

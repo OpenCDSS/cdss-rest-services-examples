@@ -1,10 +1,9 @@
 <!-- This html file is the main entry point for the JavaScript example program
 for querying the South Platte River Near Kersey, CO (PLAKERCO) Telemetry Station.
-This is raw data, so it returns -in this case- DISCHRG from the aforementioned
-telemetry station in 15 minute intervals throughout the last month. It is
-composed of a simple title, a line graph displaying the data, and a clusterize
-table with the Date/Time and values taken of streamflow in cubic feet per
-second -->
+This is raw data, so it returns -in this case- DISCHRG from the
+telemetry station in 15 minute intervals over the last month.
+The web page is composed of a simple title, a line graph displaying the data, and a clusterize
+table with the Date/Time and values in cubic feet per second -->
 
 <!DOCTYPE html>
 <html>
@@ -44,8 +43,8 @@ second -->
       </p>
     </div>
 
-    <!-- Below are the variables that can be acquired on the web page and
-    passed to the javascript-example.js file for querying. -->
+    <!-- Below are the variables that can be determined from the web page and
+    passed to the js/javascript-example.js file for querying. -->
     <var id="input-api-key"></var>
     <var id="input-abbrev"></var>
     <var id="input-end-date"></var>
@@ -53,7 +52,7 @@ second -->
     <var id="input-modified"></var>
     <var id="input-parameter"></var>
     <var id="input-start-date"></var>
-    <!-- Above are the variables that can be acquired on the web page and
+    <!-- Above are the variables that can be determined from the web page and
     passed to the javascript-example.js file for querying. -->
 
     <!-- Variable letting the JavaScript know what kind of GET request
