@@ -96,7 +96,7 @@ set up for populating a `<table>` component by putting each row (`<tr>`) and
 column (`<td>`) in an array that's passed to the Clusterize constructor.
 Documentation can be found on the [Clusterize website](https://clusterize.js.org/).
 
-Other important design issues include:
+**Other important design issues include:**
 
 **State API key** - The API key controls access to data and throttles requests.
 If necessary the State can be contacted to increase query limits for a specific key.
@@ -110,7 +110,7 @@ remaining rows. This JavaScript example will take care of that, so that only one
 query is sent; If there are multiple pages, they will be subsequently queried,
 retrieved, and added to the graph and table to be displayed.
 
-**Missing Values** - By default, the State's Web Services only return non-missing
+**Missing Data** - By default, the State's Web Services only return non-missing
 value rows. For example, if there are 10 missing days for a query of daily data,
 there will be no empty rows in the returned data; March 9th data will be
 followed by March 20th data. Because of this, the consuming application such as the examples
@@ -152,7 +152,7 @@ The following parameters are used by both the `index-telemetry-station-15min.htm
 `index-telemetry-station-day.html` files:
 
 | **Parameter** | **Description** | **Default** |
-| --------- | ----------- | ------- |
+| ------------- | --------------- | ----------- |
 | `abbrev`<br>**required** | The telemetry station ID abbreviation, as given by the [Colorado Division of Water Resources](https://water.state.co.us). `ABBREV` **must** be in all caps. The full list can be viewed [here](https://dwr.state.co.us/surfacewater/). | None - must be specified. |
 | `parameter`<br>**required** | The parameter to query at the aforementioned telemetry station. `parameter` **must** be in all caps. (e.g. `DISCHRG`, `AIRTEMP`, `GAGE_HT`) | None - must be specified. |
 | `includeThirdParty`<br>**required** | Boolean input, so value must be `true` or `false`, indicating whether third-party data should be included (typically `true` to see all available data). | None - must be specified. |
@@ -201,28 +201,88 @@ files are located.
 
 ## Software Design
 
-This section needs to describes the basics of what calls what.
-It also needs to clearly explain how the State's code has been incorporated,
-for example though a `<script>`
+There are two example html files in this directory:
 
-Why do you have unassigned variables in the index.html and then hard-code the values in the javascript-example.js file?
-Wouldn't it be better to assign in the index.html so people know what that looks like and they can change the values,
-rather than having to go deeper into the code to remove hard-coded values?
+1. The `index-telemetry-station-15min.html` file retrieves and displays data for
+every 15 minutes throughout a given amount of time, or a month by default. 
+2. The `index-telemetry-station-day.html` file retrieves and displays data for
+every day throughout a given amount of time, or a year by deafult.
+
+In either case, they both work very similarly as far as the html and JavaScript are
+set up. Around line 70 is a `<script>` tag that calls a State of Colorado's URL
+with the `?js=1` appended to the end. Normally this URL, when used in a browser's
+search bar, would download the generated JavaScript file to the users's machine.
+When used as a src attribute for the script tag instead, it gives access to that
+generated code returned from the State. Now their code can be used to query the
+web services using the given function. The functions that are used, in order, are
+as follows:
+
+| **Function** | **Description** |
+| ------------- | --------------- |
+| detectOS | Determines what operating system the user is on. This will create the table shown a little differently, as Windows and other OS's have different built in ways of rendering a table with a side scroll bar. This will keep the table alignment in check. This is done with a `<script>` tag on line 16 for both html files, and is only 1 of 2 functions directly called from the html. |
+| retrieveAllData | Uses a `<script>` tag that starts around line 73 for both example html files. It decides which html file is running and calls the appropriate State provided function. |
+| getData | The State provided function that calls the HydroBase web service. |
+| dataRetrieved | The callback function in the getData function for retrieving all data from the web service before carrying on. |
+| getDates | A helper function for returning all the dates in between two given dates. This is helpful for checking correct dates, missing data, and labeling the graph. |
+| clusterUnitHeader | Dynamically names the table and graph headers/axis names depending on which html file is currently being run. |
+| displayGraph | Sets up the configuration object for the ChartJS graph, and creates and displays both the graph and Clusterize table. |
 
 ## Moving Forward
+
+### Changing Variables
 
 After an example has been run, there are a few lines of code that need to be
 changed in order to use different data than the example, as follows:
 
-1. Open up the index-telemetry-station-15min.html file in a text editor of choice.
-2. Note the <!-- --> comment about halfway through the code. These are the
+1. Open up the html file to be run in a text editor of choice.
+2. Notice the multiple `<var>` tags around line 50 of either file. These are the
 variables that would be passed to the JavaScript from the web page once assigned 
 and are the arguments that will be sent to the HydroBase Web Service.
-3. Open up the js/javascript-example.js file. At the very bottom is a function 
-called retrieveAllData. The first 7 variables here from the html are assigned 
-their own in the javascript to be used. By default, to display the example, all 
-seven variables are immediately overridden, hard-coded, and in between two
-comments so they're easier to find. These need to be deleted in the future when
-displaying dynamic data.
 
-This should be all that needs to be done before moving on.
+For example, in the index-telemetry-station-15min.html, changing the variables to:
+```html
+<var id="input-api-key" hidden></var>
+<var id="input-abbrev" hidden>PLAKERCO</var>
+<var id="input-end-date" hidden>03/01/2020</var>
+<var id="input-include-third-party" hidden></var>
+<var id="input-modified" hidden></var>
+<var id="input-parameter" hidden>AIRTEMP</var>
+<var id="input-start-date" hidden>02/01/2020</var>
+<var id="input-offset" hidden></var>
+```
+This would query the HydroBase web service using the Telemtery Station from the
+South Platte River near Kersey, CO, from the entire month of February, looking for
+AIRTEMP in degrees Fahrenheit. 
+
+### Embeding into Existing Website
+
+To embed in an already existing website, the following would need to be done:
+
+1. Copy both css/ and js/ folders into the top level directory of the website.
+Alternatively, they can be put anywhere, but then the src attributes below would
+need to be updated so the path to each file is in the correct place relative to
+their location. Note the last link will change font, and is not completely
+necessary. Also keep in mind that the order of the scripts below matter and should
+not be changed.
+
+2. In the main html, paste the following lines into the `<head>` tag:
+  ```html
+  <script type="text/javascript" src="js/javascript-example.js"></script>
+  <script type="text/javascript">detectOS();</script>
+  <link rel="stylesheet" href="css/clusterize.css">
+  <script type="text/javascript" src="js/moment.min.js"></script>
+  <script type="text/javascript" src="js/Chart.min.js"></script>
+  <script type="text/javascript" src="js/hammer.min.js"></script>
+  <script type="text/javascript" src="js/chartjs-plugin-zoom.min.js"></script>
+  <script type="text/javascript" src="js/clusterize.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  ```
+
+3. All `<var>` tags needed for the query should be used, whether they are hard
+coded or gotten by user input, etc.
+
+4. Lastly, the entire `all-data` div should be put wherever it needs to be in the
+website. This will display the graph on the left and table on the right, and by
+default will take the entire width of the page.
+
+This should be all that needs to be done for integrating into another website.

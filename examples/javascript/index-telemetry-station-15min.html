@@ -43,25 +43,30 @@ table with the Date/Time and values in cubic feet per second -->
       </p>
     </div>
 
-    <!-- Below are the variables that can be determined from the web page and
+    <!-- Below are the variables that can be set from the web page and
     passed to the js/javascript-example.js file for querying. -->
-    <var id="input-api-key"></var>
-    <var id="input-abbrev"></var>
-    <var id="input-end-date"></var>
-    <var id="input-include-third-party"></var>
-    <var id="input-modified"></var>
-    <var id="input-parameter"></var>
-    <var id="input-start-date"></var>
-    <!-- Above are the variables that can be determined from the web page and
+    <var id="input-api-key" hidden></var>
+    <var id="input-abbrev" hidden>PLAKERCO</var>
+    <var id="input-end-date" hidden></var>
+    <var id="input-include-third-party" hidden></var>
+    <var id="input-modified" hidden></var>
+    <var id="input-parameter" hidden>DISCHRG</var>
+    <var id="input-start-date" hidden></var>
+    <!-- Above are the variables that can be set from the web page and
     passed to the javascript-example.js file for querying. -->
 
-    <!-- Variable letting the JavaScript know what kind of GET request
-    to perform -->
+    <!-- Variable letting the JavaScript know what kind of GET request to perform -->
     <var id="html-type" hidden>15min</var>
 
     <div class="all-data">
       
       <div class="lineGraph">
+        <!-- This script tag is retrieving the State of Colorado's generated code.
+        The src URL is almost identical to the State of Colorado's Division of Water
+        Resources URL-generator page address, except for the ?js=1 added to the end.
+        This signifies that we want the JavaScript for said generator page. The variables
+        above are what's passed into the State's API.
+       -->
         <script type="text/javascript"
         src="https://dwr.state.co.us/Rest/GET/Help/TelemetryTimeSeriesRawGenerator?js=1">
         </script>

@@ -1,3 +1,9 @@
+/**
+ * This is the OWF created JavaScript that incorporates the State of Colorado's
+ * generated code so that a user can easily display graphs and/or tables with the
+ * data retrieved from the HydroBase Web Services. Just below are the global variables
+ * that will be used for the example.
+ */
 var chartLabelList = [];      // X-Axis array for the chart
 var chartValueList = [];      // Y-Axis array for the chart
 var clusterizeList = [];      // Array for the table rows for clusterize
@@ -150,6 +156,14 @@ function dataRetrieved(data) {
   }
 }
 
+/**
+ * To solve a graphing issue between a Windows-based OS and others, this function
+ * determines which is being used, and creates the graph in a slightly different
+ * way depending on which it is. Windows inherently has a scroll bar issue that
+ * changes the size of the rest of the graph to squeeze the scroll bar in, whereas
+ * in others, they scroll bar is displayed over the graph itself, not changing the
+ * size of the rest of the graph.
+ */
 function detectOS() {
   let mac_css = 'css/macStyle.css'
   let pc_css = 'css/style.css'
@@ -302,7 +316,7 @@ function getDates(startDate, endDate) {
 };
 
 
-/* The main and only function that is directly called from the html file. The rest
+/* The main function that is directly called from the html file. The rest
 are called from getData function below and subsequent functions below that. The
 arguments from the html are assigned here and passed to the automated source code
 from the State of Colorado. NOTE: As of right now, all of these variables are in
@@ -310,30 +324,23 @@ between the two comments below in each of the switch cases, and are hard-coded s
 as to display the example data. */
 function retrieveAllData() {
 
-  input_api_key = document.getElementById("input-api-key");
-  input_abbrev = document.getElementById("input-abbrev");
-  input_end_date = document.getElementById("input-end-date");
+  input_api_key = document.getElementById("input-api-key").innerHTML;
+  input_abbrev = document.getElementById("input-abbrev").innerHTML;
+  input_end_date = document.getElementById("input-end-date").innerHTML;
   input_include_third_party =
-    document.getElementById("input-include-third-party");
-  input_modified = document.getElementById("input-modified");
-  input_parameter = document.getElementById("input-parameter");
-  input_start_date = document.getElementById("input-start-date");
-  input_offset = document.getElementById("input-offset");
-
+    document.getElementById("input-include-third-party").innerHTML;
+  input_modified = document.getElementById("input-modified").innerHTML;
+  input_parameter = document.getElementById("input-parameter").innerHTML;
+  input_start_date = document.getElementById("input-start-date").innerHTML;
+  // This checks to see if an offset has been set by the html file. If it has,
+  // it's querying the 'day' data from the web service. 
+  if (document.getElementById("input-offset") != null)
+    input_offset = document.getElementById("input-offset").innerHTML;
+  // This determines which query the html wants from the HydroBase
   html_type = document.getElementById("html-type").innerHTML;
   
   switch (html_type) {
     case '15min':
-      // Below, the arguments are hard-coded for example purposes and can be removed
-      input_api_key = '';
-      input_abbrev = 'PLAKERCO';
-      input_end_date = '';
-      input_include_third_party = false;
-      input_modified = '';
-      input_parameter = 'DISCHRG';
-      input_start_date = '';
-      // Above, the arguments are hard-coded for example purposes and can be removed
-      
       TelemetryTimeSeriesRaw.getData(dataRetrieved,
         pager,
         input_api_key,
@@ -345,18 +352,6 @@ function retrieveAllData() {
         input_start_date);
         break;
     case 'day':
-      // Below, the arguments are hard-coded for example purposes and can be removed
-      input_api_key = '';
-      input_abbrev = 'CHARESCO';
-      input_end_date = '';
-      input_include_third_party = false;
-      input_modified = '';
-      input_parameter = 'STORAGE';
-      input_start_date = '';
-      // Only for TelemetryTimeSeriesDay
-      input_offset = '';
-      // Above, the arguments are hard-coded for example purposes and can be removed
-      
       TelemetryTimeSeriesDay.getData(dataRetrieved,
         pager,
         input_api_key,

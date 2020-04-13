@@ -42,17 +42,17 @@ values taken of the reservoir's storage in Acre-feet (ACFT) -->
       </p>
     </div>
 
-    <!-- Below are the variables that can be acquired on the web page and
+    <!-- Below are the variables that can be acquired on the web page and are
     passed to the javascript-example.js file for querying. -->
-    <var id="input-api-key"></var>
-    <var id="input-abbrev"></var>
-    <var id="input-end-date"></var>
-    <var id="input-include-third-party"></var>
-    <var id="input-modified"></var>
-    <var id="input-parameter"></var>
-    <var id="input-start-date"></var>
-    <var id="input-offset"></var>
-    <!-- Above are the variables that can be acquired on the web page and
+    <var id="input-api-key" hidden></var>
+    <var id="input-abbrev" hidden>CHARESCO</var>
+    <var id="input-end-date" hidden></var>
+    <var id="input-include-third-party" hidden></var>
+    <var id="input-modified" hidden></var>
+    <var id="input-parameter" hidden>STORAGE</var>
+    <var id="input-start-date" hidden></var>
+    <var id="input-offset" hidden></var>
+    <!-- Above are the variables that can be acquired on the web page and are
     passed to the javascript-example.js file for querying. -->
 
     <!-- Variable letting the JavaScript know what kind of GET request
@@ -62,6 +62,12 @@ values taken of the reservoir's storage in Acre-feet (ACFT) -->
     <div class="all-data">
       
       <div class="lineGraph">
+        <!-- This script tag is retrieving the State of Colorado's generated code.
+        The src URL is almost identical to the State of Colorado's Division of Water
+        Resources URL-generator page address, except for the ?js=1 added to the end.
+        This signifies that we want the JavaScript for said generator page. The variables
+        above are what's passed into the State's API.
+       -->
         <script type="text/javascript"
         src="https://dwr.state.co.us/Rest/GET/Help/TelemetryTimeSeriesDayGenerator?js=1">
         </script>
@@ -90,7 +96,7 @@ values taken of the reservoir's storage in Acre-feet (ACFT) -->
       </div>
 
       <div class="version">
-        <p>Version 1.0.0 (2020-03-19)</p>
+        <p>Version 1.0.1 (2020-04-13)</p>
       </div>
 
     </div>
