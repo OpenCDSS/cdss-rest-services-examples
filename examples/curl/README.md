@@ -7,7 +7,7 @@ This folder contains examples of how to access HydroBase web services with comma
 `curl` is also useful to automate monitoring that data are available and to implement basic
 automated tests (download file and compare with expected results from previous download).
 
-* [`curl` Documentation](#curl-dcumentation)
+* [`curl` Documentation](#curl-documentation)
 * [Install `curl`](#install-curl)
 * [Examples](#examples)
 
@@ -37,7 +37,7 @@ The URLs that are used can be prototyped using the ***Url Generator*** links on 
 The following queries 15-minute streamflow data for recent (default) period for station `PLAKERCO` and saves JSON format to local file `PLAKERCO.json`.
 Note that the URL must be quoted on Linux because of special characters in the URL.
 It is also OK to use quotes in Windows command shell.
-The `-o` option specifies the output file, which is necessary because the web service URL does not match a simple file.
+The `-o` option specifies the output file, which is necessary because the web service URL does not match a simple file name.
 
 ```
 curl -o PLAKERCO.json "https://dwr.state.co.us/Rest/GET/api/v2/telemetrystations/telemetrytimeseriesraw/?format=jsonprettyprint&abbrev=PLAKERCO&parameter=DISCHRG"
@@ -48,3 +48,6 @@ The following queries 15-minute streamflow data for recent (default) period for 
 ```
 curl -o PLAKERCO.csv "https://dwr.state.co.us/Rest/GET/api/v2/telemetrystations/telemetrytimeseriesraw/?format=csv&abbrev=PLAKERCO&parameter=DISCHRG"
 ```
+
+See the `run-examples.sh` script to run the above in Linux environment and
+`run-examples.bat` batch file to run in a Windows command prompt shell.
