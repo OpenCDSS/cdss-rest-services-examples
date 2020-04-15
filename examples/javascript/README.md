@@ -38,15 +38,15 @@ C:\Users\user\                             User's home folder, Windows style.
 /cygdrive/C/Users/user/                    User's home folder, Cygwin style.
 /home/user/                                User's home folder, Linux style.
   cdss-dev/                                Work done on Colorado Decision Support Systems projects.
-    REST-examples/                         REST examples.
-      git-repos/                           Git repositories for the REST examples.
+    REST-examples/                         REST web service examples.
+      git-repos/                           Git repositories for the REST web service examples.
         cdss-rest-services-examples/       See below.
 ```
 
 This repository contains the following files for the JavaScript examples:
 
 ```text
-cdss-rest-services-examples/               The CDSS REST example repository folder.
+cdss-rest-services-examples/               The CDSS REST web service examples repository folder.
   examples/                                The folder for web services examples.
     javascript/                            The folder for JavaScript examples.
       css/                                 The css directory for styling the JavaScript example and third-party packages.
@@ -59,7 +59,7 @@ cdss-rest-services-examples/               The CDSS REST example repository fold
         chartjs-plugin-zoom.min.js         Plugin for chartjs to zoom and pan, and displaying axes dynamically.
         clusterize.min.js                  TPP for easily creating a table to efficiently display large amounts of data.
         hammer.min.js                      Needed along with chartjs zoom plugin, and used for gesture recognition.
-        javascript-example.js              The OWF-created file that uses JavaScript to query the HydroBase Web Services.
+        javascript-example.js              Example JavaScript code to query the HydroBase Web Services.
         moment.min.js                      TPP that deals with dates, times and the formatting of them using moments().
       index-telemetry-station-15min.html   The main html for displaying the raw 15 minute data example on a web page.
       index-telemetry-station-day.html     The main html for displaying the per day example on a web page.
@@ -76,10 +76,13 @@ The API code provides the function `getData()` that performs an HTTP GET
 request and returns the data. These examples use this API code to query data
 and additional example code has been developed to display the data using graphs and tables.
 The examples therefore illustrate how to use web services to develop a simple data viewing application.
+Production software tools will need to use one or more web services and
+deal with issues such as date/time formatting, missing data, and paging.
+The example applications handle these technical issues.
 
 The following JavaScript packages are used in the examples:
 
-**Chart.js Package** - This third party package is a popular graphing
+**Chart.js** - This third-party package is a popular graphing
 tool for dynamic graphs and provides options for colors, backgrounds,
 legends, labels, and graph types.  A graph is created with an object, usually called
 config, that is populated with graph options and data, and then provided to the Chart
@@ -89,32 +92,35 @@ panning throughout the graph, and unfortunately there is not an overabundance
 of documentation for that online. There are a few options, but nothing much
 more than their [GitHub Chartjs zoom plugin](https://github.com/chartjs/chartjs-plugin-zoom) page.
 
-**Clusterize.js Package** - This third party package is used for displaying the
+**Clusterize.js** - This third-party package is used for displaying the
 table next to the graph. It specializes in displaying large amounts of data
 efficiently, so lag isn't noticeable to users. It also has an easy to use
 set up for populating a `<table>` component by putting each row (`<tr>`) and
-column (`<td>`) in an array that's passed to the Clusterize constructor.
+column (`<td>`) in an array that is passed to the Clusterize constructor.
 Documentation can be found on the [Clusterize website](https://clusterize.js.org/).
 
-**Other important design issues include:**
+**Other important design considerations include:**
 
 **State API key** - The API key controls access to data and throttles requests.
 If necessary the State can be contacted to increase query limits for a specific key.
 The [CDSS REST Web Services help page](https://dwr.state.co.us/rest/get/help)
 provides instructions for obtaining the API key.
 
-**Paging** - By default, the State of Colorado will return more pages of
-information to the user if the amount of data rows exceeds 50,000.
-Normally, a user would have to make additional requests to retrieve the
-remaining rows. This JavaScript example will take care of that, so that only one
-query is sent; If there are multiple pages, they will be subsequently queried,
-retrieved, and added to the graph and table to be displayed.
+**Paging** - By default, the State of Colorado's web services will use 1+ pages
+of output if the amount of data rows exceeds 50,000.
+Normally, calling applications would have to make additional requests to retrieve the
+remaining rows.
+However, these JavaScript examples handle the paging so that only one query is sent.
+If there are multiple pages, they will be queried in sequence,
+data retrieved, and added to the graph and table for display.
 
-**Missing Data** - By default, the State's Web Services only return non-missing
+**Missing Data** - By default, the State's web services only return non-missing
 value rows. For example, if there are 10 missing days for a query of daily data,
-there will be no empty rows in the returned data; March 9th data will be
-followed by March 20th data. Because of this, the consuming application such as the examples
-in this repository need to fill in missing records for display.
+there will be no empty rows in the returned data (March 9th data will be
+followed by March 20th data). Because of this, the consuming application such as the examples
+in this repository need to fill in missing records for display so that data gaps are obvious.
+It is important that data gaps are filled with "missing data values"
+such as null or `NaN`, and **not** automatically assumed to be zeros.
 
 **Local Time Zones** - The HydroBase web service return all dates and times in
 local time zones.  Consequently, the JavaScript examples 
@@ -139,9 +145,9 @@ Python installation instructions can be found at [python.org](https://www.python
 
 ## JavaScript Example Arguments
 
-The separate html files listed in the Folder Structure are separate
-examples for linking JavaScript code to the HydroBase REST Services.
-Specify queries are defined as variables and the code can be adapted for other queries
+The separate html files listed in the [Java Example Folder Structure](#java-example-folder-structure) are separate
+examples to illustrate accessing HydroBase REST Services from JavaScript code.
+Specify queries are configured with variables and the code can be adapted for other queries
 or integrated with user interface elements such as choice lists.
 
 The arguments for each query executed are described in the following sections.
@@ -153,12 +159,12 @@ The following parameters are used by both the `index-telemetry-station-15min.htm
 
 | **Parameter** | **Description** | **Default** |
 | ------------- | --------------- | ----------- |
-| `abbrev`<br>**required** | The telemetry station ID abbreviation, as given by the [Colorado Division of Water Resources](https://water.state.co.us). `ABBREV` **must** be in all caps. The full list can be viewed [here](https://dwr.state.co.us/surfacewater/). | None - must be specified. |
+| `abbrev`<br>**required** | The telemetry station ID abbreviation, as used by the [Colorado Division of Water Resources](https://water.state.co.us). `ABBREV` **must** be in all caps. The full list can be viewed [here](https://dwr.state.co.us/surfacewater/). | None - must be specified. |
 | `parameter`<br>**required** | The parameter to query at the aforementioned telemetry station. `parameter` **must** be in all caps. (e.g. `DISCHRG`, `AIRTEMP`, `GAGE_HT`) | None - must be specified. |
 | `includeThirdParty`<br>**required** | Boolean input, so value must be `true` or `false`, indicating whether third-party data should be included (typically `true` to see all available data). | None - must be specified. |
-| `api-key` | The API key to allow more daily returned requests from the Web Services than the default amount. Use the [web services help page](https://dwr.state.co.us/rest/get/help) to obtain an api key. | |
+| `api-key` | The API key to allow more daily returned requests from the web services than the default amount. Use the [web services help page](https://dwr.state.co.us/rest/get/help) to obtain an api key. | |
 | `end-date` | The end date to query from the HydroBase Web Service in the form `mm/dd/yyyy`.  If the end date is given and the start date is not given, the web service will return one month's worth of data before the end date. | |
-| `modified` | The date the record was last modified will be returned | |
+| `modified` | Used to request data since a date, for example if new data are being queried to add to a local database. | |
 | `start-date` | The starting date of the data returned in the form `mm/dd/yyyy`. If the start date is given and end date is not given, the web service will return one month's worth of data after the start date. | |
 
 #### Additional constraints for `start_date` and `end_date` include:
@@ -172,8 +178,8 @@ responds with the last month of data.
 There are two ways to run each example.
 The first method is opening the html file directly in a browser, which is useful for
 quickly displaying the page; however, URLs use `file:` rather than `http:` and some browsers may have limitations.
-The second method requires running a local Python web server and then accessing the file using localhost.
-The second method more closely resembles a web service and is typically used in development.
+The second method requires running a local Python web server and then accessing the file using `localhost` for the server name.
+The second method more closely resembles how an application would be served from a web server and is typically used in development.
 The following describes running the `index-telemetry-station-15min.html` file:
 
 ### Method 1: Opening the html file in a Web Browser
@@ -203,43 +209,48 @@ files are located.
 
 There are two example html files in this directory:
 
-1. The `index-telemetry-station-15min.html` file retrieves and displays data for
-every 15 minutes throughout a given amount of time, or a month by default. 
-2. The `index-telemetry-station-day.html` file retrieves and displays data for
-every day throughout a given amount of time, or a year by deafult.
+1. The `index-telemetry-station-15min.html` file retrieves and displays
+15 minute data for a specified period, or the last month by default. 
+2. The `index-telemetry-station-day.html` file retrieves and displays
+daily data for a specified period, or a year by default.
 
-In either case, they both work very similarly as far as the html and JavaScript are
-set up. Around line 70 is a `<script>` tag that calls a State of Colorado's URL
-with the `?js=1` appended to the end. Normally this URL, when used in a browser's
-search bar, would download the generated JavaScript file to the users's machine.
-When used as a src attribute for the script tag instead, it gives access to that
-generated code returned from the State. Now their code can be used to query the
-web services using the given function. The functions that are used, in order, are
-as follows:
+In both cases, the html and JavaScript code are similar.
+Around line 70 is a `<script>` tag that calls a web service URL
+with the `?js=1` appended to the end.
+This query parameter generates JavaScript code that can be used on in
+the client application to read from web services.
+This URL would normally download the generated JavaScript file to the users's computer.
+However, when used as a `src` attribute for the `<script>` tag, it gives access to the
+generated code returned from the web service.
+The returned code can be used to query the
+web services using the provided function.
+The functions that are used, in order, are as follows:
 
 | **Function** | **Description** |
 | ------------- | --------------- |
-| detectOS | Determines what operating system the user is on. This will create the table shown a little differently, as Windows and other OS's have different built in ways of rendering a table with a side scroll bar. This will keep the table alignment in check. This is done with a `<script>` tag on line 16 for both html files, and is only 1 of 2 functions directly called from the html. |
-| retrieveAllData | Uses a `<script>` tag that starts around line 73 for both example html files. It decides which html file is running and calls the appropriate State provided function. |
-| getData | The State provided function that calls the HydroBase web service. |
-| dataRetrieved | The callback function in the getData function for retrieving all data from the web service before carrying on. |
-| getDates | A helper function for returning all the dates in between two given dates. This is helpful for checking correct dates, missing data, and labeling the graph. |
-| clusterUnitHeader | Dynamically names the table and graph headers/axis names depending on which html file is currently being run. |
-| displayGraph | Sets up the configuration object for the ChartJS graph, and creates and displays both the graph and Clusterize table. |
+| `detectOS` | Determines what operating system is used. This will create the data display table differently, as Windows and other operating systems have different built-in ways of rendering a table with a side scroll bar. This is done with a `<script>` tag on line 16 for both html files, and is 1 of 2 functions directly called from the html. |
+| `retrieveAllData` | Uses a `<script>` tag that starts around line 73 for both example html files. It decides which html file is running and calls the appropriate function that is provided by web services. |
+| `getData` | The function provided by web services that retrieves data from HydroBase web service. |
+| `dataRetrieved` | The callback function in the `getData` function for retrieving all data from the web service.  This hands off logic from the web-service JataScript code to the application code. |
+| `getDates` | A helper function for returning all the dates in between two given dates. This is helpful for checking for correct dates, missing data, and labeling the graph. |
+| `clusterUnitHeader` | Dynamically names the table and graph headers/axis names depending on which html file is currently being run. |
+| `displayGraph` | Sets up the configuration object for the ChartJS graph, and creates and displays both the graph and Clusterize table. |
 
 ## Moving Forward
 
 ### Changing Variables
 
-After an example has been run, there are a few lines of code that need to be
-changed in order to use different data than the example, as follows:
+The examples focus on a specific station and data parameter.
+In order to adapt the code for other stations and parameters,
+a few lines of code need to be changed, as follows:
 
-1. Open up the html file to be run in a text editor of choice.
-2. Notice the multiple `<var>` tags around line 50 of either file. These are the
-variables that would be passed to the JavaScript from the web page once assigned 
-and are the arguments that will be sent to the HydroBase Web Service.
+1. Edit the html file in a text editor of choice.
+2. Notice the multiple `<var>` tags around line 50. These are the
+variables that are passed to the JavaScript from the web page
+and are used as function arguments to call HydroBase web services.
 
-For example, in the index-telemetry-station-15min.html, changing the variables to:
+For example, in the index-telemetry-station-15min.html, change the variables to:
+
 ```html
 <var id="input-api-key" hidden></var>
 <var id="input-abbrev" hidden>PLAKERCO</var>
@@ -250,20 +261,20 @@ For example, in the index-telemetry-station-15min.html, changing the variables t
 <var id="input-start-date" hidden>02/01/2020</var>
 <var id="input-offset" hidden></var>
 ```
-This would query the HydroBase web service using the Telemtery Station from the
+
+This queries the HydroBase web service using the Telemetry Station from the
 South Platte River near Kersey, CO, from the entire month of February, looking for
-AIRTEMP in degrees Fahrenheit. 
+`AIRTEMP` parameter in degrees Fahrenheit. 
 
 ### Embeding into Existing Website
 
-To embed in an already existing website, the following would need to be done:
+To embed the example (or modified version) in an already existing website:
 
-1. Copy both css/ and js/ folders into the top level directory of the website.
-Alternatively, they can be put anywhere, but then the src attributes below would
+1. Copy `css/` and `js/` folders into the top level directory of the website.
+Alternatively, they can be put anywhere, but then the `src` attributes below would
 need to be updated so the path to each file is in the correct place relative to
-their location. Note the last link will change font, and is not completely
-necessary. Also keep in mind that the order of the scripts below matter and should
-not be changed.
+their location. The last link configures the font and is not completely necessary.
+The order of the scripts below matter and should not be changed.
 
 2. In the main html, paste the following lines into the `<head>` tag:
   ```html
@@ -279,10 +290,8 @@ not be changed.
   ```
 
 3. All `<var>` tags needed for the query should be used, whether they are hard
-coded or gotten by user input, etc.
+coded or from user input.
 
-4. Lastly, the entire `all-data` div should be put wherever it needs to be in the
+4. The entire `all-data` `div` should be put wherever it needs to be in the
 website. This will display the graph on the left and table on the right, and by
 default will take the entire width of the page.
-
-This should be all that needs to be done for integrating into another website.
