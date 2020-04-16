@@ -1,3 +1,4 @@
 # Ignore any data test files
-data*.csv
-data*.json
+
+*.csv
+*.json

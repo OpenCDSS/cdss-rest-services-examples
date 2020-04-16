@@ -1,12 +1,19 @@
 #!/bin/bash
-
 (set -o igncr) 2>/dev/null && set -o igncr; # this comment is required
 # The above line ensures that the script can be run on Cygwin/Linux even with
-# Windows CRNL
+# Windows CRNL line endings.
 
-# Declaring functions here, entry point of script further down
-checkOperatingSystem()
-{
+# telemetrystation-15min.sh
+#
+# Simple script to run Python program to query real-time telemetry station data from
+# State of Colorado's HydroBase REST services.
+#
+# Run with --help to see the Python program's arguments.
+
+# Supporting functions, alphabetized...
+
+checkOperatingSystem() {
+	# Check the operating system so script is portable
 	if [[ -n "${operatingSystem}" ]]; then
 		# Have already checked operating system so return
 		return
@@ -29,6 +36,7 @@ checkOperatingSystem()
 	esac
 }
 
+# Determine the Python version to use
 determinePythonVersion()
 {
 	# Version is printed to stderr or stdout so a bit trickier to redirect
@@ -42,7 +50,7 @@ determinePythonVersion()
 		pythonVersion=$(python3 --version 2>&1 | cut -d ' ' -f 2 | cut -d . -f 1)
 
 		if [[ ${pythonVersion} != "3" ]]; then
-		echo Error: streamflow.py can only be run using Python Version 3
+		echo Error: telemetrystation-15min.py can only be run using Python Version 3
 		echo Please update to the most up-to-date version try again
 		exit 1
 		fi
@@ -61,28 +69,28 @@ scriptFolder=$(cd $(dirname "${0}") && pwd)
 # Changes to the directory where the script is located
 cd ${scriptFolder}
 
-# Determine what OS is being used. Also, "$@" is shorthand for an element separated
-# list of the command line arguments.
-# Cygwin, Linux and macOS
+# Determine what OS is being used.
+# - "$@" command line arguments are passed to the Python program.
 if [[ "${operatingSystem}" = "cygwin" ]] || [[ "${operatingSystem}" = "linux" ]] || [[ "${operatingSystem}" = "macos" ]]; then
+	# Cygwin, Linux and macOS
 	# Use py command
 	if [[ ${usePy} = "true" ]]; then
-		py streamflow.py "$@"
+		py telemetrystation-15min.py "$@"
 	# Use python3 command
 	else
-		python3 streamflow.py "$@"
+		python3 telemetrystation-15min.py "$@"
 	fi
-# Git Bash
 elif [[ "${operatingSystem}" = "mingw" ]]; then
+	# Git Bash
 	# Use py command
 	if [[ ${usePy} = "true" ]]; then
-		py streamflow.py "$@"
+		py telemetrystation-15min.py "$@"
 	# Use the python executable
 	else
 		# We need to know the absolute path of where python.exe is located
 		pythonPath=$(which python)
 		# Finally, put quotes around the file path in case a directory has a space in
 		# its name
-		"${pythonPath}" streamflow.py "$@"
+		"${pythonPath}" telemetrystation-15min.py "$@"
 	fi
 fi
