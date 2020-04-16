@@ -427,7 +427,6 @@ def write_remaining(app_data: dict, param: str, page_count: int) -> None:
     for page_index in range(2, page_count + 1):
         url = build_url(app_data, param, page_index)
         print_stderr("Request: {}".format(url))
-        print_stderr("Request: {}".format(url))
         response = requests.get(url)
 
         if output_format == 'csv':
