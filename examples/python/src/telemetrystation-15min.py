@@ -59,7 +59,7 @@ def build_url(app_data: dict, param: str, page_index: int) -> str:
         url = "{}&startDate={}".format(url, start_date)
     if end_date != '':
         # end_date = '%2F'.join(end_date)
-        url = "{}&endDate={}".format(url, start_date)
+        url = "{}&endDate={}".format(url, end_date)
     if api_key != '':
         api_key = api_key.replace('/', '%2F')
         url = "{}&apiKey={}".format(url, api_key)
@@ -80,7 +80,7 @@ def check_input(app_data: dict) -> None:
 
     # Append .csv or .json to the output file if not already at the end.
     output_file = get_app_data(app_data, 'OUTPUT_FILE')
-    if not output_file.endswith(output_format):
+    if not output_file.endswith(output_format) and output_file != 'stdout':
         output_file = output_file + '.' + output_format
         app_data['OUTPUT_FILE'] = output_file
 
@@ -245,8 +245,8 @@ def print_remaining(app_data: dict, param: str, page_count: int) -> None:
     """
     output_format = get_app_data(app_data, 'OUTPUT_FORMAT')
     for page_index in range(2, page_count + 1):
-        print_stderr("Processing results page {}.".format(page_count))
-        url = build_url(param, page_index)
+        print_stderr("Processing results page {} of {}.".format(page_index, page_count))
+        url = build_url(app_data, param, page_index)
         print_stderr("Request: {}".format(url))
         response = requests.get(url)
 
@@ -293,7 +293,7 @@ def process_csv(app_data: dict, param: str, first_page: bool, response: str) -> 
     lines = format_output(lines)
     # Determine the amount of pages that the returned data was split into (if any)
     page_count = int(lines[1].split(',')[1])
-    print_stderr("Processing results page {}.".format(page_count))
+    print_stderr("Processing results page 1 of {}.".format(page_count))
     output_file = get_app_data(app_data, 'OUTPUT_FILE')
 
     # Print straight to terminal if no --output argument was received
@@ -338,7 +338,7 @@ def process_json(app_data: dict, param: str, response: str) -> None:
     print_stderr('Creating json output format.')
     json_obj = json.loads(response)
     page_count = json_obj["PageCount"]
-    print_stderr("Processing results page {}.".format(page_count))
+    print_stderr("Processing results page 1 of {}.".format(page_count))
     output_file = get_app_data(app_data, 'OUTPUT_FILE')
     parameters = get_app_data(app_data, 'PARAMETERS')
     # Printing to terminal here
@@ -408,7 +408,7 @@ def run_batch(app_data: dict) -> None:
             process_csv(app_data, param, first_page, response.text)
             first_page = False
         else:
-            print_stderr('Unknown output format {}'.format(output_fromat))
+            print_stderr('Unknown output format {}'.format(output_format))
 
 
 def write_remaining(app_data: dict, param: str, page_count: int) -> None:

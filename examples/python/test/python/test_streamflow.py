@@ -29,7 +29,7 @@ def compare_csv_files():
     # with each of the elements
     for number in range(1, 4):
         subprocess.run(['python3',
-                        '../../src/streamflow.py',
+                        '../../src/telemetrystation-15min.py',
                         '--abbrev', 'PLAKERCO',
                         '--parameter', '{}'.format(PARAMETER[number - 1]),
                         '--format', 'csv',
@@ -60,7 +60,7 @@ def compare_json_files():
 
     for number in range(1, 4):
         subprocess.run(['python3',
-                        '../../src/streamflow.py',
+                        '../../src/telemetrystation-15min.py',
                         '--abbrev', 'PLAKERCO',
                         '--parameter', '{}'.format(PARAMETER[number - 1]),
                         '--format', 'json',
