@@ -34,9 +34,11 @@ values taken of the reservoir's storage in Acre-feet (ACFT) -->
       <p>
         This is an example of how to use JavaScript to query the State of
         Colorado's Web Services. It illustrates how to retrieve and display
-        per day water storage data. It accomplishes this by using a line graph
-        that's easy to use, and a table that's easy to view, while taking care
-        of behind the scenes issues such as missing data values. This example
+        daily water storage data.
+        The example uses <a href="https://www.chartjs.org/">Chart.js</a> for the graph
+        and <a href="https://clusterize.js.org/">Clusterize.js</a> for the table.
+        Missing data in HydroBase are represented as empty data records.
+        This example
         uses the Chatfield Reservoir (CHARESCO), using the STORAGE parameter
         in Acre-Feet (ACFT) over the last year.
       </p>
